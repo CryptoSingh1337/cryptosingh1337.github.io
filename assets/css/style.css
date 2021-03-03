@@ -952,6 +952,28 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+
+.download-button {
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.download-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.download-button:hover {
+  background: #0678e3;
+}
+
+/*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials .section-header {
