@@ -541,6 +541,7 @@ section {
 --------------------------------------------------------------*/
 .projects .projects-item {
   margin-bottom: 30px;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
 .projects #projects-flters {
