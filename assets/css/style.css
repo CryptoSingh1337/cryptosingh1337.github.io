@@ -286,8 +286,16 @@ h6 {
   position: absolute;
   right: 5%;
   top: 10%;
+  opacity: 1;
+  z-index: 1001;
+}
+
+.dark-theme i {
+  position: absolute;
+  top: 8.5%;
+  right: 6.2%;
   opacity: 0.7;
-  z-index: 1000;
+  z-index: 999;
 }
 
 @media (min-width: 992px) {
@@ -412,6 +420,8 @@ section {
 --------------------------------------------------------------*/
 #profile-img {
   height: 300px;
+  border-radius: 8%;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
 .about .content h3 {
@@ -447,48 +457,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts .count-box {
-  padding: 30px 30px 25px 30px;
-  margin-top: 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  background: #fff;
-}
-
-.facts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: #0563bb;
-  color: #fff;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-}
-
-.facts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 600;
-  color: #011426;
-}
-
-.facts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-}
-
-/*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
 
@@ -496,6 +464,7 @@ section {
   width: 65%;
   height: 65%;
   margin: auto;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
 .skills-content p {
