@@ -680,7 +680,7 @@ section {
 .projects .projects-wrap .projects-info p {
   color: #45505b;
   font-size: 14px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding: 0;
   margin: 0;
 }
