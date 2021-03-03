@@ -278,79 +278,71 @@
 
         <div class="row skills-content">
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
 
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-3 text-center">
-                  <img class="skill" src="assets/img/skills/java.svg" alt="java">
+            <div class="container-fluid">
+              <div class="row justify-content-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
+                  <img class="skill card-img-top" src="assets/img/skills/java.svg" alt="java">
                   <p>Java</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/spring.svg" alt="spring">
                   <p>Spring</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/hibernate.svg" alt="hibernate">
                   <p>Hibernate</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/sql.png" alt="sql">
                   <p>SQL</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/git-icon.svg" alt="git">
                   <p>Git</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/intellij-idea.svg" alt="intellij-idea">
                   <p>Intellij Idea</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/data-structures.jpg" alt="data-structures">
                   <p>Data Structurtes</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/algorithms.png" alt="data-structures">
                   <p>Algorithms</p>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/html-5.svg" alt="htm-5">
                   <p>HTML</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/css-3.svg" alt="css-3">
                   <p>CSS</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/javascript.svg" alt="javascript">
                   <p>Javascript</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/bootstrap.svg" alt="bootstrap">
                   <p>Bootstrap</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/mongodb-icon.svg" alt="mongodb">
                   <p>MongoDB</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/nodejs-icon.svg" alt="nodejs">
                   <p>NodeJS</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/express.svg" alt="express">
                   <p>Express</p>
                 </div>
-                <div class="col-sm-3 text-center">
+                <div class="card col-4 col-sm-3 col-lg-2 text-center">
                   <img class="skill" src="assets/img/skills/github-icon.svg" alt="github">
                   <p>GitHub</p>
                 </div>
@@ -590,7 +582,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="mailto:cryptosingh@gmail.com" method="post" role="form" class="contact-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -604,11 +596,6 @@
               </div>
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
@@ -641,7 +628,6 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
