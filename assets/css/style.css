@@ -370,56 +370,6 @@ section {
 .card {
   border: 0;
 }
-/* .resume .resume-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #45505b;
-}
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #0563bb;
-  position: relative;
-}
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: Poppins, sans-serif;
-  color: #0563bb;
-  margin-bottom: 10px;
-}
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: #f7f8f9;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #0563bb;
-} */
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -427,52 +377,43 @@ section {
   margin-bottom: 20px;
   color: #45505b;
 }
-
 .resume .resume-item {
   margin-top: -2px;
   position: relative;
   width: 50%;
 }
-
 .resume-inner-left {
   width: 55%;
   margin-left: auto;
 }
-
 .resume-inner-right {
   width: 55%;
   margin-right: auto;
 }
-
 @media only screen and (max-width: 800px) {
   .resume-inner-left {
     width: 100%;
   }
-
   .resume-inner-right {
     width: 100%;
   }
 }
-
 .left {
   padding: 0 20px 0 0;
   text-align: end;
   border-right: 2px solid #0563bb;
   left: 0;
 }
-
 .right {
   padding: 0 0 0 20px;
   text-align: start;
   border-left: 2px solid #0563bb;
   left: 49.9%;
 }
-
 .resume .resume-item p {
   margin-bottom: 0;
   margin-top: 0;
 }
-
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 18px;
@@ -482,7 +423,6 @@ section {
   color: #0563bb;
   margin-bottom: 10px;
 }
-
 .resume .resume-item h5 {
   font-size: 16px;
   background: #f7f8f9;
@@ -491,19 +431,15 @@ section {
   font-weight: 600;
   margin-bottom: 10px;
 }
-
 .resume .resume-item ul {
   padding-left: 20px;
 }
-
 .resume .resume-item ul li {
   padding-bottom: 10px;
 }
-
 .resume .resume-item:last-child {
   padding-bottom: 0;
 }
-
 .left::before {
   content: "";
   position: absolute;
@@ -515,7 +451,6 @@ section {
   background: #fff;
   border: 2px solid #0563bb;
 }
-
 .right::before {
   content: "";
   position: absolute;
