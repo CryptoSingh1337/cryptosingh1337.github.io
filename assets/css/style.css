@@ -361,6 +361,7 @@ section {
 #experience .card {
   border: 1px solid #dbdbdb;
   margin-bottom: 20px;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 .skill {
   width: 65%;
