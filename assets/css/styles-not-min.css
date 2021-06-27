@@ -649,7 +649,7 @@ section {
   height: 16px;
   border-radius: 50px;
   right: -9px;
-  top: 0;
+  top: 50%;
   background: #fff;
   border: 2px solid #0563bb;
 }
@@ -661,7 +661,7 @@ section {
   height: 16px;
   border-radius: 50px;
   left: -9px;
-  top: 0;
+  top: 50%;
   background: #fff;
   border: 2px solid #0563bb;
 }
