@@ -213,6 +213,7 @@ h6 {
   background: url("../img/bg.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
 .dark-theme {
   position: absolute;
