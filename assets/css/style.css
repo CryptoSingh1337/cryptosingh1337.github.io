@@ -479,6 +479,17 @@ section {
   border-left: 2px solid #0563bb;
   left: 49.9%;
 }
+@media only screen and (max-width: 500px) {
+  .right {
+    left: 49.6%;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 1200px) {
+  .right {
+    left: 49.8%;
+  }
+}
 .resume .resume-item p {
   margin-bottom: 0;
   margin-top: 0;
