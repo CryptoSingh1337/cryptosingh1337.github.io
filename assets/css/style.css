@@ -440,31 +440,31 @@ section {
     transform: scale3d(1, 1, 1);
   }
 }
-.resume .resume-title {
+.education .education-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #45505b;
 }
-.resume .resume-item {
+.education .education-item {
   margin-top: -2px;
   position: relative;
   width: 50%;
 }
-.resume-inner-left {
+.education-inner-left {
   width: 55%;
   margin-left: auto;
 }
-.resume-inner-right {
+.education-inner-right {
   width: 55%;
   margin-right: auto;
 }
 @media only screen and (max-width: 800px) {
-  .resume-inner-left {
+  .education-inner-left {
     width: 100%;
   }
-  .resume-inner-right {
+  .education-inner-right {
     width: 100%;
   }
 }
@@ -490,11 +490,11 @@ section {
     left: 49.8%;
   }
 }
-.resume .resume-item p {
+.education .education-item p {
   margin-bottom: 0;
   margin-top: 0;
 }
-.resume .resume-item h4 {
+.education .education-item h4 {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
@@ -503,7 +503,7 @@ section {
   color: #0563bb;
   margin-bottom: 10px;
 }
-.resume .resume-item h5 {
+.education .education-item h5 {
   font-size: 16px;
   background: #f7f8f9;
   padding: 5px 15px;
@@ -511,13 +511,13 @@ section {
   font-weight: 600;
   margin-bottom: 10px;
 }
-.resume .resume-item ul {
+.education .education-item ul {
   padding-left: 20px;
 }
-.resume .resume-item ul li {
+.education .education-item ul li {
   padding-bottom: 10px;
 }
-.resume .resume-item:last-child {
+.education .education-item:last-child {
   padding-bottom: 0;
 }
 .left::before {
