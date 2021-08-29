@@ -42,8 +42,10 @@ export default {
               id: tech.id,
               title: tech.data.name[0].text,
               source: tech.data.url.url,
+              order: tech.data.order[0].text,
             });
           });
+          this.technologies.sort((a, b) => a.order - b.order);
           this.loading = false;
         })
         .catch((err) => {

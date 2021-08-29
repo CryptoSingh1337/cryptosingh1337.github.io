@@ -155,6 +155,10 @@ export default {
 .content-details--left {
   display: block;
 }
+.icon-size-x1h {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .contacts {
   width: 16rem;
   margin-right: var(--space-6);
