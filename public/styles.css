@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+:root {
+  --module: 8px;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --transition-time-base: 300ms;
+}
+.theme--dark {
+  --primary-100: #fff0dd;
+  --primary-100-rgb: HexToRGB(#fff0dd);
+  --primary-200: #ffd8a8;
+  --primary-200-rgb: HexToRGB(#ffd8a8);
+  --primary-300: #ffc175;
+  --primary-300-rgb: HexToRGB(#ffc175);
+  --primary-400: #ffae4c;
+  --primary-400-rgb: HexToRGB(#ffae4c);
+  --primary-500: #ff9c22;
+  --primary-500-rgb: HexToRGB(#ff9c22);
+  --primary-600: #ba6a08;
+  --primary-600-rgb: HexToRGB(#ba6a08);
+  --primary-800: #6d3c00;
+  --primary-800-rgb: HexToRGB(#6d3c00);
+  --success-100: #cee6ce;
+  --success-100-rgb: HexToRGB(#cee6ce);
+  --success-200: #b0e6b0;
+  --success-200-rgb: HexToRGB(#b0e6b0);
+  --success-500: #4c994c;
+  --success-500-rgb: HexToRGB(#4c994c);
+  --success-600: #2c7d2c;
+  --success-600-rgb: HexToRGB(#2c7d2c);
+  --success-800: #034003;
+  --success-800-rgb: HexToRGB(#034003);
+  --warning-100: #ffd8a8;
+  --warning-100-rgb: HexToRGB(#ffd8a8);
+  --warning-500: #ff9c22;
+  --warning-500-rgb: HexToRGB(#ff9c22);
+  --warning-600: #ba6a08;
+  --warning-600-rgb: HexToRGB(#ba6a08);
+  --warning-800: #6d3c00;
+  --warning-800-rgb: HexToRGB(#6d3c00);
+  --danger-100: #ffc1c1;
+  --danger-100-rgb: HexToRGB(#ffc1c1);
+  --danger-500: #ce3232;
+  --danger-500-rgb: HexToRGB(#ce3232);
+  --danger-600: #a91818;
+  --danger-600-rgb: HexToRGB(#a91818);
+  --danger-800: #5c0000;
+  --danger-800-rgb: HexToRGB(#5c0000);
+  --gray-100: #333;
+  --gray-100-rgb: HexToRGB(#333);
+  --gray-500: #d0d0d0;
+  --gray-500-rgb: HexToRGB(#d0d0d0);
+  --gray-600: #dfdfdf;
+  --gray-600-rgb: HexToRGB(#dfdfdf);
+  --gray-800: #dfdfdf;
+  --gray-800-rgb: HexToRGB(#dfdfdf);
+  --gray-900: #1e1e1e;
+  --gray-900-rgb: HexToRGB(#1e1e1e);
+  --light: #333;
+  --light-rgb: HexToRGB(#333);
+  --dark: #fff;
+  --dark-rgb: HexToRGB(#fff);
+  --grey: #eaeaea;
+  --grey-rgb: HexToRGB(#eaeaea);
+  --body-color: #4d4d4d;
+  --body-color-rgb: HexToRGB(#4d4d4d);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-width: 320px;
+  background-color: var(--body-color);
+  color: var(--grey);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.825rem;
+  font-weight: normal;
+  line-height: 1.25rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+}
