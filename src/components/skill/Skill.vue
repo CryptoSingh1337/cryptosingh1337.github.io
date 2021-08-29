@@ -1,5 +1,7 @@
 <template>
-  <span class="icon tooltip icon-size-x2h">
+  <span
+    :class="['icon', 'tooltip', isSkill ? 'icon-size-x2h' : 'icon-size-x1h']"
+  >
     <img :src="source" />
     <span class="tooltip-title">{{ title }}</span>
   </span>
@@ -11,6 +13,7 @@ export default {
   props: {
     source: String,
     title: String,
+    isSkill: Boolean,
   },
 };
 </script>
@@ -22,7 +25,15 @@ span {
   justify-content: center;
 }
 img {
-  max-width: 2rem;
-  max-height: 2rem;
+  width: 100%;
+  height: 100%;
+}
+.icon-size-x1h {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.icon-size-x2h {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 </style>

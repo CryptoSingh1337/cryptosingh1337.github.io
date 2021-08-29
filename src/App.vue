@@ -56,14 +56,6 @@ export default {
   display: block;
   text-align: center;
 }
-.icon-size-x1h {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-.icon-size-x2h {
-  width: 2rem;
-  height: 2rem;
-}
 .tooltip {
   position: relative;
 }

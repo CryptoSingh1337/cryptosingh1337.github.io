@@ -58,6 +58,7 @@
           v-for="skill in interested"
           :title="skill.title"
           :source="skill.source"
+          :isSkill="false"
         />
       </span>
     </p>
@@ -168,7 +169,7 @@ img {
   grid-template-columns: repeat(auto-fill, minmax(1.5rem, 1fr));
   margin-top: var(--space-4);
   display: grid;
-  grid-column-gap: var(--space-5);
+  grid-column-gap: var(--space-4);
   grid-row-gap: var(--space-4);
 }
 .download-resume {

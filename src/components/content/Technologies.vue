@@ -8,6 +8,7 @@
         v-for="tech in technologies"
         :title="tech.title"
         :source="tech.source"
+        :isSkill="true"
       />
     </div>
   </section>
