@@ -22,6 +22,18 @@ export default {
     };
   },
   methods: {
+    initializeLocalStorageTheme() {
+      let theme = localStorage.getItem("theme");
+      if (theme) {
+        this.isDark = theme === "dark" ? true : false;
+        this.changeTheme();
+      } else {
+        localStorage.setItem("theme", "dark");
+      }
+    },
+    changeLocalStorageTheme() {
+      localStorage.setItem("theme", this.isDark ? "dark" : "light");
+    },
     changeTheme() {
       const body = document.querySelector("body");
       if (this.isDark) {
@@ -31,12 +43,15 @@ export default {
         body.classList.add("theme--light");
         body.classList.remove("theme--dark");
       }
-      console.log(this.isDark);
     },
     handleClick() {
       this.isDark = !this.isDark;
       this.changeTheme();
+      this.changeLocalStorageTheme();
     },
+  },
+  created() {
+    this.initializeLocalStorageTheme();
   },
 };
 </script>
