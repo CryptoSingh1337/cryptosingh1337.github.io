@@ -64,7 +64,7 @@ export default {
   right: var(--space-4);
 }
 .switches-theme {
-  margin-right: var(--space-5);
+  margin-right: 0;
 }
 .toggle {
   position: relative;
@@ -113,5 +113,10 @@ export default {
   background-image: url("~@/assets/switches/theme-light.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+@media screen and (min-width: 1280px) {
+  .switches-theme {
+    margin-right: var(--space-5);
+  }
 }
 </style>
