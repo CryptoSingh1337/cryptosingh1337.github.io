@@ -150,9 +150,6 @@ img {
   width: 7.5rem;
   margin-bottom: var(--space-2);
   margin-right: var(--space-4);
-  outline: 5px solid rgba(255, 255, 255, 0.2);
-  outline-offset: -5px;
-  border-radius: var(--space-1);
   float: left;
 }
 .about-resume-title {
