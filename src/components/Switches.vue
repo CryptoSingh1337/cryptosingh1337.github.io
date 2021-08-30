@@ -22,18 +22,6 @@ export default {
     };
   },
   methods: {
-    themeChecker() {
-      const value = localStorage.getItem("theme");
-      if (value === undefined) {
-        localStorage.setItem("theme", "dark");
-      } else {
-        if (value === "dark") this.isDark = true;
-        else this.isDark = false;
-      }
-    },
-    changeThemeLocalStorage() {
-      localStorage.setItem("theme", this.isDark ? "dark" : "light");
-    },
     changeTheme() {
       const body = document.querySelector("body");
       if (this.isDark) {
@@ -43,16 +31,12 @@ export default {
         body.classList.add("theme--light");
         body.classList.remove("theme--dark");
       }
+      console.log(this.isDark);
     },
     handleClick() {
       this.isDark = !this.isDark;
-      this.changeThemeLocalStorage();
       this.changeTheme();
     },
-  },
-  mounted() {
-    this.themeChecker();
-    this.changeTheme();
   },
 };
 </script>
