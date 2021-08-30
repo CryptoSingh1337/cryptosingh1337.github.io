@@ -101,9 +101,6 @@
           <span class="icon tooltip icon-size-x1h">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              xml:space="preserve"
-              width="24"
-              height="24"
               version="1.1"
               style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
               viewBox="0 0 1684 1684"
