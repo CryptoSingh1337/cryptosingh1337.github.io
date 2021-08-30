@@ -1,0 +1,118 @@
+<template>
+  <div class="switches">
+    <label
+      :class="[
+        'toggle',
+        'toggle--type',
+        isDark
+          ? 'toggle--off-theme toggle--off switches-theme'
+          : 'toggle--on-theme toggle--on switches-theme',
+      ]"
+      @click="handleClick"
+    ></label>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Switches",
+  data() {
+    return {
+      isDark: true,
+    };
+  },
+  methods: {
+    themeChecker() {
+      const value = localStorage.getItem("theme");
+      if (value === undefined) {
+        localStorage.setItem("theme", "dark");
+      } else {
+        if (value === "dark") this.isDark = true;
+        else this.isDark = false;
+      }
+    },
+    changeThemeLocalStorage() {
+      localStorage.setItem("theme", this.isDark ? "dark" : "light");
+    },
+    changeTheme() {
+      const body = document.querySelector("body");
+      if (this.isDark) {
+        body.classList.add("theme--dark");
+        body.classList.remove("theme--light");
+      } else {
+        body.classList.add("theme--light");
+        body.classList.remove("theme--dark");
+      }
+    },
+    handleClick() {
+      this.isDark = !this.isDark;
+      this.changeThemeLocalStorage();
+      this.changeTheme();
+    },
+  },
+  mounted() {
+    this.themeChecker();
+    this.changeTheme();
+  },
+};
+</script>
+
+<style scoped>
+.switches {
+  display: flex;
+  position: fixed;
+  top: var(--space-2);
+  right: var(--space-4);
+}
+.switches-theme {
+  margin-right: var(--space-5);
+}
+.toggle {
+  position: relative;
+  display: block;
+  width: 34px;
+  height: 14px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.toggle--on,
+.toggle--on:focus,
+.toggle--off,
+.toggle--off:focus {
+  background: var(--gray-100);
+}
+.toggle::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: right ease var(--transition-time-base);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+}
+.toggle--off::before {
+  right: calc(34px - 20px);
+  background-color: var(--gray-500);
+}
+.toggle--on::before {
+  right: 0;
+  background-color: var(--primary-500);
+}
+.toggle--type::before {
+  border-color: #fff;
+  background-color: #fff;
+}
+.toggle--off-theme::before {
+  background-image: url("~@/assets/switches/theme-dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.toggle--on-theme::before {
+  background-image: url("~@/assets/switches/theme-light.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+</style>

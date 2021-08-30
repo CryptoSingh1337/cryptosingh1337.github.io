@@ -6,17 +6,21 @@
         <Content />
       </div>
     </div>
+    <Switches />
   </div>
 </template>
 
 <script>
 import About from "./components/about/About.vue";
 import Content from "./components/content/Content.vue";
+import Switches from "./components/Switches.vue";
+
 export default {
   name: "App",
   components: {
     About,
     Content,
+    Switches,
   },
 };
 </script>
