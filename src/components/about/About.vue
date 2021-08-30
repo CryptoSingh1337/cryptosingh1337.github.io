@@ -3,7 +3,7 @@
     <picture>
       <img src="@/assets/profile/img.jpg" alt="profile-img" />
       <div class="resume about-resume-desktop">
-        <h3 class="about-resume-title">Resume</h3>
+        <h3 class="about-resume-title" v-text="`R${e[0]}sum${e[0]}`"></h3>
         <a :href="resumeLink" target="_blank"
           ><button class="download-resume">
             <svg
@@ -63,7 +63,7 @@
       </span>
     </p>
     <div class="resume about-resume-mobile">
-      <h3 class="about-resume-title">Resume</h3>
+      <h3 class="about-resume-title">Résumé</h3>
       <a :href="resumeLink" target="_blank"
         ><button class="download-resume">
           <svg
@@ -104,6 +104,7 @@ export default {
       resumeLink: process.env.VUE_APP_RESUME,
       loading: true,
       interested: [],
+      e: ["é"],
     };
   },
   methods: {
