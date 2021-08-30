@@ -106,7 +106,7 @@ export default {
   border-bottom: 1px solid var(--primary-200);
 }
 .projects-item-title {
-  color: var(--gray-600);
+  color: var(--gray-500);
   transition: var(--transition-time-base);
   font-weight: 500;
   font-size: 0.875rem;
