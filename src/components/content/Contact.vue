@@ -93,7 +93,7 @@
             <span class="tooltip-title">Medium</span></span
           >
         </a>
-        <a
+        <!-- <a
           class="contacts-item-link--additional"
           href="https://www.stopstalk.com/user/profile/cryptosingh"
           target="_blank"
@@ -136,7 +136,7 @@
             </svg>
             <span class="tooltip-title">StopStalk</span></span
           >
-        </a>
+        </a> -->
       </li>
     </ul>
   </section>
