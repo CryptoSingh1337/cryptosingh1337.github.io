@@ -1,7 +1,7 @@
 <template>
   <div class="work-experience-block work-experience-block--left">
     <span class="work-experience-period work-experience-period--left"
-      >Sept 2021 - Present</span
+      >Sept 2021 - Dec 2021</span
     >
     <div class="work-experience-info work-experience-info--left">
       <a
