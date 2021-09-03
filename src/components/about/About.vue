@@ -117,8 +117,11 @@ export default {
               id: res.id,
               title: res.data.name[0].text,
               source: res.data.url.url,
+              order: res.data.order[0].text,
             });
           });
+          console.log(this.interested);
+          this.interested.sort((a, b) => a.order - b.order);
           this.loading = false;
         })
         .catch((err) => {
