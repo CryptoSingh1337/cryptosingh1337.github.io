@@ -5,7 +5,7 @@
     <ul class="projects-list">
       <li v-if="!loading" class="projects-item projects-item--headings">
         <span>Title</span>
-        <span>Repo/Demo</span>
+        <span>Links</span>
         <span>Description</span>
         <span>Technologies</span>
       </li>
@@ -15,7 +15,7 @@
         :title="project.title"
         :info="project.info"
         :repo="project.repo"
-        :demo="project.demo"
+        :live="project.live"
         :frontendRepo="project.frontendRepo"
         :backendRepo="project.backendRepo"
         :technologies="project.technologies"
@@ -53,7 +53,7 @@ export default {
               title: result.data.title[0].text,
               info: result.data.info[0].text,
               repo: result.data.repo.url,
-              demo: result.data.demo.url,
+              live: result.data.demo.url,
               frontendRepo: result.data.frontendrepo.url,
               backendRepo: result.data.backendrepo.url,
               technologies: result.data.technologies,

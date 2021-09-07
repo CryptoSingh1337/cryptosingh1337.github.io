@@ -7,9 +7,9 @@
           >Repo</span
         ></a
       >
-      <a :href="demo" target="_blank"
-        ><span class="projects-item-demo" v-if="demo != undefined"
-          >Demo</span
+      <a :href="live" target="_blank"
+        ><span class="projects-item-live" v-if="live != undefined"
+          >Live</span
         ></a
       >
       <a :href="frontendRepo" target="_blank"
@@ -35,7 +35,7 @@ export default {
     title: String,
     info: String,
     repo: String,
-    demo: String,
+    live: String,
     frontendRepo: String,
     backendRepo: String,
     technologies: Array,
@@ -67,7 +67,7 @@ export default {
   padding: var(--space-3) 0;
   font-size: 0.75rem;
 }
-.projects-item-demo,
+.projects-item-live,
 .projects-item-repo {
   padding: 0 var(--space-2);
   color: var(--gray-900);
@@ -77,7 +77,7 @@ export default {
 .projects-item-repo {
   background-color: var(--success-100);
 }
-.projects-item-demo {
+.projects-item-live {
   background-color: var(--success-200);
 }
 .projects-item-preview {
