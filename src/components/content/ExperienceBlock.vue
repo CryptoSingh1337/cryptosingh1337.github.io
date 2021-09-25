@@ -1,36 +1,38 @@
 <template>
   <div class="work-experience-block work-experience-block--left">
     <span class="work-experience-period work-experience-period--left"
-      >Sept 2021 - Dec 2021</span
-    >
-    <div class="work-experience-info work-experience-info--left">
-      <a
-        class="work-experience-link"
-        href="https://www.girlscript.tech"
-        target="_blank"
-        ><h3>GirlScript Winter of Contributing</h3></a
-      ><span class="work-experience-position">Contributor</span>
-      <div class="work-experience-content">
-        <span>Contributing to Back-end development with Java project.</span>
-      </div>
-    </div>
-  </div>
-  <div class="work-experience-block work-experience-block--right">
-    <span class="work-experience-period work-experience-period--right"
       >Mar 2021 – May 2021</span
     >
-    <div class="work-experience-info work-experience-info--right">
+    <div class="work-experience-info work-experience-info--left">
       <a
         class="work-experience-link"
         href="https://github.com/checkstyle/checkstyle"
         target="_blank"
         ><h3>Checkstyle</h3></a
-      >
-      <span class="work-experience-position">Contributor</span>
+      ><span class="work-experience-position">Contributor</span>
       <div class="work-experience-content">
         <span>Updated existing unit tests to use separate input file.</span>
         <span>Updated existing Javadocs and added code examples.</span>
         <span>Merged over 35+ pull requests.</span>
+      </div>
+    </div>
+  </div>
+  <div class="work-experience-block work-experience-block--right">
+    <span class="work-experience-period work-experience-period--right"
+      >Jul 2016 - Dec 2019</span
+    >
+    <div class="work-experience-info work-experience-info--right">
+      <a
+        class="work-experience-link"
+        href="https://www.youtube.com/c/CryptoSingh/"
+        target="_blank"
+        ><h3>YouTube</h3></a
+      >
+      <span class="work-experience-position">Content Creator</span>
+      <div class="work-experience-content">
+        <span>Created tech and gaming related videos.</span>
+        <span>Live streamed various games</span>
+        <span>Crossed 100k+ views</span>
       </div>
     </div>
   </div>
