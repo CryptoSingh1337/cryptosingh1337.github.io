@@ -26,6 +26,9 @@ export default {
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 .content {
   min-width: 320px;
   max-width: 768px;
@@ -35,7 +38,7 @@ export default {
     0 -8px 16px rgba(110, 120, 130, 0.12);
   background: var(--light);
 }
-.content::-webkit-scrollbar {
+.content-info::-webkit-scrollbar {
   display: none;
 }
 .content-info {
