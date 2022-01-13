@@ -34,6 +34,7 @@ export default {
     VUE_APP_ACCESS_TOKEN: process.env.VUE_APP_ACCESS_TOKEN,
     VUE_APP_ENDPOINT: process.env.VUE_APP_ENDPOINT,
     VUE_APP_REF: process.env.VUE_APP_REF,
+    VUE_APP_RESUME: process.env.VUE_APP_RESUME
   },
   build: {}
 }
