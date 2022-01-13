@@ -100,10 +100,6 @@ export default {
   color: var(--primary-400);
   font-weight: 700;
 }
-.loader {
-  text-align: unset;
-  margin-top: var(--space-3);
-}
 .about {
   margin-right: var(--space-6);
   margin-bottom: var(--space-6);
