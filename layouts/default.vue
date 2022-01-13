@@ -13,11 +13,6 @@
 import Switches from "@/components/Switches.vue";
 
 export default {
-  head: {
-    bodyAttrs: {
-      class: "theme--dark",
-    },
-  },
   components: {
     Switches,
   },

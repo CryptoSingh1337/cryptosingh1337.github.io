@@ -16,7 +16,21 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
-    ]
+    ],
+    script: [
+      {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=G-0DMWLMLPLW"
+      },
+      {
+        innerHTML: "window.dataLayer = window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-0DMWLMLPLW');",
+        type: "text/javascript",
+        charset: "utf-8"
+      }
+    ],
+    bodyAttrs: {
+      class: "theme--dark",
+    },
   },
   css: [
     '@/assets/styles.css'
