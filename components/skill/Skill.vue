@@ -2,7 +2,7 @@
   <span
     :class="['icon', 'tooltip', isSkill ? 'icon-size-x2h' : 'icon-size-x1h']"
   >
-    <img :src="source" />
+    <img :src="source" :alt="title" />
     <span class="tooltip-title">{{ title }}</span>
   </span>
 </template>
