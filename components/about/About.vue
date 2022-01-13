@@ -1,7 +1,7 @@
 <template>
   <section class="about">
     <picture>
-      <img src="@/assets/profile/img.jpg" alt="profile-img" />
+      <img src="/profile/img.jpg" alt="profile-img" />
       <div class="resume about-resume-desktop">
         <h3 class="about-resume-title" v-text="`R${e[0]}sum${e[0]}`"></h3>
         <a :href="resumeLink" target="_blank"
@@ -34,24 +34,10 @@
         <span class="about-text--primary">Student</span>
         from India!
       </span>
-      <span class="about-text">
-        Currently I'm learning Spring and working on my DSA skills and projects.
-      </span>
-      <span class="about-text">
-        I am passionate about Computer Science and want to contribute to
-        Computer Science community by creating something new and unique.
-      </span>
-      <span class="about-text"
-        >I believe in smart work and anyone with the curiosity and want to learn
-        and create something can excel in Computer Science field. At the age of
-        6, I was introduced to Computers since then I love Computers and
-        curiosity inside me keep me motivated to learn something new in this
-        field. Recently, I dive into the ocean of web development and I like
-        back-end development interesting. So, I want to continue my career as a
-        Back-end Developer.
+      <span class="about-text" :key="i" v-for="(l, i) in line">
+        {{ l }}
       </span>
       <span class="about-text">At the moment I'm interested in</span>
-      <Loader class="loader" v-if="loading" />
       <span class="about-interests">
         <Skill
           :key="skill.id"
@@ -88,49 +74,23 @@
 </template>
 
 <script>
-import axios from "axios";
-import Url from "../../url";
-import Skill from "../skill/Skill.vue";
-import Loader from "../Loader.vue";
+import { line } from "@/utils/data";
+import Skill from "@/components/skill/Skill.vue";
 
 export default {
   name: "About",
   components: {
     Skill,
-    Loader,
+  },
+  props: {
+    interested: Array,
   },
   data() {
     return {
       resumeLink: process.env.VUE_APP_RESUME,
-      loading: true,
-      interested: [],
       e: ["é"],
+      line: line,
     };
-  },
-  methods: {
-    getInterestedSkills() {
-      axios
-        .get(Url.baseUrl + Url.interested)
-        .then((response) => {
-          response.data.results.forEach((res) => {
-            this.interested.push({
-              id: res.id,
-              title: res.data.name[0].text,
-              source: res.data.url.url,
-              order: res.data.order[0].text,
-            });
-          });
-          console.log(this.interested);
-          this.interested.sort((a, b) => a.order - b.order);
-          this.loading = false;
-        })
-        .catch((err) => {
-          throw err;
-        });
-    },
-  },
-  created() {
-    this.getInterestedSkills();
   },
 };
 </script>

@@ -1,7 +1,6 @@
 <template>
   <section class="technologies">
     <h3 class="technologies-title">Technologies and skills</h3>
-    <Loader v-if="loading" />
     <div class="technologies-block">
       <Skill
         :key="tech.id"
@@ -15,46 +14,15 @@
 </template>
 
 <script>
-import axios from "axios";
-import Url from "../../url";
-import Skill from "../skill/Skill.vue";
-import Loader from "../Loader.vue";
+import Skill from "@/components/skill/Skill.vue";
 
 export default {
   name: "Technologies",
   components: {
     Skill,
-    Loader,
   },
-  data() {
-    return {
-      technologies: [],
-      loading: true,
-    };
-  },
-  methods: {
-    getTechnologies() {
-      axios
-        .get(Url.baseUrl + Url.technologies)
-        .then((response) => {
-          response.data.results.forEach((tech) => {
-            this.technologies.push({
-              id: tech.id,
-              title: tech.data.name[0].text,
-              source: tech.data.url.url,
-              order: tech.data.order[0].text,
-            });
-          });
-          this.technologies.sort((a, b) => a.order - b.order);
-          this.loading = false;
-        })
-        .catch((err) => {
-          throw err;
-        });
-    },
-  },
-  created() {
-    this.getTechnologies();
+  props: {
+    technologies: Array,
   },
 };
 </script>

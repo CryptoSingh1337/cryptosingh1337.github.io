@@ -1,9 +1,8 @@
 <template>
   <section class="projects">
     <h3 class="projects-title">Projects</h3>
-    <Loader v-if="loading" />
     <ul class="projects-list">
-      <li v-if="!loading" class="projects-item projects-item--headings">
+      <li class="projects-item projects-item--headings">
         <span>Title</span>
         <span>Links</span>
         <span>Description</span>
@@ -25,49 +24,15 @@
 </template>
 
 <script>
-import axios from "axios";
-import Url from "../../url";
-import Loader from "../Loader.vue";
-import ProjectBlock from "./ProjectBlock.vue";
+import ProjectBlock from "@/components/content/ProjectBlock.vue";
 
 export default {
   name: "Project",
   components: {
-    Loader,
     ProjectBlock,
   },
-  data() {
-    return {
-      loading: true,
-      projects: [],
-    };
-  },
-  methods: {
-    getProjects() {
-      axios
-        .get(Url.baseUrl + Url.projects)
-        .then((response) => response.data.results)
-        .then((results) => {
-          results.forEach((result) => {
-            this.projects.push({
-              title: result.data.title[0].text,
-              info: result.data.info[0].text,
-              repo: result.data.repo.url,
-              live: result.data.demo.url,
-              frontendRepo: result.data.frontendrepo.url,
-              backendRepo: result.data.backendrepo.url,
-              technologies: result.data.technologies,
-            });
-          });
-          this.loading = false;
-        })
-        .catch((err) => {
-          throw err;
-        });
-    },
-  },
-  created() {
-    this.getProjects();
+  props: {
+    projects: Array,
   },
 };
 </script>

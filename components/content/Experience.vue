@@ -1,50 +1,92 @@
 <template>
-  <div class="work-experience-block work-experience-block--left">
-    <span class="work-experience-period work-experience-period--left"
-      >Mar 2021 – May 2021</span
-    >
-    <div class="work-experience-info work-experience-info--left">
-      <a
-        class="work-experience-link"
-        href="https://github.com/checkstyle/checkstyle"
-        target="_blank"
-        ><h3>Checkstyle</h3></a
-      ><span class="work-experience-position">Contributor</span>
-      <div class="work-experience-content">
-        <span>Updated existing unit tests to use separate input file.</span>
-        <span>Updated existing Javadocs and added code examples.</span>
-        <span>Merged over 35+ pull requests.</span>
-      </div>
-    </div>
-  </div>
-  <div class="work-experience-block work-experience-block--right">
-    <span class="work-experience-period work-experience-period--right"
-      >Jul 2016 - Dec 2019</span
-    >
-    <div class="work-experience-info work-experience-info--right">
-      <a
-        class="work-experience-link"
-        href="https://www.youtube.com/c/CryptoSingh/"
-        target="_blank"
-        ><h3>YouTube</h3></a
-      >
-      <span class="work-experience-position">Content Creator</span>
-      <div class="work-experience-content">
-        <span>Created tech and gaming related videos.</span>
-        <span>Live streamed various games</span>
-        <span>Crossed 100k+ views</span>
-      </div>
-    </div>
-  </div>
+  <section class="work-experience">
+    <h3 class="work-experience-title">Work Experience</h3>
+    <ExperienceBlock />
+  </section>
 </template>
 
 <script>
+import ExperienceBlock from "@/components/content/ExperienceBlock.vue";
+
 export default {
-  name: "ExperienceBlock",
+  name: "Experience",
+  components: {
+    ExperienceBlock,
+  },
 };
 </script>
 
 <style scoped>
+.work-experience {
+  margin-right: var(--space-6);
+  margin-bottom: var(--space-6);
+  margin-left: var(--space-6);
+}
+.work-experience-title {
+  margin-bottom: var(--space-4);
+}
+.work-experience--branches {
+  position: relative;
+  padding-right: var(--space-2);
+}
+.work-experience--branches::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: auto;
+  width: 8px;
+  height: 100%;
+  background: var(--primary-300);
+}
+@media screen and (min-width: 640px) {
+  .work-experience--branches {
+    display: grid;
+    grid-column-gap: 8px;
+    grid-template-columns: 50% 50%;
+    padding-right: 0;
+  }
+  .work-experience--branches::after {
+    right: 50%;
+    left: 50%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .work-experience {
+    margin-left: 0;
+  }
+}
+.work-experience--branches {
+  position: relative;
+  padding-right: var(--space-2);
+}
+.work-experience--branches::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: auto;
+  width: 8px;
+  height: 100%;
+  background: var(--primary-300);
+}
+@media screen and (min-width: 640px) {
+  .work-experience--branches {
+    display: grid;
+    grid-column-gap: 8px;
+    grid-template-columns: 50% 50%;
+    padding-right: 0;
+  }
+  .work-experience--branches::after {
+    right: 50%;
+    left: 50%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .work-experience {
+    margin-left: 0;
+  }
+}
 .work-experience-block--left,
 .work-experience-block--right {
   margin-bottom: var(--space-4);

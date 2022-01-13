@@ -1,25 +1,24 @@
 <template>
   <div class="content">
     <div class="content-info">
-      <About />
-      <div class="content-details">
-        <Content />
-      </div>
+      <Nuxt />
     </div>
-    <Switches />
+    <client-only>
+      <Switches />
+    </client-only>
   </div>
 </template>
 
 <script>
-import About from "./components/about/About.vue";
-import Content from "./components/content/Content.vue";
-import Switches from "./components/Switches.vue";
+import Switches from "@/components/Switches.vue";
 
 export default {
-  name: "App",
+  head: {
+    bodyAttrs: {
+      class: "theme--dark",
+    },
+  },
   components: {
-    About,
-    Content,
     Switches,
   },
 };
