@@ -28,10 +28,10 @@ export default {
     '@nuxtjs/axios'
   ],
   env: {
-    VUE_APP_ACCESS_TOKEN: process.env.VUE_APP_ACCESS_TOKEN || "MC5ZU2RSbEJNQUFDa0FJNXFu.77-9BCLvv73vv73vv71877-977-9EUXvv70277-9E--_ve-_ve-_vTDvv70eKO-_ve-_ve-_ve-_vRrvv73vv73vv70FOA",
-    VUE_APP_ENDPOINT: process.env.VUE_APP_ENDPOINT || "https://saransh-kumar.prismic.io/api/v2/",
-    VUE_APP_REF: process.env.VUE_APP_REF || "YcQ6kBIAACgAYUfj",
-    VUE_APP_RESUME: process.env.VUE_APP_RESUME || "https://github.com/CryptoSingh1337/cryptosingh1337.github.io/raw/master/src/assets/resume/SaranshKumar-Resume.pdf"
+    VUE_APP_ACCESS_TOKEN: process.env.VUE_APP_ACCESS_TOKEN,
+    VUE_APP_ENDPOINT: process.env.VUE_APP_ENDPOINT,
+    VUE_APP_REF: process.env.VUE_APP_REF,
+    VUE_APP_RESUME: process.env.VUE_APP_RESUME,
   },
   build: {}
 }
