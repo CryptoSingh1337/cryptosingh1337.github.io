@@ -17,16 +17,6 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
     ],
-    script: [
-      {
-        async: true,
-        src: "https://www.googletagmanager.com/gtag/js?id=G-0DMWLMLPLW"
-      },
-      {
-        innerHTML: "window.dataLayer = window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-0DMWLMLPLW');",
-        type: "text/javascript",
-      }
-    ],
     bodyAttrs: {
       class: "theme--dark",
     },
@@ -44,7 +34,6 @@ export default {
     VUE_APP_ACCESS_TOKEN: process.env.VUE_APP_ACCESS_TOKEN,
     VUE_APP_ENDPOINT: process.env.VUE_APP_ENDPOINT,
     VUE_APP_REF: process.env.VUE_APP_REF,
-    VUE_APP_RESUME: process.env.VUE_APP_RESUME,
   },
   build: {}
 }

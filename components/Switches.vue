@@ -105,12 +105,12 @@ export default {
   background-color: #fff;
 }
 .toggle--off-theme::before {
-  background-image: url("~@/assets/switches/theme-dark.svg");
+  background-image: url("/switches/theme-dark.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 .toggle--on-theme::before {
-  background-image: url("~@/assets/switches/theme-light.svg");
+  background-image: url("/switches/theme-light.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

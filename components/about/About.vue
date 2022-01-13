@@ -4,7 +4,7 @@
       <img src="/profile/img.jpg" alt="profile-img" />
       <div class="resume about-resume-desktop">
         <h3 class="about-resume-title" v-text="`R${e[0]}sum${e[0]}`"></h3>
-        <a :href="resumeLink" target="_blank"
+        <a href="/resume/SaranshKumar-Resume.pdf" target="_blank" download
           ><button class="download-resume">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@
     </p>
     <div class="resume about-resume-mobile">
       <h3 class="about-resume-title">Résumé</h3>
-      <a :href="resumeLink" target="_blank"
+      <a href="/resume/Saransh-Kumar-Resume.pdf" target="_blank"
         ><button class="download-resume">
           <svg
             xmlns="http://www.w3.org/2000/svg"
