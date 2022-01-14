@@ -1,4 +1,5 @@
 export default {
+  target: 'static',
   head: {
     title: 'Saransh Kumar',
     htmlAttrs: {
