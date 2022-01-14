@@ -1,6 +1,6 @@
 <template>
   <section class="contacts">
-    <h3 class="contacts-title">Contacts</h3>
+    <h3 class="title contacts-title">Contacts</h3>
     <ul class="contacts-list">
       <li class="contacts-item">
         <a
@@ -209,7 +209,6 @@ export default {
 }
 .contacts-item-link--main {
   color: var(--gray-500);
-  transition: var(--transition-time-base);
   display: flex;
   align-items: center;
 }

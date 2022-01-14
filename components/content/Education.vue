@@ -1,6 +1,6 @@
 <template>
   <section class="education content-education">
-    <h3 class="education-title">Education</h3>
+    <h3 class="title education-title">Education</h3>
     <p class="education-info">
       <span class="education-subtitle"
         >Amity University, Noida <br />(2019 - 2023)</span

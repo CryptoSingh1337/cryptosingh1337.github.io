@@ -22,7 +22,7 @@
         ]"
       >
         <a class="work-experience-link" :href="w.org_link" target="_blank"
-          ><h3>{{ w.org }}</h3></a
+          ><h3>{{ w.org }} <Link /></h3></a
         ><span class="work-experience-position">Contributor</span>
         <div class="work-experience-content">
           <span :key="i" v-for="(c, i) in w.content">{{ c }}</span>
@@ -34,9 +34,13 @@
 
 <script>
 import { work_experience } from "@/utils/data";
+import Link from "@/components/Link.vue";
 
 export default {
   name: "ExperienceBlock",
+  components: {
+    Link,
+  },
   data() {
     return {
       work: work_experience,

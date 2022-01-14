@@ -1,6 +1,6 @@
 <template>
   <section class="projects">
-    <h3 class="projects-title">Projects</h3>
+    <h3 class="title projects-title">Projects</h3>
     <ul class="projects-list">
       <li class="projects-item projects-item--headings">
         <span>Title</span>
@@ -72,7 +72,6 @@ export default {
 }
 .projects-item-title {
   color: var(--gray-500);
-  transition: var(--transition-time-base);
   font-weight: 500;
   font-size: 0.875rem;
 }

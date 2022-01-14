@@ -26,7 +26,7 @@
       </div>
     </picture>
     <p>
-      <span class="welcome">&#60;Hello, World &#47;&#62;</span>
+      <span class="title welcome">&#60;Hello, World &#47;&#62;</span>
       <span class="about-text">
         My name is
         <span class="about-text--primary">Saransh</span>

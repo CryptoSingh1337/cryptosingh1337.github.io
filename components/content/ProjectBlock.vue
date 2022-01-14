@@ -2,25 +2,17 @@
   <li class="projects-item projects-item--info">
     <span class="projects-item-title">{{ title }}</span>
     <span class="projects-item-preview">
-      <a :href="repo" target="_blank"
-        ><span class="projects-item-repo" v-if="repo != undefined"
-          >Repo</span
-        ></a
+      <a v-if="repo !== undefined" :href="repo" target="_blank"
+        ><span class="projects-item-repo">Repo</span></a
       >
-      <a :href="live" target="_blank"
-        ><span class="projects-item-live" v-if="live != undefined"
-          >Live</span
-        ></a
+      <a v-if="live !== undefined" :href="live" target="_blank"
+        ><span class="projects-item-live">Live</span></a
       >
-      <a :href="frontendRepo" target="_blank"
-        ><span class="projects-item-repo" v-if="frontendRepo != undefined"
-          >Frontend</span
-        ></a
+      <a v-if="frontendRepo !== undefined" :href="frontendRepo" target="_blank"
+        ><span class="projects-item-repo">Frontend</span></a
       >
-      <a :href="backendRepo" target="_blank"
-        ><span class="projects-item-repo" v-if="backendRepo != undefined"
-          >Backend</span
-        ></a
+      <a v-if="backendRepo !== undefined" :href="backendRepo" target="_blank"
+        ><span class="projects-item-repo">Backend</span></a
       >
     </span>
     <span>{{ info }}</span>
@@ -29,6 +21,8 @@
 </template>
 
 <script>
+import Link from "@/components/Link.vue";
+
 export default {
   name: "ProjectBlock",
   props: {
@@ -39,6 +33,9 @@ export default {
     frontendRepo: String,
     backendRepo: String,
     technologies: Array,
+  },
+  components: {
+    Link,
   },
   data() {
     return {
@@ -63,6 +60,9 @@ export default {
 </script>
 
 <style scoped>
+.project-link {
+  color: var(--gray-500);
+}
 .projects-item--info {
   padding: var(--space-3) 0;
   font-size: 0.75rem;
@@ -86,6 +86,6 @@ export default {
 }
 .projects-item-preview a {
   color: var(--gray-900);
-  transition: var(--transition-time-base);
+  /* transition: var(--transition-time-base); */
 }
 </style>

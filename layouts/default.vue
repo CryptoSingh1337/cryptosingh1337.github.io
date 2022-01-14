@@ -84,6 +84,12 @@ html {
   margin-bottom: var(--space-6);
   margin-left: var(--space-6);
 }
+.title {
+  transition: var(--transition-time-base);
+}
+.link {
+  color: var(--gray-500);
+}
 @media screen and (min-width: 768px) {
   .content {
     max-width: 1280px;

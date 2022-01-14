@@ -1,6 +1,6 @@
 <template>
   <section class="work-experience">
-    <h3 class="work-experience-title">Work Experience</h3>
+    <h3 class="title work-experience-title">Work Experience</h3>
     <ExperienceBlock />
   </section>
 </template>
