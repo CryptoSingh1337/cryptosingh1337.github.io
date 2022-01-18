@@ -4,8 +4,8 @@
       <img src="/profile/img.jpg" alt="profile-img" />
       <div class="resume about-resume-desktop">
         <h3 class="about-resume-title" v-text="`R${e[0]}sum${e[0]}`"></h3>
-        <a :href="resumeLink" target="_blank" download
-          ><button class="download-resume">
+        <a :href="resumeLink" target="_blank" download>
+          <button class="download-resume">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -135,7 +135,7 @@ img {
   border: 0px;
   border-radius: 5px;
   transition: all ease-in-out 350ms;
-  display: flex;
+  display: inline-flex;
   align-content: center;
 }
 .download-resume span {
