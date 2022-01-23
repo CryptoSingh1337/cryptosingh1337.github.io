@@ -7,12 +7,13 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
+      { name: 'robots', content: 'noindex, nofollow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Saransh Kumar portfolio' },
-      { hid: 'og:title', name: 'og:title', content: 'Saransh Kumar portfolio' },
-      { hid: 'og:url', name: 'og:url', content: 'https://saransh-kumar.online' },
-      { hid: 'og:image', name: 'og:image', content: '/favicon.png' },
-      { hid: 'og-type', name: 'og:type', content: 'Resume' }
+      { property: 'description', name: 'description', content: 'Resume for Saransh Kumar' },
+      { property: 'og:title', name: 'og:title', content: 'Saransh Kumar' },
+      { property: 'og:url', name: 'og:url', content: 'https://saransh-kumar.online' },
+      { property: 'og:image', name: 'og:image', content: '/logo.svg' },
+      { property: 'og:type', name: 'og:type', content: 'web application' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
