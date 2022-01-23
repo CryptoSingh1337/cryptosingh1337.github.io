@@ -9,11 +9,10 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Saransh Kumar portfolio' },
-      { name: 'format-detection', content: 'telephone=no' },
-      { name: 'og:title', content: 'Saransh Kumar portfolio' },
-      { name: 'og:url', content: 'https://saransh-kumar.online' },
-      { name: 'og:image', content: '/favicon.png' },
-      { name: 'og:type', content: 'Resume' }
+      { hid: 'og:title', name: 'og:title', content: 'Saransh Kumar portfolio' },
+      { hid: 'og:url', name: 'og:url', content: 'https://saransh-kumar.online' },
+      { hid: 'og:image', name: 'og:image', content: '/favicon.png' },
+      { hid: 'og-type', name: 'og:type', content: 'Resume' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }
