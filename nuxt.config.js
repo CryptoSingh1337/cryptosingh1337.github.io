@@ -12,7 +12,8 @@ export default {
       { property: 'description', name: 'description', content: 'Resume for Saransh Kumar' },
       { property: 'og:title', name: 'og:title', content: 'Saransh Kumar' },
       { property: 'og:url', name: 'og:url', content: 'https://saransh-kumar.online' },
-      { property: 'og:image', name: 'og:image', content: '/logo.svg' },
+      { property: 'og:image', name: 'og:image', content: '/favicon.png' },
+      { property: 'og:description', name: 'og:description', content: 'Resume for Saransh Kumar' },
       { property: 'og:type', name: 'og:type', content: 'web application' }
     ],
     link: [
