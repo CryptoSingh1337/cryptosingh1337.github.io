@@ -1,7 +1,7 @@
 export default {
   target: 'static',
   head: {
-    title: 'Saransh Kumar',
+    title: 'Saransh',
     htmlAttrs: {
       lang: 'en'
     },
@@ -10,7 +10,7 @@ export default {
       { name: 'robots', content: 'noindex, nofollow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { property: 'description', name: 'description', content: 'Resume for Saransh Kumar' },
-      { property: 'og:title', name: 'og:title', content: 'Saransh Kumar' },
+      { property: 'og:title', name: 'og:title', content: 'Saransh' },
       { property: 'og:url', name: 'og:url', content: 'https://saransh-kumar.online' },
       { property: 'og:image', name: 'og:image', content: '/favicon.png' },
       { property: 'og:description', name: 'og:description', content: 'Resume for Saransh Kumar' },
