@@ -3,7 +3,7 @@
     <div
       :class="[
         'work-experience-block',
-        (i & 1) == 0 ? class_left[0] : class__right[0],
+        (i & 1) === 0 ? class_left[0] : class__right[0],
       ]"
       :key="i"
       v-for="(w, i) in work"
@@ -11,19 +11,19 @@
       <span
         :class="[
           'work-experience-period',
-          (i & 1) == 0 ? class_left[1] : class__right[1],
+          (i & 1) === 0 ? class_left[1] : class__right[1],
         ]"
         >{{ w.date }}</span
       >
       <div
         :class="[
           'work-experience-info',
-          (i & 1) == 0 ? class_left[2] : class__right[2],
+          (i & 1) === 0 ? class_left[2] : class__right[2],
         ]"
       >
         <a class="work-experience-link" :href="w.org_link" target="_blank"
           ><h3>{{ w.org }} <Link /></h3></a
-        ><span class="work-experience-position">Contributor</span>
+        ><span class="work-experience-position">{{ w.position }}</span>
         <div class="work-experience-content">
           <span :key="i" v-for="(c, i) in w.content">{{ c }}</span>
         </div>
