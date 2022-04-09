@@ -1,6 +1,6 @@
 <template>
   <div>
-    <About :interested="interested" />
+    <About :interested="interested" :stack="stack" />
     <Content :technologies="technologies" :projects="projects" />
   </div>
 </template>
@@ -17,9 +17,11 @@ export default {
     Content,
   },
   async asyncData({ $axios }) {
+    const _stack = new Set(["Java", "Spring", "Vue"]);
     let response = await $axios.get(Url.baseUrl + Url.interested);
     let data = await response.data.results;
     const interested = [];
+    const stack = [];
     await data.forEach((interest) => {
       interested.push({
         id: interest.id,
@@ -33,9 +35,18 @@ export default {
     data = await response.data.results;
     const technologies = [];
     await data.forEach((tech) => {
+      const name = tech.data.name[0].text;
+      if (_stack.has(name)) {
+        stack.push({
+          id: tech.id,
+          title: name,
+          source: tech.data.url.url,
+          order: tech.data.order[0].text,
+        });
+      }
       technologies.push({
         id: tech.id,
-        title: tech.data.name[0].text,
+        title: name,
         source: tech.data.url.url,
         order: tech.data.order[0].text,
       });
@@ -55,7 +66,7 @@ export default {
         technologies: project.data.technologies,
       });
     });
-    return { interested, technologies, projects };
+    return { stack, interested, technologies, projects };
   },
 };
 </script>

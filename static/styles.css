@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
 :root {
   --module: 8px;
   --space-1: 0.25rem;
@@ -9,6 +10,7 @@
   --space-6: 2rem;
   --transition-time-base: 300ms;
 }
+
 .theme--dark {
   --primary-100: #fff0dd;
   --primary-100-rgb: HexToRGB(#fff0dd);
@@ -69,6 +71,7 @@
   --body-color: #4d4d4d;
   --body-color-rgb: HexToRGB(#4d4d4d);
 }
+
 .theme--light {
   --primary-100: #eff6ef;
   --primary-100-rgb: HexToRGB(#eff6ef);
@@ -129,23 +132,27 @@
   --body-color: #fff;
   --body-color-rgb: HexToRGB(#fff);
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   min-width: 320px;
   background-color: var(--body-color);
   color: var(--grey);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 0.825rem;
   font-weight: normal;
   line-height: 1.25rem;
 }
+
 h1,
 h2,
 h3,
@@ -155,13 +162,16 @@ h6,
 p {
   margin: 0;
 }
+
 a {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 img {
   max-width: 100%;
 }

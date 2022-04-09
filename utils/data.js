@@ -1,4 +1,7 @@
-const line = ["Currently I'm learning Spring and working on my DSA skills and projects.", "I am passionate about Computer Science and want to contribute to Computer Science community by creating something new and unique.", "I believe in smart work and anyone with the curiosity and want to learn and create something can excel in Computer Science field. At the age of 6, I was introduced to Computers since then I love Computers and curiosity inside me keep me motivated to learn something new in this field. Recently, I dive into the ocean of web development and I like back-end development interesting. So, I want to continue my career as a Back-end Developer."];
+const line = ["I am a passionate Backend Developer and am highly interested in developing scalable backend systems.",
+	"I am also interested in Algorithmic Problem solving and I am constantly working on improving this skill.",
+	"The main stack of technologies which I currently use: ",
+	"And now I try not to dwell on what I've already achieved, therefore I'm constantly digging deep in order to further develop in the chosen path."];
 const work_experience = [
 	{
 		date: "Mar 2021 - May 2021",

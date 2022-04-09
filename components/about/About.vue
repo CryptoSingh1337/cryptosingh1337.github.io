@@ -26,16 +26,28 @@
       </div>
     </picture>
     <p>
-      <span class="title welcome">&#60;Hello, World &#47;&#62;</span>
+      <span class="title welcome">&#60;Hello, world! &#47;&#62;</span>
       <span class="about-text">
         My name is
         <span class="about-text--primary">Saransh</span>
         and I'm a
-        <span class="about-text--primary">Student</span>
+        <span>
+          <span class="about-text--primary">3<sup>rd</sup> year</span>
+          undergrad</span
+        >
         from India!
       </span>
       <span class="about-text" :key="i" v-for="(l, i) in line">
         {{ l }}
+        <span class="about-interests" v-if="i === 2">
+          <Skill
+            :key="s.id"
+            v-for="s in stack"
+            :title="s.title"
+            :source="s.source"
+            :isSkill="false"
+          />
+        </span>
       </span>
       <span class="about-text">At the moment I'm interested in</span>
       <span class="about-interests">
@@ -83,6 +95,7 @@ export default {
     Skill,
   },
   props: {
+    stack: Array,
     interested: Array,
   },
   data() {
