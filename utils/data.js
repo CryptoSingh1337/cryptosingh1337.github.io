@@ -11,6 +11,7 @@ const work_experience = [
 		content: [
 			"Updated existing unit tests to use separate input file",
 			"Updated existing Javadocs and added code examples",
+			"Learned about CI/CD, Apache Maven, Unit testing",
 			"Merged over 35+ pull requests"
 		]
 	},
