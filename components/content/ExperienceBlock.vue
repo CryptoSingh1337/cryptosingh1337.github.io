@@ -21,7 +21,8 @@
           (i & 1) === 0 ? class_left[2] : class__right[2],
         ]"
       >
-        <a class="work-experience-link" :href="w.org_link" target="_blank"
+        <a class="['work-experience-link',
+          (i & 1) === 0 ? 'ml' : 'mr']" :href="w.org_link" target="_blank"
           ><h3>{{ w.org }} <Link /></h3></a
         ><span class="work-experience-position">{{ w.position }}</span>
         <div class="work-experience-content">
@@ -130,6 +131,15 @@ export default {
 }
 .work-experience-content span {
   display: block;
+}
+.ml {
+  margin-left: auto;
+}
+.mr {
+  margin-right: auto;
+}
+a {
+  width: fit-content;
 }
 @media screen and (min-width: 640px) {
   .work-experience-block--left:not(:last-child) {
