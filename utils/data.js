@@ -4,6 +4,18 @@ const line = ["I am a passionate Backend Developer and am highly interested in d
 	"And now I try not to dwell on what I've already achieved, therefore I'm constantly digging deep in order to further develop in the chosen path."];
 const work_experience = [
 	{
+		date: "Jun 2022 - Sep 2022",
+		org: "LoadShare Networks",
+		org_link: "https://loadshare.net/",
+		position: "SDE Intern",
+		content: [
+			"Working under the Hyperlocal logistics operations pod which internally uses Spring framework for Backend.",
+			"Created the Cash On Delivery service from scratch which will result in 30% more orders.",
+			"Created unit tests using JUnit and Mockito.",
+			"Learned about Logging, API design, Jenkins, Aws SQS and ECS."
+		]
+	},
+	{
 		date: "Mar 2021 - May 2021",
 		org: "Checkstyle",
 		org_link: "https://github.com/checkstyle/checkstyle",
