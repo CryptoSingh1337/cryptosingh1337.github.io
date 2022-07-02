@@ -149,7 +149,7 @@ a {
   }
   .work-experience-block--right {
     text-align: left;
-    margin-top: 8rem;
+    margin-top: 13rem;
     margin-bottom: 0;
   }
   .work-experience-period--left {
