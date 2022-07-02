@@ -9,10 +9,10 @@ const work_experience = [
 		org_link: "https://loadshare.net/",
 		position: "SDE Intern",
 		content: [
-			"Working under the Hyperlocal logistics operations pod which internally uses Spring framework for Backend.",
-			"Created the Cash On Delivery service from scratch which will result in 30% more orders.",
-			"Created unit tests using JUnit and Mockito.",
-			"Learned about Logging, API design, Jenkins, Aws SQS and ECS."
+			"Working under the Hyperlocal logistics operations pod",
+			"Created the COD service from scratch (30% more orders)",
+			"Created unit tests using JUnit and Mockito",
+			"Learned about Logging, API design, Jenkins, Aws SQS and ECS"
 		]
 	},
 	{
