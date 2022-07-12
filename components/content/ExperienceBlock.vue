@@ -171,5 +171,8 @@ a {
     padding-left: var(--space-4);
     padding-right: 0;
   }
+  .mr {
+    margin-left: auto;
+  }
 }
 </style>
