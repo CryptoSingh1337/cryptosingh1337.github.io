@@ -32,7 +32,7 @@
         <span class="about-text--primary">Saransh</span>
         and I'm a
         <span>
-          <span class="about-text--primary">3<sup>rd</sup> year</span>
+          <span class="about-text--primary">final year</span>
           undergrad</span
         >
         from India!
