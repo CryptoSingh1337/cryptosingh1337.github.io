@@ -4,6 +4,7 @@
       <Contact />
       <Technologies :technologies="technologies" />
       <Education />
+      <Certification />
     </div>
     <div class="content-details--right">
       <Experience />
@@ -16,6 +17,7 @@
 import Contact from "@/components/content/Contact.vue";
 import Technologies from "@/components/content/Technologies.vue";
 import Education from "@/components/content/Education.vue";
+import Certification from "@/components/content/Certification.vue";
 import Experience from "@/components/content/Experience.vue";
 import Project from "@/components/content/Project.vue";
 
@@ -25,6 +27,7 @@ export default {
     Contact,
     Technologies,
     Education,
+    Certification,
     Experience,
     Project,
   },

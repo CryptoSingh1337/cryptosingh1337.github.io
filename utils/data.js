@@ -40,4 +40,37 @@ const work_experience = [
 	}
 ];
 
-export { line, work_experience };
+const certifications = [
+	{
+		title: 'Certified Ethical Hacker (CEH)',
+		link: null,
+		issuedOn: '2018-04-01'
+	},
+	{
+		title: 'Java Programming: Solving Problems with Software (with Honors)',
+		link: 'https://drive.google.com/file/d/1qxRbGtqBzQ_YaSdoqotdRfB-lMWlhf79/view?usp=share_link',
+		issuedOn: '2020-05-01'
+	},
+	{
+		title: 'The Complete 2020 Web Development Bootcamp',
+		link: 'https://drive.google.com/file/d/1f0GeEJzd-unvVrWXEXoLYN-9vwhccAc1/view?usp=share_link',
+		issuedOn: '2020-12-01'
+	},
+	{
+		title: 'Master the Coding Interview: Data Structures + Algorithms',
+		link: 'https://drive.google.com/file/d/1c3WgUWvdjRynLsLjM_maLJjOI3XuXMxO/view?usp=share_link',
+		issuedOn: '2021-01-01'
+	},
+	{
+		title: 'Linux for Developers',
+		link: 'https://drive.google.com/file/d/1ihRSSbztsjlV4SokVEGmwX_7TPC4tPce/view?usp=share_link',
+		issuedOn: '2021-04-01'
+	},
+	{
+		title: 'Java Programming Masterclass covering Java 11 & Java 17',
+		link: 'https://drive.google.com/file/d/1DpARYUIKYBITomuhNrukw23d5T7cbaXo/view?usp=share_link',
+		issuedOn: '2022-05-01'
+	}
+];
+
+export { line, work_experience, certifications };
