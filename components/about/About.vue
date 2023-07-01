@@ -32,8 +32,8 @@
         <span class="about-text--primary">Saransh</span>
         and I'm a
         <span>
-          <span class="about-text--primary">final year</span>
-          undergrad</span
+          <span class="about-text--primary">Backend</span>
+          developer</span
         >
         from India!
       </span>

@@ -1,5 +1,5 @@
-const line = ["I am a passionate Backend Developer and am highly interested in developing scalable backend systems.",
-	"I am also interested in Algorithmic Problem solving and I am constantly working on improving this skill.",
+const line = ["I am highly interested in developing scalable backend systems.",
+	"I am also interested in Algorithmic Problem solving and I am constantly working on improving this.",
 	"The main stack of technologies which I currently use: ",
 	"And now I try not to dwell on what I've already achieved, therefore I'm constantly digging deep in order to further develop in the chosen path."];
 const work_experience = [
