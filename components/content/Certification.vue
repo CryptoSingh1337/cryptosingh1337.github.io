@@ -42,7 +42,6 @@ export default {
 
 <style scoped>
 .certification {
-  width: 100%;
   margin-right: var(--space-6);
   margin-bottom: var(--space-6);
   margin-left: var(--space-6);
