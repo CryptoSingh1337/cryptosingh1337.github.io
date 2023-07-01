@@ -9,7 +9,10 @@ const work_experience = [
 		org_link: "https://amadeus.com/en/bengaluru-labs-india",
 		position: "SDE Intern",
 		content: [
-			"Working with data engineering team on API extension project using Apache Kafka, Spring Boot, MongoDB."
+			"Worked on API Extension project",
+			"Create resources, generate code according to Open API specification",
+			"Deploy that on Azure Function App using GitHub Actions",
+			"Learned about terraform, GitHub Actions, Azure Function and Logic Apps"
 		]
 	},
 	{
