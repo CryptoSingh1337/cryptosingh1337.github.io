@@ -5,7 +5,7 @@
       <li class="contacts-item">
         <a
           class="contacts-item-link--main"
-          href="mailto:cryptosingh@gmail.com"
+          href="mailto:lunaticdevs1337@gmail.com"
           target="_blank"
         >
           <span class="icon tooltip icon-size-x1h contacts-item-icon">
@@ -28,7 +28,7 @@
               ></path>
             </svg>
           </span>
-          cryptosingh@gmail.com
+          lunaticdevs1337@gmail.com
         </a>
       </li>
       <li class="contacts-item">

@@ -40,7 +40,7 @@ const work_experience = [
 		]
 	},
 	{
-		date: "Jul 2016 - Dec 2019",
+		date: "Jul 2016 - Present",
 		org: "YouTube",
 		org_link: "https://www.youtube.com/c/CryptoSingh/",
 		position: "Content Creator",
