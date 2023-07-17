@@ -9,8 +9,8 @@ const work_experience = [
 		org_link: "https://loadshare.net/",
 		position: "SDE",
 		content: [
-			"Add functionality to log the login and logout events from the rider app",
-			"Working on improving the security of the current existing APIs"
+			"Add functionality to log the login and logout events from the rider app.",
+			"Working on improving the security of the current existing APIs."
 		]
 	},
 	{
@@ -19,10 +19,10 @@ const work_experience = [
 		org_link: "https://amadeus.com/en/bengaluru-labs-india",
 		position: "SDE Intern",
 		content: [
-			"Worked on API Extension project",
-			"Create resources, generate code according to Open API specification",
-			"Deploy that on Azure Function App using GitHub Actions",
-			"Learned about terraform, GitHub Actions, Azure Function and Logic Apps"
+			"Worked on API Extension project.",
+			"Create resources, generate code according to Open API specification.",
+			"Deploy that on Azure Function App using GitHub Actions.",
+			"Learned about terraform, GitHub Actions, Azure Function and Logic Apps."
 		]
 	},
 	{
@@ -31,10 +31,10 @@ const work_experience = [
 		org_link: "https://loadshare.net/",
 		position: "SDE Intern",
 		content: [
-			"Working under the Hyperlocal logistics operations pod",
-			"Created the COD service from scratch (30% more orders)",
-			"Created unit tests using JUnit and Mockito",
-			"Learned about Logging, API design, Jenkins, Aws SQS and ECS"
+			"Working under the Hyperlocal logistics operations pod.",
+			"Created the COD service from scratch (30% more orders).",
+			"Created unit tests using JUnit and Mockito.",
+			"Learned about Logging, API design, Jenkins, Aws SQS and ECS."
 		]
 	},
 	{
@@ -43,10 +43,10 @@ const work_experience = [
 		org_link: "https://github.com/checkstyle/checkstyle",
 		position: "Contributor",
 		content: [
-			"Updated existing unit tests to use separate input file",
-			"Updated existing Javadocs and added code examples",
-			"Learned about CI/CD, Apache Maven, Unit testing",
-			"Merged over 35+ pull requests"
+			"Updated existing unit tests to use separate input file.",
+			"Updated existing Javadocs and added code examples.",
+			"Learned about CI/CD, Apache Maven, Unit testing.",
+			"Merged over 35+ pull requests."
 		]
 	},
 	{
