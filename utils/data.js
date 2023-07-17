@@ -4,6 +4,16 @@ const line = ["I am highly interested in developing scalable backend systems.",
 	"And now I try not to dwell on what I've already achieved, therefore I'm constantly digging deep in order to further develop in the chosen path."];
 const work_experience = [
 	{
+		date: "July 2023 - Present",
+		org: "LoadShare Networks",
+		org_link: "https://loadshare.net/",
+		position: "SDE",
+		content: [
+			"Add functionality to log the login and logout events from the rider app",
+			"Working on improving the security of the current existing APIs"
+		]
+	},
+	{
 		date: "Feb 2023 - Jun 2023",
 		org: "Amadeus Labs",
 		org_link: "https://amadeus.com/en/bengaluru-labs-india",
