@@ -55,9 +55,9 @@ const work_experience = [
 		org_link: "https://www.youtube.com/c/CryptoSingh/",
 		position: "Content Creator",
 		content: [
-			"Created tech and gaming related videos",
-			"Live streamed various games",
-			"Crossed 100k+ views"
+			"Created tech and gaming related videos.",
+			"Live streamed various games.",
+			"Crossed 100k+ views."
 		]
 	}
 ];
