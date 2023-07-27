@@ -7,17 +7,18 @@ const work_experience = [
 		date: "July 2023 - Present",
 		org: "LoadShare Networks",
 		org_link: "https://loadshare.net/",
-		position: "SDE",
+		position: "Software Engineer",
 		content: [
-			"Add functionality to log the login and logout events from the rider app.",
-			"Working on improving the security of the current existing APIs."
+			"Created the logger for login and logout events from the rider app.",
+			"Change the signing algorithm of JWT from HMAC256 to RSA256.",
+			"Working on improving the security of current APIs."
 		]
 	},
 	{
 		date: "Feb 2023 - Jun 2023",
 		org: "Amadeus Labs",
 		org_link: "https://amadeus.com/en/bengaluru-labs-india",
-		position: "SDE Intern",
+		position: "Software Engineer Intern",
 		content: [
 			"Worked on API Extension project.",
 			"Create resources, generate code according to Open API specification.",
@@ -29,7 +30,7 @@ const work_experience = [
 		date: "Jun 2022 - Sep 2022",
 		org: "LoadShare Networks",
 		org_link: "https://loadshare.net/",
-		position: "SDE Intern",
+		position: "Software Engineer Intern",
 		content: [
 			"Working under the Hyperlocal logistics operations pod.",
 			"Created the COD service from scratch (30% more orders).",
