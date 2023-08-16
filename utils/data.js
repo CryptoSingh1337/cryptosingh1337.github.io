@@ -11,7 +11,8 @@ const work_experience = [
 		content: [
 			"Created the logger for login and logout events from the rider app.",
 			"Change the signing algorithm of JWT from HMAC256 to RSA256.",
-			"Working on improving the security of current APIs."
+			"Working on rate rule engine which is responsible for calculating the earnings and revenue.",
+			"Creating a state machine-driven Grievance system."
 		]
 	},
 	{
