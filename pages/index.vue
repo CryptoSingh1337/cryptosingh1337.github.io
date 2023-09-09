@@ -8,7 +8,7 @@
 <script setup lang="ts">
 import { Skill } from '@/utils/types'
 
-const currentStackSet = new Set(['Java', 'Spring', 'Vue'])
+const currentStackSet = new Set(['Java', 'Spring', 'Vue.js'])
 const currentStack: Array<Skill> = []
 const { data: interested } = await useFetch('/api/interested')
 const { data: skills } = await useFetch('/api/technologies')

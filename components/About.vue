@@ -61,7 +61,6 @@
 <script setup lang="ts">
 import { hero } from '@/utils/data'
 import { Skill } from '@/utils/types'
-import SkillBlock from '@/components/SkillBlock.vue'
 
 defineProps<{
   stack: Array<Skill>,
