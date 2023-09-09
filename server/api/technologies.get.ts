@@ -30,6 +30,5 @@ export default defineEventHandler(async () => {
     })
   })
   skills.sort((a, b) => a.order - b.order)
-  console.log(skills);
   return skills
 })
