@@ -21,13 +21,13 @@
     <p>
       <span class="title welcome">&#60;Hello, world! &#47;&#62;</span>
       <span class="about-text">
-        My name is
+        I am
         <span class="about-text--primary">Saransh</span>
-        and I'm a
+        and a <!-- seasoned -->
         <span>
-          <span class="about-text--primary">Backend</span>
-          developer</span>
-        from India!
+          <span class="about-text--primary">Backend</span> Developer
+        </span>
+        hailing from India!
       </span>
       <span class="about-text" :key="i" v-for="(l, i) in hero">
         {{ l }}
@@ -35,7 +35,7 @@
           <Technology :key="skill.id" v-for="skill in stack" :skill="skill" :isSkill="false" />
         </span>
       </span>
-      <span class="about-text">At the moment I'm interested in</span>
+      <span class="about-text">Presently, my keen interest is focused on:</span>
       <span class="about-interests">
         <Technology :key="skill.id" v-for="skill in interested" :skill="skill" :isSkill="false" />
       </span>

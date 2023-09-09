@@ -17,7 +17,8 @@ export type Project = {
   githubReadme: string,
   urls: Array<Link>,
   technologies: Array<string>
-  createdAt: string
+  createdAt: string,
+  order: number
 }
 
 export type Experience = {

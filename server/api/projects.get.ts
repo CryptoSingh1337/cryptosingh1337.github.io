@@ -32,7 +32,10 @@ const schema = z.array(z.object({
     technologies: z.array(z.object({
       text: z.string()
     })),
-    createdAt: z.string()
+    createdAt: z.string(),
+    order: z.array(z.object({
+      text: z.string().transform(Number)
+    }))
   })
 }))
 
@@ -79,10 +82,10 @@ export default defineEventHandler(async () => {
       githubReadme: project.data.githubReadme.url,
       urls: links,
       technologies: project.data.technologies.map(v => v.text),
-      createdAt: project.data.createdAt
+      createdAt: project.data.createdAt,
+      order: project.data.order[0].text
     })
   })
-  console.log(projects);
-
+  projects.sort((a, b) => b.order - a.order)
   return projects
 })

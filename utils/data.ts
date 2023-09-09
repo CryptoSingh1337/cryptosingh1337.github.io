@@ -1,10 +1,10 @@
 import { Certification, Experience } from "./types"
 
 export const hero = [
-  "I am highly interested in developing scalable backend systems.",
-  "I am also interested in Algorithmic Problem solving and I am constantly working on improving this.",
-  "The main stack of technologies which I currently use: ",
-  "And now I try not to dwell on what I've already achieved, therefore I'm constantly digging deep in order to further develop in the chosen path."
+  "My passion lies in crafting robust and scalable backend systems that power today's digital landscape.",
+  "My journey as a developer has been marked by a relentless pursuit of excellence, especially in the realm of developing applications and system design. I am dedicated to honing my skills continually, striving for mastery.",
+  "In my current work, I proficiently wield a stack of technologies that include:",
+  "However, I believe in the importance of forward momentum. Rather than resting on my past accomplishments, I am committed to delving deeper into my chosen path."
 ]
 
 export const workExperience: Experience[] = [
@@ -14,10 +14,9 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://loadshare.net/",
     position: "Software Engineer",
     content: [
-      "Created the logger for login and logout events from the rider app.",
-      "Change the signing algorithm of JWT from HMAC256 to RSA256.",
-      "Working on rate rule engine which is responsible for calculating the earnings and revenue.",
-      "Creating a state machine-driven Grievance system."
+      "Working on rate rule engine which handles the earnings and revenue.",
+      "Working on state machine based Grievance system.",
+      "Creating Ticket management system for the Grievance system."
     ]
   },
   {

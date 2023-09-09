@@ -29,5 +29,6 @@ export default defineEventHandler(async () => {
       order: Number(skill.data.order[0].text)
     })
   })
+  interestedSkill.sort((a, b) => a.order - b.order)
   return interestedSkill
 })

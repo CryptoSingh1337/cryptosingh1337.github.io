@@ -12,7 +12,7 @@ const schema = z.array(z.object({
       url: z.string()
     }),
     order: z.array(z.object({
-      text: z.string()
+      text: z.string().transform(Number)
     }))
   })
 }))
@@ -26,8 +26,10 @@ export default defineEventHandler(async () => {
       id: skill.id,
       name: skill.data.name[0].text,
       url: skill.data.url.url,
-      order: Number(skill.data.order[0].text)
+      order: skill.data.order[0].text
     })
   })
+  skills.sort((a, b) => a.order - b.order)
+  console.log(skills);
   return skills
 })
