@@ -1,3 +1,5 @@
+import { Certification, Experience } from "./types"
+
 export const hero = [
   "I am highly interested in developing scalable backend systems.",
   "I am also interested in Algorithmic Problem solving and I am constantly working on improving this.",
@@ -5,11 +7,11 @@ export const hero = [
   "And now I try not to dwell on what I've already achieved, therefore I'm constantly digging deep in order to further develop in the chosen path."
 ]
 
-export const workExperience = [
+export const workExperience: Experience[] = [
   {
     date: "July 2023 - Present",
-    org: "LoadShare Networks",
-    org_link: "https://loadshare.net/",
+    organization: "LoadShare Networks",
+    organizationUrl: "https://loadshare.net/",
     position: "Software Engineer",
     content: [
       "Created the logger for login and logout events from the rider app.",
@@ -20,8 +22,8 @@ export const workExperience = [
   },
   {
     date: "Feb 2023 - Jun 2023",
-    org: "Amadeus Labs",
-    org_link: "https://amadeus.com/en/bengaluru-labs-india",
+    organization: "Amadeus Labs",
+    organizationUrl: "https://amadeus.com/en/bengaluru-labs-india",
     position: "Software Engineer Intern",
     content: [
       "Worked on API Extension project.",
@@ -32,8 +34,8 @@ export const workExperience = [
   },
   {
     date: "Jun 2022 - Sep 2022",
-    org: "LoadShare Networks",
-    org_link: "https://loadshare.net/",
+    organization: "LoadShare Networks",
+    organizationUrl: "https://loadshare.net/",
     position: "Software Engineer Intern",
     content: [
       "Working under the Hyperlocal logistics operations pod.",
@@ -44,8 +46,8 @@ export const workExperience = [
   },
   {
     date: "Mar 2021 - May 2021",
-    org: "Checkstyle",
-    org_link: "https://github.com/checkstyle/checkstyle",
+    organization: "Checkstyle",
+    organizationUrl: "https://github.com/checkstyle/checkstyle",
     position: "Contributor",
     content: [
       "Updated existing unit tests to use separate input file.",
@@ -56,8 +58,8 @@ export const workExperience = [
   },
   {
     date: "Jul 2016 - Present",
-    org: "YouTube",
-    org_link: "https://www.youtube.com/c/CryptoSingh/",
+    organization: "YouTube",
+    organizationUrl: "https://www.youtube.com/c/CryptoSingh/",
     position: "Content Creator",
     content: [
       "Created tech and gaming related videos.",
@@ -67,35 +69,41 @@ export const workExperience = [
   }
 ]
 
-export const certifications = [
+export const certifications: Certification[] = [
   {
-    title: 'Certified Ethical Hacker (CEH)',
-    link: null,
-    issuedOn: '2018-04-01'
-  },
-  {
-    title: 'Java Programming: Solving Problems with Software (with Honors)',
-    link: 'https://drive.google.com/file/d/1qxRbGtqBzQ_YaSdoqotdRfB-lMWlhf79/view?usp=share_link',
-    issuedOn: '2020-05-01'
-  },
-  {
-    title: 'The Complete 2020 Web Development Bootcamp',
-    link: 'https://drive.google.com/file/d/1f0GeEJzd-unvVrWXEXoLYN-9vwhccAc1/view?usp=share_link',
-    issuedOn: '2020-12-01'
-  },
-  {
-    title: 'Master the Coding Interview: Data Structures + Algorithms',
-    link: 'https://drive.google.com/file/d/1c3WgUWvdjRynLsLjM_maLJjOI3XuXMxO/view?usp=share_link',
-    issuedOn: '2021-01-01'
+    title: 'Java Programming Masterclass covering Java 11 & Java 17',
+    url: 'https://drive.google.com/file/d/1DpARYUIKYBITomuhNrukw23d5T7cbaXo/view?usp=share_link',
+    issuedOn: '2022-05-01',
+    organization: 'Udemy'
   },
   {
     title: 'Linux for Developers',
-    link: 'https://drive.google.com/file/d/1ihRSSbztsjlV4SokVEGmwX_7TPC4tPce/view?usp=share_link',
-    issuedOn: '2021-04-01'
+    url: 'https://drive.google.com/file/d/1ihRSSbztsjlV4SokVEGmwX_7TPC4tPce/view?usp=share_link',
+    issuedOn: '2021-04-01',
+    organization: 'Coursera'
   },
   {
-    title: 'Java Programming Masterclass covering Java 11 & Java 17',
-    link: 'https://drive.google.com/file/d/1DpARYUIKYBITomuhNrukw23d5T7cbaXo/view?usp=share_link',
-    issuedOn: '2022-05-01'
+    title: 'Master the Coding Interview: Data Structures + Algorithms',
+    url: 'https://drive.google.com/file/d/1c3WgUWvdjRynLsLjM_maLJjOI3XuXMxO/view?usp=share_link',
+    issuedOn: '2021-01-01',
+    organization: 'Udemy'
+  },
+  {
+    title: 'The Complete 2020 Web Development Bootcamp',
+    url: 'https://drive.google.com/file/d/1f0GeEJzd-unvVrWXEXoLYN-9vwhccAc1/view?usp=share_link',
+    issuedOn: '2020-12-01',
+    organization: 'Udemy'
+  },
+  {
+    title: 'Java Programming: Solving Problems with Software (with Honors)',
+    url: 'https://drive.google.com/file/d/1qxRbGtqBzQ_YaSdoqotdRfB-lMWlhf79/view?usp=share_link',
+    issuedOn: '2020-05-01',
+    organization: 'Coursera'
+  },
+  {
+    title: 'Certified Ethical Hacker (CEH)',
+    url: null,
+    issuedOn: '2018-04-01',
+    organization: 'Cryptus Cyber Security'
   }
 ]

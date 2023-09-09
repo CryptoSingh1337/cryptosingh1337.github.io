@@ -32,12 +32,12 @@
       <span class="about-text" :key="i" v-for="(l, i) in hero">
         {{ l }}
         <span class="about-interests" v-if="i === 2">
-          <SkillBlock :key="skill.id" v-for="skill in stack" :skill="skill" :isSkill="false" />
+          <Technology :key="skill.id" v-for="skill in stack" :skill="skill" :isSkill="false" />
         </span>
       </span>
       <span class="about-text">At the moment I'm interested in</span>
       <span class="about-interests">
-        <SkillBlock :key="skill.id" v-for="skill in interested" :skill="skill" :isSkill="false" />
+        <Technology :key="skill.id" v-for="skill in interested" :skill="skill" :isSkill="false" />
       </span>
     </p>
     <div class="resume about-resume-mobile">

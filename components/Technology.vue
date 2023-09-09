@@ -7,6 +7,7 @@
 
 <script setup lang="ts">
 import { Skill } from '@/utils/types'
+
 defineProps<{
   skill: Skill
   isSkill: boolean

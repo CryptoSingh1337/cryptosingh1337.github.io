@@ -89,13 +89,13 @@ onBeforeMount(() => {
 }
 
 .toggle--off-theme::before {
-  background-image: url("/theme-dark.svg");
+  background-image: url("/icons/theme-dark.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .toggle--on-theme::before {
-  background-image: url("/theme-light.svg");
+  background-image: url("/icons/theme-light.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

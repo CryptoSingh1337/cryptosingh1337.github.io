@@ -12,5 +12,8 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.0",
     "nuxt": "^3.7.1"
+  },
+  "dependencies": {
+    "zod": "^3.22.2"
   }
 }

@@ -6,31 +6,31 @@ export type Skill = {
 }
 
 export type Link = {
-  displayName: string,
-  link: string,
-  color: string
+  name: string,
+  url: string
 }
 
 export type Project = {
+  id: string,
   title: string,
   briefInfo: string,
   githubReadme: string,
-  links: Array<Link>,
+  urls: Array<Link>,
   technologies: Array<string>
   createdAt: string
 }
 
 export type Experience = {
   date: string,
-  org: string,
-  org_link: string,
+  organization: string,
+  organizationUrl: string,
   position: string,
   content: Array<string>
 }
 
 export type Certification = {
   title: string,
-  link: string,
+  url: string | null,
   issuedOn: string,
   organization: string
 }
