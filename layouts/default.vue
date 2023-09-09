@@ -9,6 +9,14 @@
   </div>
 </template>
 
+<script setup lang="ts">
+useHead({
+  bodyAttrs: {
+    class: 'theme--dark'
+  }
+})
+</script>
+
 <style>
 html {
   scroll-behavior: smooth;
