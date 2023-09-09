@@ -71,31 +71,31 @@ export const workExperience: Experience[] = [
 export const certifications: Certification[] = [
   {
     title: 'Java Programming Masterclass covering Java 11 & Java 17',
-    url: 'https://drive.google.com/file/d/1DpARYUIKYBITomuhNrukw23d5T7cbaXo/view?usp=share_link',
+    url: 'https://drive.google.com/file/d/1qwzm_jqgQ4h7cdao-xxYgBwdxlHqpjx2/view?usp=sharing',
     issuedOn: '2022-05-01',
     organization: 'Udemy'
   },
   {
     title: 'Linux for Developers',
-    url: 'https://drive.google.com/file/d/1ihRSSbztsjlV4SokVEGmwX_7TPC4tPce/view?usp=share_link',
+    url: 'https://drive.google.com/file/d/1ueku1aWAsOdTtEa9KXs-800PrLemVShJ/view?usp=sharing',
     issuedOn: '2021-04-01',
     organization: 'Coursera'
   },
   {
     title: 'Master the Coding Interview: Data Structures + Algorithms',
-    url: 'https://drive.google.com/file/d/1c3WgUWvdjRynLsLjM_maLJjOI3XuXMxO/view?usp=share_link',
+    url: 'https://drive.google.com/file/d/1IY3bERgnasuYxmhxH4C7m2tXnyCykHXR/view?usp=sharing',
     issuedOn: '2021-01-01',
     organization: 'Udemy'
   },
   {
     title: 'The Complete 2020 Web Development Bootcamp',
-    url: 'https://drive.google.com/file/d/1f0GeEJzd-unvVrWXEXoLYN-9vwhccAc1/view?usp=share_link',
+    url: 'https://drive.google.com/file/d/1bMyD_QtNX1B9QR-6WrVNW4M-TKD0QO2V/view?usp=sharing',
     issuedOn: '2020-12-01',
     organization: 'Udemy'
   },
   {
     title: 'Java Programming: Solving Problems with Software (with Honors)',
-    url: 'https://drive.google.com/file/d/1qxRbGtqBzQ_YaSdoqotdRfB-lMWlhf79/view?usp=share_link',
+    url: 'https://drive.google.com/file/d/1hBQ584XsfbKDM-ByoQRirJRvQ7CqEmE6/view?usp=sharing',
     issuedOn: '2020-05-01',
     organization: 'Coursera'
   },
