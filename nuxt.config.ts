@@ -1,4 +1,10 @@
 export default defineNuxtConfig({
+  ssr: true,
+  nitro: {
+    prerender: {
+      routes: ['/']
+    }
+  },
   runtimeConfig: {
     public: {
       resume: process.env.RESUME
