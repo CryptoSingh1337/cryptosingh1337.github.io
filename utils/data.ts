@@ -20,7 +20,7 @@ export const workExperience: Experience[] = [
     ]
   },
   {
-    date: "Feb 2023 - Jun 2023",
+    date: "Feb 2023 - June 2023",
     organization: "Amadeus Labs",
     organizationUrl: "https://amadeus.com/en/bengaluru-labs-india",
     position: "Software Engineer Intern",
@@ -32,7 +32,7 @@ export const workExperience: Experience[] = [
     ]
   },
   {
-    date: "Jun 2022 - Sep 2022",
+    date: "June 2022 - Sep 2022",
     organization: "LoadShare Networks",
     organizationUrl: "https://loadshare.net/",
     position: "Software Engineer Intern",
@@ -56,7 +56,7 @@ export const workExperience: Experience[] = [
     ]
   },
   {
-    date: "Jul 2016 - Present",
+    date: "July 2016 - Present",
     organization: "YouTube",
     organizationUrl: "https://www.youtube.com/c/CryptoSingh/",
     position: "Content Creator",
