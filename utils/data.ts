@@ -26,8 +26,8 @@ export const workExperience: Experience[] = [
     position: "Software Engineer Intern",
     content: [
       "Worked on API Extension project.",
-      "Create resources, generate code according to Open API specification.",
-      "Deploy that on Azure Function App using GitHub Actions.",
+      "Used to create resources, generate code according to Open API specification.",
+      "Deployed that on Azure Function App using GitHub Actions.",
       "Learned about terraform, GitHub Actions, Azure Function and Logic Apps."
     ]
   },
@@ -37,7 +37,7 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://loadshare.net/",
     position: "Software Engineer Intern",
     content: [
-      "Working under the Hyperlocal logistics operations pod.",
+      "Worked under the Hyperlocal logistics operations pod.",
       "Created the COD service from scratch (30% more orders).",
       "Created unit tests using JUnit and Mockito.",
       "Learned about Logging, API design, Jenkins, Aws SQS and ECS."
@@ -61,7 +61,7 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://www.youtube.com/c/CryptoSingh/",
     position: "Content Creator",
     content: [
-      "Created tech and gaming related videos.",
+      "Created Technology and Gaming related videos.",
       "Live streamed various games.",
       "Crossed 100k+ views."
     ]
