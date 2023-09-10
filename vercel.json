@@ -1,5 +1,7 @@
 {
-	"github": {
-		"silent": true
-	}
+  "github": {
+    "silent": true
+  },
+  "buildCommand": "nuxt generate",
+  "outputDirectory": ".output/public"
 }
