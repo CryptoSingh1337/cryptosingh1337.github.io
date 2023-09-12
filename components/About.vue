@@ -7,7 +7,7 @@
         <h3 class="mb-4 font-bold text-base text-black dark:text-white">Résumé</h3>
         <a class="no-underline" :href="resume" target="_blank" download>
           <button
-            class="inline-flex bg-primary-500 border-0 rounded-md py-1 px-3 items-center transition-colors ease-in-out duration-300 hover:bg-primary-600 hover:cursor-pointer">
+            class="inline-flex bg-primary-500 border-0 rounded-md py-1 px-3 items-center transition-colors ease-in-out duration-300 hover:bg-primary-600 hover:cursor-pointer text-white dark:text-black">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download"
               viewBox="0 0 16 16">
               <path
