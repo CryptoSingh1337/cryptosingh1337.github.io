@@ -1,6 +1,6 @@
 <template>
   <section class="education content-education">
-    <h3 class="title education-title">Education</h3>
+    <h3 class="mb-4 font-bold text-base text-black dark:text-white">Education</h3>
     <p class="education-info">
       <span class="education-subtitle">Amity University, Noida <br />(2019 - 2023)</span>
       <span class="education-details">
@@ -45,10 +45,6 @@
 
 .education-info:last-child {
   margin-bottom: 0;
-}
-
-.education-title {
-  margin-bottom: var(--space-4);
 }
 
 .education-subtitle {

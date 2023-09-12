@@ -1,6 +1,6 @@
 <template>
   <section class="projects">
-    <h3 class="title projects-title">Projects</h3>
+    <h3 class="mb-4 font-bold text-lg text-black dark:text-white">Projects</h3>
     <ul class="projects-list">
       <li class="projects-item projects-item--headings">
         <span>Title</span>

@@ -1,6 +1,6 @@
 <template>
   <section class="technologies">
-    <h3 class="title technologies-title">Technologies and skills</h3>
+    <h3 class="mb-4 font-bold text-lg text-black dark:text-white">Technologies and skills</h3>
     <div class="technologies-block">
       <Technology :key="skill.id" v-for="skill in technologies" :skill="skill" :isSkill="true" />
     </div>
