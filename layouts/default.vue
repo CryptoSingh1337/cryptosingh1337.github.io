@@ -1,47 +1,21 @@
 <template>
-  <div class="content">
-    <div class="content-info">
+  <div
+    class="bg-default min-w-[320px] max-w-3xl xl:max-w-7xl my-8 mx-auto py-8 px-0 shadow-2xl dark:shadow-none text-black dark:text-white">
+    <div class="content-info flex flex-col overflow-x-hidden overflow-y-scroll">
       <slot />
     </div>
-    <ClientOnly>
-      <ThemeToggleButton />
-    </ClientOnly>
+    <ThemeToggleButton />
   </div>
 </template>
 
-<script setup lang="ts">
-useHead({
-  bodyAttrs: {
-    class: 'theme--dark'
-  }
-})
-</script>
-
 <style>
-html {
-  scroll-behavior: smooth;
-}
-
-.content {
-  min-width: 320px;
-  max-width: 768px;
-  margin: var(--space-6) auto;
-  padding: var(--space-6) 0;
-  box-shadow: 0 8px 16px rgba(110, 120, 130, 0.12),
-    0 -8px 16px rgba(110, 120, 130, 0.12);
-  background: var(--light);
-}
-
+/* TODO: Make this style tag scoped */
 .content-info::-webkit-scrollbar {
   display: none;
 }
 
 .content-info {
-  display: flex;
-  flex-direction: column;
   height: calc(100vh - calc((var(--space-6) * 4)));
-  overflow-x: hidden;
-  overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -61,31 +35,6 @@ html {
   text-align: center;
 }
 
-.tooltip {
-  position: relative;
-}
-
-.tooltip .tooltip-title {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  z-index: 1;
-  top: calc(100% + var(--space-1));
-  color: var(--gray-900);
-  text-align: center;
-  font-size: 0.75rem;
-  background-color: var(--primary-100);
-  border-radius: var(--space-2);
-  padding: 0 var(--space-2);
-  transition: opacity var(--transition-time-base);
-  left: 0;
-}
-
-.tooltip:hover .tooltip-title {
-  visibility: visible;
-  opacity: 1;
-}
-
 .technologies {
   margin-right: var(--space-6);
   margin-bottom: var(--space-6);
@@ -101,10 +50,6 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  .content {
-    max-width: 1280px;
-  }
-
   .content-details {
     display: flex;
     flex-direction: column;

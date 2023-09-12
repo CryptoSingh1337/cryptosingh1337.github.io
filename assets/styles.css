@@ -13,7 +13,6 @@ html {
 body {
   min-width: 320px;
   background-color: var(--body-color);
-  color: var(--grey);
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 0.9rem;
   font-weight: normal;

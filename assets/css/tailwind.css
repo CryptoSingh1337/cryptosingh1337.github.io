@@ -46,6 +46,7 @@
     --danger-800-rgb: HexToRGB(#5c0000);
     --gray-100: #333;
     --gray-100-rgb: HexToRGB(#333);
+    --gray-400: #eaeaea;
     --gray-500: #d0d0d0;
     --gray-500-rgb: HexToRGB(#d0d0d0);
     --gray-600: #dfdfdf;
@@ -58,8 +59,6 @@
     --light-rgb: HexToRGB(#333);
     --dark: #fff;
     --dark-rgb: HexToRGB(#fff);
-    --grey: #eaeaea;
-    --grey-rgb: HexToRGB(#eaeaea);
     --body-color: #4d4d4d;
     --body-color-rgb: HexToRGB(#4d4d4d);
 
@@ -116,6 +115,7 @@
     --danger-800-rgb: HexToRGB(#5c0000);
     --gray-100: #eaeaea;
     --gray-100-rgb: HexToRGB(#eaeaea);
+    --gray-400: #333;
     --gray-500: #2e2e2e;
     --gray-500-rgb: HexToRGB(#2e2e2e);
     --gray-600: #6c6c6c;
@@ -128,7 +128,6 @@
     --light-rgb: HexToRGB(#fff);
     --dark: #000;
     --dark-rgb: HexToRGB(#000);
-    --grey: #333;
     --grey-rgb: HexToRGB(#333);
     --body-color: #fff;
     --body-color-rgb: HexToRGB(#fff);
