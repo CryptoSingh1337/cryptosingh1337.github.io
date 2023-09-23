@@ -5,7 +5,7 @@
       class="flex sm:flex-col flex-wrap items-end self-end justify-end justify-self-end sm:items-center sm:self-center sm:justify-center sm:justify-self-center">
       <a class="text-black hover:underline p-1" :key="idx" v-for="(url, idx) in project.urls" :href="url.url"
         target="_blank">
-        <span :class="['px-2 rounded-lg', url.name === 'live' ? 'bg-success-200' : 'bg-success-100']">
+        <span :class="['px-2 rounded-lg duration-700', url.name === 'live' ? 'bg-success-200' : 'bg-success-100']">
           {{ url.name }}
         </span>
       </a>

@@ -4,7 +4,7 @@
       <img class="float-left w-[7.5rem] h-[7.5rem] mb-2 mr-4 md:float-none md:min-w-[16rem] md:h-64 md:mb-4 md:mr-8"
         src="/profile/img.jpg" alt="profile-img" />
       <div class="text-black hidden md:block">
-        <h3 class="mb-4 font-bold text-base text-black dark:text-white">Résumé</h3>
+        <h3 class="mb-4 font-bold text-base text-black dark:text-white duration-700">Résumé</h3>
         <a class="no-underline" :href="resume" target="_blank" download>
           <button
             class="inline-flex bg-primary-500 border-0 rounded-md py-1 px-3 items-center transition-colors ease-in-out duration-300 hover:bg-primary-600 hover:cursor-pointer text-white dark:text-black">
@@ -21,13 +21,13 @@
       </div>
     </picture>
     <p class="mb-4 md:mb-0">
-      <span class="text-primary-400 font-bold">&#60;Hello, world! &#47;&#62;</span>
+      <span class="text-primary-400 font-bold duration-300">&#60;Hello, world! &#47;&#62;</span>
       <span class="block mt-4">
         I am
-        <span class="text-primary-400">Saransh</span>
+        <span class="text-primary-400 duration-300">Saransh</span>
         and a <!-- seasoned -->
         <span>
-          <span class="text-primary-400">Backend</span> Developer
+          <span class="text-primary-400 duration-300">Backend</span> Developer
         </span>
         hailing from India!
       </span>
@@ -46,7 +46,7 @@
       <h3 class="mb-4 font-bold text-base text-black dark:text-white">Résumé</h3>
       <a class="no-underline" :href="resume" target="_blank" download>
         <button
-          class="inline-flex bg-primary-500 border-0 rounded-md py-1 px-3 items-center transition-colors ease-in-out duration-300 hover:bg-primary-600 hover:cursor-pointer">
+          class="inline-flex bg-primary-500 border-0 rounded-md py-1 px-3 items-center transition-colors ease-in-out duration-700 hover:bg-primary-600 hover:cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download"
             viewBox="0 0 16 16">
             <path

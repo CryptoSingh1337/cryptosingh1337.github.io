@@ -1,6 +1,6 @@
 <template>
   <section class="m-8 mt-0 col-[1/2] xl:w-64 xl:mr-0">
-    <h3 class="mb-4 font-bold text-base text-black dark:text-white">Education</h3>
+    <h3 class="mb-4 font-bold text-base text-black dark:text-white duration-700">Education</h3>
     <p class="grid gap-y-4 mb-8 md:grid-cols-[16rem_auto_16rem] xl:grid-cols-[16rem]">
       <span class="inline-block text-primary-400 font-semibold">
         Amity University, Noida

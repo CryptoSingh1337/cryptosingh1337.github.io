@@ -1,6 +1,6 @@
 <template>
   <section class="w-64 m-8 mt-0 xl:mr-0">
-    <h3 class="mb-4 font-bold text-lg text-black dark:text-white">Contacts</h3>
+    <h3 class="mb-4 font-bold text-lg text-black dark:text-white duration-700">Contacts</h3>
     <ul class="m-0">
       <li class="mb-4">
         <a class="flex items-center hover:underline" href="mailto:lunaticdevs1337@gmail.com" target="_blank">
