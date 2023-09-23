@@ -3,8 +3,7 @@
     <h3 class="mb-4 font-bold text-lg text-black dark:text-white">Contacts</h3>
     <ul class="m-0">
       <li class="mb-4">
-        <a class="text-gray-500 flex items-center hover:underline" href="mailto:lunaticdevs1337@gmail.com"
-          target="_blank">
+        <a class="flex items-center hover:underline" href="mailto:lunaticdevs1337@gmail.com" target="_blank">
           <span class="w-6 h-6 mr-4">
             <img src="/icons/mail.svg" alt="mail" style="height: 24px">
           </span>
@@ -12,7 +11,7 @@
         </a>
       </li>
       <li class="mb-4">
-        <a class="text-gray-500 flex items-center hover:underline" href="https://www.linkedin.com/in/saransh-kumar-2k19/"
+        <a class="flex items-center hover:underline" href="https://www.linkedin.com/in/saransh-kumar-2k19/"
           target="_blank">
           <span class="w-6 h-6 mr-4">
             <img src="/icons/linkedin.svg" alt="linkedin" style="height: 24px">

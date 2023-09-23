@@ -1,11 +1,11 @@
 <template>
   <li class="py-3 px-0 text-xs grid gap-4 grid-cols-[repeat(2,_1fr)] sm:grid-cols-[1fr_1fr_3fr_2fr] sm:items-center">
-    <span class="text-gray-500 font-medium text-sm">{{ project.title }}</span>
+    <span class="font-medium text-sm">{{ project.title }}</span>
     <span
       class="flex sm:flex-col flex-wrap items-end self-end justify-end justify-self-end sm:items-center sm:self-center sm:justify-center sm:justify-self-center">
-      <a class="text-gray-900 hover:underline p-1" :key="idx" v-for="(url, idx) in project.urls" :href="url.url"
+      <a class="text-black hover:underline p-1" :key="idx" v-for="(url, idx) in project.urls" :href="url.url"
         target="_blank">
-        <span :class="['px-2 text-gray-900 rounded-lg', url.name === 'live' ? 'bg-success-200' : 'bg-success-100']">
+        <span :class="['px-2 rounded-lg', url.name === 'live' ? 'bg-success-200' : 'bg-success-100']">
           {{ url.name }}
         </span>
       </a>

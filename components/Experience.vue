@@ -92,7 +92,6 @@ const classRight = [
 }
 
 .work-experience-link {
-  color: var(--gray-500);
   transition: var(--transition-time-base);
 }
 
