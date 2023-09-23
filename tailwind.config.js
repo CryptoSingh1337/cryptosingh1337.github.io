@@ -12,7 +12,7 @@ module.exports = {
         'primary-500': 'var(--primary-500)',
         'primary-600': 'var(--primary-600)',
         'primary-800': 'var(--primary-800)',
-        'success-100': 'var(--sucess-100)',
+        'success-100': 'var(--success-100)',
         'success-200': 'var(--success-200)',
         'success-500': 'var(--success-500)',
         'success-600': 'var(--success-600)',

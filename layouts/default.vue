@@ -24,8 +24,7 @@
 .certificates-list,
 .certificates-resourse-list,
 .certificates-year-list,
-.contacts-list,
-.projects-list {
+.contacts-list {
   list-style: none;
   padding-left: 0;
 }
