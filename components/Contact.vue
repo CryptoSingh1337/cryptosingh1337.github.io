@@ -1,36 +1,37 @@
 <template>
-  <section class="contacts">
-    <h3 class="title contacts-title">Contacts</h3>
-    <ul class="contacts-list">
-      <li class="contacts-item">
-        <a class="contacts-item-link--main" href="mailto:lunaticdevs1337@gmail.com" target="_blank">
-          <span class="icon tooltip icon-size-x1h contacts-item-icon">
+  <section class="w-64 m-8 mt-0 xl:mr-0">
+    <h3 class="mb-4 font-bold text-lg text-black dark:text-white duration-700">Contacts</h3>
+    <ul class="m-0">
+      <li class="mb-4">
+        <a class="flex items-center hover:underline" href="mailto:lunaticdevs1337@gmail.com" target="_blank">
+          <span class="w-6 h-6 mr-4">
             <img src="/icons/mail.svg" alt="mail" style="height: 24px">
           </span>
           lunaticdevs1337@gmail.com
         </a>
       </li>
-      <li class="contacts-item">
-        <a class="contacts-item-link--main" href="https://www.linkedin.com/in/saransh-kumar-2k19/" target="_blank">
-          <span class="icon tooltip icon-size-x1h contacts-item-icon">
+      <li class="mb-4">
+        <a class="flex items-center hover:underline" href="https://www.linkedin.com/in/saransh-kumar-2k19/"
+          target="_blank">
+          <span class="w-6 h-6 mr-4">
             <img src="/icons/linkedin.svg" alt="linkedin" style="height: 24px">
           </span>
           saransh-kumar-2k19
         </a>
       </li>
-      <li class="contacts-item--additional">
-        <a class="contacts-item-link--additional" href="https://steamcommunity.com/id/cryptosingh/" target="_blank">
-          <span class="icon tooltip icon-size-x1h">
+      <li class="flex">
+        <a class="mr-4" href="https://steamcommunity.com/id/cryptosingh/" target="_blank">
+          <span class="block w-6 h-6 tooltip">
             <img src="/icons/steam.svg" alt="steam" style="height: 24px">
             <span class="tooltip-title">Steam</span></span>
         </a>
-        <a class="contacts-item-link--additional" href="https://leetcode.com/cryptosingh/" target="_blank">
-          <span class="icon tooltip icon-size-x1h">
+        <a class="mr-4" href="https://leetcode.com/cryptosingh/" target="_blank">
+          <span class="block relative text-center w-6 h-6 tooltip">
             <img src="/icons/leetcode.svg" alt="leetcode" style="height: 24px">
             <span class="tooltip-title">LeetCode</span></span>
         </a>
-        <a class="contacts-item-link--additional" href="https://www.codechef.com/users/cryptosingh" target="_blank">
-          <span class="icon tooltip icon-size-x1h">
+        <a class="mr-4" href="https://www.codechef.com/users/cryptosingh" target="_blank">
+          <span class="block w-6 h-6 tooltip">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
               role="img" width="1.8em" height="1.8em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 26">
               <path
@@ -40,8 +41,8 @@
             <span class="tooltip-title">CodeChef</span>
           </span>
         </a>
-        <a class="contacts-item-link--additional" href="https://github.com/CryptoSingh1337" target="_blank">
-          <span class="icon tooltip icon-size-x1h">
+        <a class="mr-4" href="https://github.com/CryptoSingh1337" target="_blank">
+          <span class="block w-6 h-6 tooltip">
             <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M7.96906 0.199997C3.56844 0.199997 0 3.76781 0 8.16906C0 11.6901 2.28338 14.6772 5.44975 15.7309C5.848 15.8047 5.99425 15.5581 5.99425 15.3476C5.99425 15.1576 5.98681 14.5297 5.98344 13.8639C3.76638 14.3459 3.29856 12.9236 3.29856 12.9236C2.93606 12.0025 2.41375 11.7576 2.41375 11.7576C1.69075 11.263 2.46825 11.2731 2.46825 11.2731C3.2685 11.3294 3.68987 12.0944 3.68987 12.0944C4.40062 13.3127 5.55412 12.9604 6.00887 12.7569C6.08037 12.2417 6.28694 11.8902 6.51481 11.6912C4.74481 11.4897 2.88406 10.8064 2.88406 7.75287C2.88406 6.88287 3.19538 6.17193 3.70519 5.61387C3.62244 5.41312 3.34969 4.60262 3.78238 3.50493C3.78238 3.50493 4.45156 3.29075 5.97444 4.32181C6.61006 4.14518 7.29181 4.05668 7.96906 4.05368C8.64631 4.05668 9.32856 4.14518 9.96544 4.32181C11.4865 3.29075 12.1547 3.50493 12.1547 3.50493C12.5885 4.60262 12.3156 5.41312 12.2329 5.61387C12.7438 6.17193 13.053 6.88281 13.053 7.75287C13.053 10.8136 11.1888 11.4876 9.41425 11.6849C9.70006 11.9322 9.95475 12.4172 9.95475 13.1606C9.95475 14.2269 9.9455 15.0851 9.9455 15.3476C9.9455 15.5596 10.0889 15.8081 10.4929 15.7299C13.6576 14.6749 15.9381 11.6889 15.9381 8.16906C15.9381 3.76781 12.3701 0.199997 7.96906 0.199997Z"
@@ -53,14 +54,14 @@
             <span class="tooltip-title">GitHub</span>
           </span>
         </a>
-        <a class="contacts-item-link--additional" href="https://medium.com/@cryptosingh1337" target="_blank">
-          <span class="icon tooltip icon-size-x1h">
+        <a class="mr-4" href="https://medium.com/@cryptosingh1337" target="_blank">
+          <span class="block w-6 h-6 tooltip">
             <img src="/icons/medium.svg" alt="medium" style="height: 24px">
             <span class="tooltip-title">Medium</span>
           </span>
         </a>
-        <a class="contacts-item-link--additional" href="https://codeforces.com/profile/CryptoSingh" target="_blank">
-          <span class="icon tooltip icon-size-x1h">
+        <a class="mr-4" href="https://codeforces.com/profile/CryptoSingh" target="_blank">
+          <span class="block w-6 h-6 tooltip">
             <img src="/icons/codeforces.svg" alt="codeforces" style="height: 24px" />
             <span class="tooltip-title">Codeforces</span>
           </span>
@@ -69,73 +70,3 @@
     </ul>
   </section>
 </template>
-
-<style scoped>
-.content-details--left {
-  display: block;
-}
-
-.icon-size-x1h {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.contacts {
-  width: 16rem;
-  margin-right: var(--space-6);
-  margin-bottom: var(--space-6);
-  margin-left: var(--space-6);
-}
-
-.contacts-title {
-  margin-bottom: var(--space-4);
-}
-
-.contacts-list {
-  margin: 0;
-}
-
-.contacts-item {
-  margin-bottom: var(--space-4);
-}
-
-.contacts-item-link--main {
-  color: var(--gray-500);
-  display: flex;
-  align-items: center;
-}
-
-.contacts-item-icon {
-  margin-right: var(--space-4);
-}
-
-.contacts-item--additional {
-  display: flex;
-}
-
-.contacts-item-link--additional {
-  margin-right: var(--space-4);
-}
-
-.st0 {
-  fill: url(#SVGID_1_);
-}
-
-.st1 {
-  fill: url(#SVGID_2_);
-}
-
-.st2 {
-  fill: url(#SVGID_3_);
-}
-
-.st3 {
-  fill: #425e9c;
-}
-
-@media screen and (min-width: 1280px) {
-  .contacts {
-    margin-right: 0;
-  }
-}
-</style>

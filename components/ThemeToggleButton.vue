@@ -9,27 +9,9 @@
 <script setup lang="ts">
 const colorMode = useColorMode()
 
-function changeTheme() {
-  const body = document.querySelector('body')
-  if (body) {
-    if (colorMode.preference === 'dark') {
-      body.classList.add('theme--dark')
-      body.classList.remove('theme--light')
-    } else {
-      body.classList.add('theme--light')
-      body.classList.remove('theme--dark')
-    }
-  }
-}
-
 function handleClick() {
   colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
-  changeTheme()
 }
-
-onBeforeMount(() => {
-  changeTheme()
-})
 </script>
 
 <style scoped>

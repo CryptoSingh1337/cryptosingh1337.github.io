@@ -1,11 +1,13 @@
 <template>
-  <section class="about">
+  <section class="md:flex mt-0 mx-8 mb-8">
     <picture>
-      <img src="/profile/img.jpg" alt="profile-img" />
-      <div class="resume about-resume-desktop">
-        <h3 class="about-resume-title" v-text="`R${e[0]}sum${e[0]}`"></h3>
-        <a :href="resume" target="_blank" download>
-          <button class="download-resume">
+      <img class="float-left w-[7.5rem] h-[7.5rem] mb-2 mr-4 md:float-none md:min-w-[16rem] md:h-64 md:mb-4 md:mr-8"
+        src="/profile/img.jpg" alt="profile-img" />
+      <div class="text-black hidden md:block">
+        <h3 class="mb-4 font-bold text-base text-black dark:text-white duration-700">Résumé</h3>
+        <a class="no-underline" :href="resume" target="_blank" download>
+          <button
+            class="inline-flex bg-primary-500 border-0 rounded-md py-1 px-3 items-center transition-colors ease-in-out duration-300 hover:bg-primary-600 hover:cursor-pointer text-white dark:text-black">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download"
               viewBox="0 0 16 16">
               <path
@@ -13,37 +15,38 @@
               <path
                 d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
             </svg>
-            <span>Download</span>
+            <span class="ml-2">Download</span>
           </button>
         </a>
       </div>
     </picture>
-    <p>
-      <span class="title welcome">&#60;Hello, world! &#47;&#62;</span>
-      <span class="about-text">
+    <p class="mb-4 md:mb-0">
+      <span class="text-primary-400 font-bold duration-300">&#60;Hello, world! &#47;&#62;</span>
+      <span class="block mt-4">
         I am
-        <span class="about-text--primary">Saransh</span>
+        <span class="text-primary-400 duration-300">Saransh</span>
         and a <!-- seasoned -->
         <span>
-          <span class="about-text--primary">Backend</span> Developer
+          <span class="text-primary-400 duration-300">Backend</span> Developer
         </span>
         hailing from India!
       </span>
-      <span class="about-text" :key="i" v-for="(l, i) in hero">
+      <span class="block mt-4" :key="i" v-for="(l, i) in hero">
         {{ l }}
-        <span class="about-interests" v-if="i === 2">
+        <span class="grid grid-cols-autofill gap-4 mt-4" v-if="i === 2">
           <Technology :key="skill.id" v-for="skill in stack" :skill="skill" :isSkill="false" />
         </span>
       </span>
-      <span class="about-text">Presently, my keen interest is focused on:</span>
-      <span class="about-interests">
+      <span class="block mt-4">Presently, my keen interest is focused on:</span>
+      <span class="grid grid-cols-autofill gap-4 mt-4">
         <Technology :key="skill.id" v-for="skill in interested" :skill="skill" :isSkill="false" />
       </span>
     </p>
-    <div class="resume about-resume-mobile">
-      <h3 class="about-resume-title">Résumé</h3>
-      <a :href="resume" target="_blank">
-        <button class="download-resume">
+    <div class="text-black block md:hidden">
+      <h3 class="mb-4 font-bold text-base text-black dark:text-white">Résumé</h3>
+      <a class="no-underline" :href="resume" target="_blank" download>
+        <button
+          class="inline-flex bg-primary-500 border-0 rounded-md py-1 px-3 items-center transition-colors ease-in-out duration-700 hover:bg-primary-600 hover:cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download"
             viewBox="0 0 16 16">
             <path
@@ -51,7 +54,7 @@
             <path
               d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
           </svg>
-          <span>Download</span>
+          <span class="ml-2">Download</span>
         </button>
       </a>
     </div>
@@ -68,106 +71,4 @@ defineProps<{
 }>()
 
 const resume = useRuntimeConfig().public.resume as string
-const e = ['é']
 </script>
-
-<style scoped>
-.welcome {
-  color: var(--primary-400);
-  font-weight: 700;
-}
-
-.about {
-  margin-right: var(--space-6);
-  margin-bottom: var(--space-6);
-  margin-left: var(--space-6);
-}
-
-img {
-  height: 7.5rem;
-  width: 7.5rem;
-  margin-bottom: var(--space-2);
-  margin-right: var(--space-4);
-  float: left;
-}
-
-.about-resume-title {
-  margin-bottom: var(--space-4);
-}
-
-.about-text {
-  display: block;
-  margin-top: var(--space-4);
-}
-
-.about-text--primary {
-  color: var(--primary-400);
-}
-
-.about-interests {
-  grid-template-columns: repeat(auto-fill, minmax(1.5rem, 1fr));
-  margin-top: var(--space-4);
-  display: grid;
-  grid-column-gap: var(--space-4);
-  grid-row-gap: var(--space-4);
-}
-
-.download-resume {
-  padding: var(--space-1) var(--space-3);
-  background-color: var(--primary-500);
-  border: 0px;
-  border-radius: 5px;
-  transition: all ease-in-out 350ms;
-  display: inline-flex;
-  align-content: center;
-}
-
-.download-resume span {
-  margin-left: 8px;
-}
-
-.download-resume:hover {
-  background-color: var(--primary-600);
-  cursor: pointer;
-}
-
-.resume a {
-  text-decoration: none;
-}
-
-@media screen and (max-width: 480px) {
-  .about-resume-desktop {
-    display: none;
-  }
-
-  .about-resume-mobile {
-    display: block;
-  }
-
-  .about p {
-    margin-bottom: var(--space-4);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .about-resume-mobile {
-    display: none;
-  }
-
-  .about-resume-desktop {
-    display: block;
-  }
-
-  img {
-    min-width: 16rem;
-    height: 16rem;
-    margin-bottom: var(--space-4);
-    margin-right: var(--space-6);
-    float: none;
-  }
-
-  .about {
-    display: flex;
-  }
-}
-</style>

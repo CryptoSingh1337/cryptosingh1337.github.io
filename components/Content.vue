@@ -1,12 +1,12 @@
 <template>
-  <div class="content-details">
-    <div class="content-details--left">
+  <div class="block md:flex md:flex-col xl:flex-row">
+    <div class="block md:grid md:grid-x-8 md:grid-cols-[16rem_auto] xl:block">
       <Contact />
       <SectionSkill :technologies="technologies" />
       <Education />
       <SectionCertification />
     </div>
-    <div class="content-details--right">
+    <div class="xl:ml-8">
       <SectionExperience />
       <SectionProject :projects="projects" />
     </div>
@@ -21,27 +21,3 @@ defineProps<{
   projects: Array<Project>
 }>()
 </script>
-
-<style>
-.content-details--left {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .content-details--left {
-    display: grid;
-    grid-column-gap: var(--space-6);
-    grid-template-columns: 16rem auto;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .content-details--left {
-    display: block;
-  }
-
-  .content-details--right {
-    margin-left: var(--space-6);
-  }
-}
-</style>
