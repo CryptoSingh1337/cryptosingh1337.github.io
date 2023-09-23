@@ -32,7 +32,6 @@ import { workExperience } from "@/utils/data"
 @media screen and (min-width: 640px) {
   .work-experience--branches {
     display: grid;
-    grid-column-gap: 8px;
     grid-template-columns: 50% 50%;
     padding-right: 0;
   }

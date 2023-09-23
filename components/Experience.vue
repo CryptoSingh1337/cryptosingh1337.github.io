@@ -48,9 +48,17 @@ const classRight = [
   text-align: right;
 }
 
+.work-experience-block--left:last-child {
+  margin-bottom: 0;
+}
+
+.work-experience-block--right:last-child {
+  margin-bottom: 0;
+}
+
 .work-experience-period--left,
 .work-experience-period--right {
-  padding-right: var(--space-4);
+  padding-right: var(--space-2);
 }
 
 .work-experience-block--left {
@@ -75,7 +83,7 @@ const classRight = [
 
 .work-experience-info--left,
 .work-experience-info--right {
-  padding-right: var(--space-4);
+  padding-right: var(--space-2);
 }
 
 .work-experience-position {
@@ -93,9 +101,6 @@ const classRight = [
 }
 
 @media screen and (min-width: 640px) {
-  .work-experience-block--left:not(:last-child) {
-    margin-bottom: 8rem;
-  }
 
   .work-experience-block--right {
     text-align: left;
@@ -104,7 +109,7 @@ const classRight = [
   }
 
   .work-experience-period--left {
-    padding-right: var(--space-4);
+    padding-right: var(--space-2);
   }
 
   .work-experience-period--right {
@@ -119,7 +124,7 @@ const classRight = [
   }
 
   .work-experience-info--left {
-    padding-right: var(--space-4);
+    padding-right: var(--space-2);
   }
 
   .work-experience-info--right {
