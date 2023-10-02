@@ -14,9 +14,8 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://loadshare.net/",
     position: "Software Engineer",
     content: [
-      "Working on rate rule engine which handles the earnings and revenue.",
-      "Working on state machine based Grievance system.",
-      "Creating Ticket management system for the Grievance system."
+      "Working on rate rule engine which handles the earnings of the field executives, revenue of the company.",
+      "Building a Ticket Management microservice for field executives to raise tickets from the app."
     ]
   },
   {
@@ -26,9 +25,8 @@ export const workExperience: Experience[] = [
     position: "Software Engineer Intern",
     content: [
       "Worked on API Extension project.",
-      "Used to create resources, generate code according to Open API specification.",
-      "Deployed that on Azure Function App using GitHub Actions.",
-      "Learned about terraform, GitHub Actions, Azure Function and Logic Apps."
+      "Used to automate the process of API code generation according to Open API specification.",
+      "Deploy that on Azure Function App using GitHub Actions, terraform and terragrunt."
     ]
   },
   {
