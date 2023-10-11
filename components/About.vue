@@ -1,9 +1,9 @@
 <template>
-  <section class="md:flex mt-0 mx-8 mb-8">
+  <section class="xl:flex mt-0 mx-8 mb-8">
     <picture>
-      <img class="float-left w-[7.5rem] h-[7.5rem] mb-2 mr-4 md:float-none md:min-w-[16rem] md:h-64 md:mb-4 md:mr-8"
+      <img class="float-left w-[7.5rem] h-[7.5rem] mb-2 mr-4 xl:float-none md:min-w-[16rem] md:h-64 md:mb-4 md:mr-8"
         src="/profile/img.jpg" alt="profile-img" />
-      <div class="text-black hidden md:block">
+      <div class="text-black hidden xl:block">
         <h3 class="mb-4 font-bold text-base text-black dark:text-white duration-700">Résumé</h3>
         <a class="no-underline" :href="resume" target="_blank" download>
           <button
@@ -20,7 +20,7 @@
         </a>
       </div>
     </picture>
-    <p class="mb-4 md:mb-0">
+    <p class="mb-4 xl:mb-0">
       <span class="text-primary-400 font-bold duration-300">&#60;Hello, world! &#47;&#62;</span>
       <span class="block mt-4">
         I am
@@ -33,7 +33,7 @@
       </span>
       <span class="block mt-4" :key="i" v-for="(l, i) in hero">
         {{ l }}
-        <span class="grid grid-cols-autofill gap-4 mt-4" v-if="i === 2">
+        <span class="grid grid-cols-autofill gap-4 mt-4 md:ml-[41%] xl:ml-0" v-if="i === 2">
           <Technology :key="skill.id" v-for="skill in stack" :skill="skill" :isSkill="false" />
         </span>
       </span>
@@ -42,7 +42,7 @@
         <Technology :key="skill.id" v-for="skill in interested" :skill="skill" :isSkill="false" />
       </span>
     </p>
-    <div class="text-black block md:hidden">
+    <div class="text-black block xl:hidden">
       <h3 class="mb-4 font-bold text-base text-black dark:text-white">Résumé</h3>
       <a class="no-underline" :href="resume" target="_blank" download>
         <button

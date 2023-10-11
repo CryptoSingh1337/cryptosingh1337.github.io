@@ -1,43 +1,42 @@
 <template>
-  <section class="m-8 mt-0 col-[1/2] xl:w-64 xl:mr-0">
-    <h3 class="mb-4 font-bold text-base text-black dark:text-white duration-700">Education</h3>
-    <p class="grid gap-y-4 mb-8 md:grid-cols-[16rem_auto_16rem] xl:grid-cols-[16rem]">
+  <p v-if="!showTable" class="grid gap-y-4 mb-8 xl:grid-cols-[16rem]">
+    <span class="inline-block text-primary-400 font-semibold">
+      {{ education.institute }}
+      <br />
+      ({{ education.duration }})
+    </span>
+    <span class="grid grid-cols-[max-content]">
       <span class="inline-block text-primary-400 font-semibold">
-        Amity University, Noida
-        <br />
-        (2019 - 2023)
+        Degree:
       </span>
-      <span class="grid grid-cols-[max-content]">
-        <span class="inline-block text-primary-400 font-semibold">
-          Degree:
-        </span>
-        B. Tech
-      </span>
-      <span class="grid grid-cols-[max-content]">
-        <span class="inline-block text-primary-400 font-semibold">
-          Field Of Study:
-        </span>
-        Computer Science and Engineering
-      </span>
-    </p>
-    <p class="grid gap-y-4 md:grid-cols-[16rem_auto_16rem] xl:grid-cols-[16rem]">
+      {{ education.degree }}
+    </span>
+    <span class="grid grid-cols-[max-content]">
       <span class="inline-block text-primary-400 font-semibold">
-        Bal Bhavan Public Sr. Sec School
-        <br />
-        (2017 - 2019)
+        Field Of Study:
       </span>
-      <span class="grid grid-cols-[max-content]">
-        <span class="inline-block text-primary-400 font-semibold">
-          Degree:
-        </span>
-        Intermediate
+      {{ education.fieldOfStudy }}
+    </span>
+    <span class="grid grid-cols-[max-content]">
+      <span class="inline-block text-primary-400 font-semibold">
+        Grade:
       </span>
-      <span class="grid grid-cols-[max-content]">
-        <span class="inline-block text-primary-400 font-semibold">
-          Field Of Study:
-        </span>
-        Science with CS
-      </span>
-    </p>
-  </section>
+      {{ education.grade }}
+    </span>
+  </p>
+  <li v-else class="grid py-3 px-0 gap-4 grid-cols-[1fr_2fr_1fr_2fr_1fr] items-center">
+    <span>{{ education.duration }}</span>
+    <span class="text-center">{{ education.institute }}</span>
+    <span class="text-center">{{ education.degree }}</span>
+    <span class="text-center">{{ education.fieldOfStudy }}</span>
+    <span class="text-right">{{ education.grade }}</span>
+  </li>
 </template>
+
+<script lang="ts" setup>
+import { Education } from '@/utils/types'
+defineProps<{
+  education: Education,
+  showTable: Boolean
+}>()
+</script>
