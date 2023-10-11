@@ -10,6 +10,14 @@ export type Link = {
   url: string
 }
 
+export type Education = {
+  duration: string,
+  institute: string,
+  degree: string,
+  fieldOfStudy: string,
+  grade: string
+}
+
 export type Project = {
   id: string,
   title: string,

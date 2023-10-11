@@ -1,5 +1,5 @@
 <template>
-  <span :class="['text-center flex items-center justify-center tooltip', isSkill ? 'w-10 h-10' : 'w-6 h-6']">
+  <span :class="['tooltip', isSkill ? 'w-10 h-10' : 'w-6 h-6']">
     <img class="w-full h-full" :src="skill.url" :alt="skill.name" />
     <span class="tooltip-title">{{ skill.name }}</span>
   </span>

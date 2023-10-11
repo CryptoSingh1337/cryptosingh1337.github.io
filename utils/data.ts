@@ -1,4 +1,4 @@
-import { Certification, Experience } from "./types"
+import { Education, Certification, Experience } from "./types"
 
 export const hero = [
   "My passion lies in crafting robust and scalable backend systems that power today's digital landscape.",
@@ -65,6 +65,23 @@ export const workExperience: Experience[] = [
       "Live streamed various games.",
       "Crossed 100k+ views."
     ]
+  }
+]
+
+export const educations: Education[] = [
+  {
+    duration: '2019 - 2023',
+    institute: 'Amity University, Noida',
+    degree: 'B. Tech',
+    fieldOfStudy: 'Computer Science and Engineering',
+    grade: 'CGPA - 8.41 / 10'
+  },
+  {
+    duration: '2017 - 2019',
+    institute: 'Bal Bhavan Public Sr. Sec School',
+    degree: 'Intermediate',
+    fieldOfStudy: 'Science with CS',
+    grade: 'Percentage - 75.6 %'
   }
 ]
 
