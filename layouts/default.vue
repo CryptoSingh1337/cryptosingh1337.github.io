@@ -4,7 +4,9 @@
     <div class="content-info flex flex-col overflow-x-hidden overflow-y-scroll">
       <slot />
     </div>
-    <ThemeToggleButton />
+    <ClientOnly>
+      <ThemeToggleButton />
+    </ClientOnly>
   </div>
 </template>
 

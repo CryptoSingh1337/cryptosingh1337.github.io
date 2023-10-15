@@ -1,7 +1,7 @@
 <template>
   <div class="switches">
     <label :class="['toggle', 'toggle--type', $colorMode.value === 'dark' ?
-      'toggle--off-theme toggle--off switches-theme' : 'toggle--on-theme toggle--on switches-theme',]"
+      'toggle--off-theme toggle--off switches-theme' : 'toggle--on-theme toggle--on switches-theme']"
       @click="handleClick"></label>
   </div>
 </template>
