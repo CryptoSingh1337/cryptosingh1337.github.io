@@ -23,7 +23,7 @@ export const workExperience: Experience[] = [
   {
     date: "Feb 2023 - June 2023",
     organization: "Amadeus Labs",
-    organizationUrl: "https://amadeus.com/en/bengaluru-labs-india",
+    organizationUrl: "https://amadeus.com/en",
     position: "Software Engineer Intern",
     content: [
       "Worked on API Extension project.",
