@@ -43,3 +43,8 @@ export type Certification = {
   issuedOn: string,
   organization: string
 }
+
+export type Publication = {
+  citation: string,
+  url: string
+}

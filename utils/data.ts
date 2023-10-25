@@ -1,4 +1,4 @@
-import { Education, Certification, Experience } from "./types"
+import { Education, Certification, Experience, Publication } from "./types"
 
 export const hero = [
   "My passion lies in crafting robust and scalable backend systems that power today's digital landscape.",
@@ -15,7 +15,9 @@ export const workExperience: Experience[] = [
     position: "Software Engineer",
     content: [
       "Working on rate rule engine which handles the earnings of the field executives, revenue of the company.",
-      "Building a Ticket Management microservice for field executives to raise tickets from the app."
+      "Created Ticket Management microservice for users to raise tickets from the app.",
+      "Added new flows for non-hyperlocal field executives.",
+      "Created new transaction history feature using which users can see their earnings, withdrawal histories and remaining balance."
     ]
   },
   {
@@ -85,6 +87,12 @@ export const educations: Education[] = [
 
 export const certifications: Certification[] = [
   {
+    title: 'Spring Framework 5: Beginner to Guru',
+    url: 'https://drive.google.com/file/d/1r48p_lY3g5_u6c-UsmNE0kNHo6y2WHko/view?usp=sharing',
+    issuedOn: '2023-10-25',
+    organization: 'Udemy'
+  },
+  {
     title: 'Java Programming Masterclass covering Java 11 & Java 17',
     url: 'https://drive.google.com/file/d/1qwzm_jqgQ4h7cdao-xxYgBwdxlHqpjx2/view?usp=sharing',
     issuedOn: '2022-05-01',
@@ -119,5 +127,12 @@ export const certifications: Certification[] = [
     url: null,
     issuedOn: '2018-04-01',
     organization: 'Cryptus Cyber Security'
+  }
+]
+
+export const publications: Publication[] = [
+  {
+    citation: 'S. Kumar, S. Dubey, M. Khandelwal and G. Aggarwal, "Design of cloud based video sharing platform using Machine Learning," 2023 13th International Conference on Cloud Computing, Data Science & Engineering (Confluence), Noida, India, 2023, pp. 80-85, doi: 10.1109/Confluence56041.2023.10048833.',
+    url: 'https://ieeexplore.ieee.org/document/10048833'
   }
 ]

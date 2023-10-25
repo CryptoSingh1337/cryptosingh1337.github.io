@@ -11,6 +11,7 @@
       <SectionExperience />
       <SectionProject :projects="projects" />
       <SectionCertification class="md:block xl:hidden" />
+      <SectionPublication />
     </div>
   </div>
 </template>
