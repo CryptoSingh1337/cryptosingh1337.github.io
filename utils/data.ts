@@ -14,10 +14,10 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://loadshare.net/",
     position: "Software Engineer",
     content: [
-      "Working on rate rule engine which handles the earnings of the field executives, revenue of the company.",
-      "Created Ticket Management microservice for users to raise tickets from the app.",
-      "Added new flows for non-hyperlocal field executives.",
-      "Created new transaction history feature using which users can see their earnings, withdrawal histories and remaining balance."
+      "Developing and maintaining a rate rule engine, pivotal for field executive compensation & company revenue optimisation.",
+      "Built a ticket management microservice, enhancing grievance resolution speed.",
+      "Introduced operational workflows for non-hyperlocal field executives.",
+      "Created a transaction history feature for user financial insights, boosting transparency & trust."
     ]
   },
   {
@@ -38,9 +38,10 @@ export const workExperience: Experience[] = [
     position: "Software Engineer Intern",
     content: [
       "Worked under the Hyperlocal logistics operations pod.",
-      "Created the COD service from scratch (30% more orders).",
-      "Created unit tests using JUnit and Mockito.",
-      "Learned about Logging, API design, Jenkins, Aws SQS and ECS."
+      "Built a COD microservice, boosting orders by 30%.",
+      "Made an API for zone configurations, increasing the operational efficiency by 10%.",
+      "Cut Ops team manual work with geo-spatial queries.",
+      "Upgraded Spring Boot from 1 to 2, shifted the deployment from WAR to JAR."
     ]
   },
   {
