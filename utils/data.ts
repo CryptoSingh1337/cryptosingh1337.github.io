@@ -14,7 +14,7 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://loadshare.net/",
     position: "Software Engineer",
     content: [
-      "Developing and maintaining a rate rule engine, pivotal for field executive compensation & company revenue optimisation.",
+      "Developing and maintaining the rate rule engine, pivotal for field executive compensation & company revenue optimisation.",
       "Built a ticket management microservice, enhancing grievance resolution speed.",
       "Introduced operational workflows for non-hyperlocal field executives.",
       "Created a transaction history feature for user financial insights, boosting transparency & trust."
