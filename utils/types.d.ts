@@ -22,6 +22,7 @@ export type Project = {
   id: string,
   title: string,
   briefInfo: string,
+  freelance: boolean,
   githubReadme: string,
   urls: Array<Link>,
   technologies: Array<string>

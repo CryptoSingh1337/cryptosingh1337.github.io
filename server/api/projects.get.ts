@@ -11,8 +11,9 @@ const schema = z.array(z.object({
     briefInfo: z.array(z.object({
       text: z.string()
     })),
+    freelance: z.boolean().nullable().default(false),
     githubReadme: z.object({
-      url: z.string()
+      url: z.string().optional().default('')
     }),
     repo: z.object({
       url: z.optional(z.string())
@@ -79,6 +80,7 @@ export default defineEventHandler(async () => {
       id: project.id,
       title: project.data.title[0].text,
       briefInfo: project.data.briefInfo[0].text,
+      freelance: project.data.freelance as any,
       githubReadme: project.data.githubReadme.url,
       urls: links,
       technologies: project.data.technologies.map(v => v.text),
