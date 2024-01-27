@@ -34,7 +34,7 @@ export const workExperience: Experience[] = [
   {
     date: "June 2022 - Sep 2022",
     organization: "LoadShare Networks",
-    organizationUrl: "https://loadshare.net/",
+    organizationUrl: "https://loadshare.net",
     position: "Software Engineer Intern",
     content: [
       "Worked under the Hyperlocal logistics operations pod.",
@@ -135,5 +135,9 @@ export const publications: Publication[] = [
   {
     citation: 'S. Kumar, S. Dubey, M. Khandelwal and G. Aggarwal, "Design of cloud based video sharing platform using Machine Learning," 2023 13th International Conference on Cloud Computing, Data Science & Engineering (Confluence), Noida, India, 2023, pp. 80-85, doi: 10.1109/Confluence56041.2023.10048833.',
     url: 'https://ieeexplore.ieee.org/document/10048833'
+  },
+  {
+    citation: 'S. Dubey, S. Kumar, M. Khandelwal, N. S. Gupta and G. Aggarwal, "Comparing Deep Learning and Traditional ML for Detecting Spam and Trolls on Video Sharing Sites," 2023 6th International Conference on Contemporary Computing and Informatics (IC3I), Gautam Buddha Nagar, India, 2023, pp. 397-402, doi: 10.1109/IC3I59117.2023.10397835.',
+    url: 'https://ieeexplore.ieee.org/document/10397835'
   }
 ]
