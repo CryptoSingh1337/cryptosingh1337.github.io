@@ -14,12 +14,10 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://loadshare.net/",
     position: "Software Engineer",
     content: [
-      "Managed and maintained a project focused on riders’ earnings and company revenue utilizing Drool rule engine.",
-      "Developed a transaction history feature to track rider earnings and withdrawals through a ledger system.",
-      "Implemented a configuration-based point system to incentivize riders for order delivery, reducing cost per batch by 10-20%.",
-      "Designed and implemented a ticket management microservice integrated with the grievance system, significantly enhancing issue resolution speed by 30-40%.",
-      "Spearheaded a POC for a grievance system based on state machine architecture.",
-      "Expanding the grievance system by developing new issue resolution flows."
+      "Managed project on riders’ earnings and revenue using Drool, including transaction history and point system implementation.",
+      "Developed transaction tracking and configuration-based point system for rider incentives, reducing batch costs.",
+      "Designed ticket management microservice, integrated with grievance system, enhancing issue resolution speed.",
+      "Spearheaded grievance system POC and expanding with new issue resolution flows based on state machine architecture."
     ]
   },
   {
