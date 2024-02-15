@@ -57,7 +57,7 @@ export const workExperience: Experience[] = [
     ]
   },
   {
-    date: "July 2016 - Present",
+    date: "July 2016 - June 2019",
     organization: "YouTube",
     organizationUrl: "https://www.youtube.com/c/CryptoSingh/",
     position: "Content Creator",
