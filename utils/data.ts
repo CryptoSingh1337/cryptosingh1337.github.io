@@ -14,10 +14,12 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://loadshare.net/",
     position: "Software Engineer",
     content: [
-      "Developing and maintaining the rate rule engine, pivotal for field executive compensation & company revenue optimisation.",
-      "Built a ticket management microservice, enhancing grievance resolution speed.",
-      "Introduced operational workflows for non-hyperlocal field executives.",
-      "Created a transaction history feature for user financial insights, boosting transparency & trust."
+      "Managed and maintained a project focused on riders’ earnings and company revenue utilizing Drool rule engine.",
+      "Developed a transaction history feature to track rider earnings and withdrawals through a ledger system.",
+      "Implemented a configuration-based point system to incentivize riders for order delivery, reducing cost per batch by 10-20%.",
+      "Designed and implemented a ticket management microservice integrated with the grievance system, significantly enhancing issue resolution speed by 30-40%.",
+      "Spearheaded a POC for a grievance system based on state machine architecture.",
+      "Expanding the grievance system by developing new issue resolution flows."
     ]
   },
   {
@@ -39,9 +41,9 @@ export const workExperience: Experience[] = [
     content: [
       "Worked under the Hyperlocal logistics operations pod.",
       "Built a COD microservice, boosting orders by 30%.",
-      "Made an API for zone configurations, increasing the operational efficiency by 10%.",
-      "Cut Ops team manual work with geo-spatial queries.",
-      "Upgraded Spring Boot from 1 to 2, shifted the deployment from WAR to JAR."
+      "Created an API for zone configurations, increasing operational efficiency by 10%.",
+      "Reduced Ops team manual work with geo-spatial queries.",
+      "Upgraded Spring Boot from version 1 to 2, shifting deployment from WAR to JAR."
     ]
   },
   {
