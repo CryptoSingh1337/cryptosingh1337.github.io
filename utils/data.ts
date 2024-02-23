@@ -14,8 +14,8 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://loadshare.net/",
     position: "Software Engineer",
     content: [
-      "Managed project on riders’ earnings and revenue using Drool, including transaction history and point system implementation.",
-      "Developed transaction tracking and configuration-based point system for rider incentives, reducing batch costs.",
+      "Managed project focused on riders’ earnings and revenue using Drool, including transaction history and point system implementation.",
+      "Developed transaction tracking and configuration-based point system for incentive riders, reducing cost per batch",
       "Designed ticket management microservice, integrated with grievance system, enhancing issue resolution speed.",
       "Spearheaded grievance system POC and expanding with new issue resolution flows based on state machine architecture."
     ]
