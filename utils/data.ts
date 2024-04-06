@@ -12,9 +12,9 @@ export const workExperience: Experience[] = [
     date: "July 2023 - Present",
     organization: "LoadShare Networks",
     organizationUrl: "https://loadshare.net/",
-    position: "Software Engineer",
+    position: "Software Engineer (Backend Developer)",
     content: [
-      "Managed project focused on riders’ earnings and revenue using Drool, including transaction history and point system implementation.",
+      "Working on a financial microservice",
       "Developed transaction tracking and configuration-based point system for incentive riders, reducing cost per batch",
       "Designed ticket management microservice, integrated with grievance system, enhancing issue resolution speed.",
       "Spearheaded grievance system POC and expanding with new issue resolution flows based on state machine architecture."
@@ -75,7 +75,7 @@ export const educations: Education[] = [
     institute: 'Amity University, Noida',
     degree: 'B. Tech',
     fieldOfStudy: 'Computer Science and Engineering',
-    grade: 'CGPA - 8.41 / 10'
+    grade: 'CGPA - 8.41 / 10, Major GPA - 9 / 10'
   },
   {
     duration: '2017 - 2019',
