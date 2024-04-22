@@ -13,6 +13,6 @@
     "@nuxtjs/color-mode": "^3.4.0",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "nuxt": "^3.11.2",
-    "zod": "^3.22.4"
+    "zod": "^3.23.0"
   }
 }
