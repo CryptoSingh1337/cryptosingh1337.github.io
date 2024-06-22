@@ -15,9 +15,9 @@ export const workExperience: Experience[] = [
     position: "Software Engineer (Backend Developer)",
     content: [
       "Working on a financial microservice.",
-      "Developed transaction tracking and configuration-based point system for incentive riders, reducing cost per batch.",
-      "Designed ticket management microservice, integrated with grievance system, enhancing issue resolution speed.",
-      "Spearheaded grievance system POC and expanding with new issue resolution flows based on state machine architecture."
+      "Developed transaction tracking and configuration-based point system for incentive riders, reduced cost per batch.",
+      "Designed ticket management microservice, integrated with grievance system, reduced issue resolution speed.",
+      "Created POC for grievance system using state machine architecture and created new flows for auto-ticket resolution."
     ]
   },
   {
@@ -27,8 +27,8 @@ export const workExperience: Experience[] = [
     position: "Software Engineer Intern",
     content: [
       "Worked on API Extension project.",
-      "Used to automate the process of API code generation according to Open API specification.",
-      "Written a pipeline to deploy the API on the Azure Function App using GitHub Actions, terraform and terragrunt."
+      "Integrated OpenAPI specification in API code generation flow.",
+      "Wrote a pipeline to deploy the API on the Azure Function App using GitHub Actions, Terraform, and Terragrunt."
     ]
   },
   {
@@ -41,7 +41,7 @@ export const workExperience: Experience[] = [
       "Built a COD microservice, boosting orders by 30%.",
       "Created an API for zone configurations, increasing operational efficiency by 10%.",
       "Reduced Ops team manual work with geo-spatial queries.",
-      "Upgraded Spring Boot from version 1 to 2, shifting deployment from WAR to JAR."
+      "Upgraded Spring Boot from version 1 to 2, migrated deployment from WAR to JAR."
     ]
   },
   {
