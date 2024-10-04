@@ -1,15 +1,18 @@
 export default defineNuxtConfig({
   ssr: true,
+
   nitro: {
     prerender: {
       routes: ['/']
     }
   },
+
   runtimeConfig: {
     public: {
       resume: process.env.RESUME
     }
   },
+
   app: {
     head: {
       charset: 'UTF-8',
@@ -28,20 +31,27 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   css: [
     '@/assets/styles.css'
   ],
+
   devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/color-mode',
-    '@nuxtjs/tailwindcss'
-  ],
+  modules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/robots'],
+
   colorMode: {
     preference: 'dark',
     fallback: 'dark',
     classSuffix: ''
   },
-  tailwindcss: {
 
-  }
+  site: {
+    indexable: false
+  },
+
+  robots: {
+    disallow: ['*']
+  },
+
+  compatibilityDate: '2024-10-05'
 })
