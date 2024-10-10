@@ -8,7 +8,6 @@
           <span class="text-center">Name</span>
           <span class="text-center">Degree</span>
           <span class="text-center">Field Of Study</span>
-          <span class="text-right">Grade</span>
         </li>
         <div class="divide-y divide-solid divide-primary-200">
           <Education :key="idx" v-for="(education, idx) in educations" :education="education" :show-table="true" />

@@ -14,8 +14,7 @@ export type Education = {
   duration: string,
   institute: string,
   degree: string,
-  fieldOfStudy: string,
-  grade: string
+  fieldOfStudy: string
 }
 
 export type Project = {

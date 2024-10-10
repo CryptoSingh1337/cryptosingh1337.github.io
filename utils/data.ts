@@ -14,7 +14,7 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://loadshare.net/",
     position: "Software Engineer (Backend Developer)",
     content: [
-      "Working on a financial microservice.",
+      "Working on a financial service.",
       "Developed transaction tracking and configuration-based point system for incentive riders, reduced cost per batch.",
       "Designed ticket management microservice, integrated with grievance system, reduced issue resolution speed.",
       "Created POC for grievance system using state machine architecture and created new flows for auto-ticket resolution."
@@ -74,15 +74,13 @@ export const educations: Education[] = [
     duration: '2019 - 2023',
     institute: 'Amity University, Noida',
     degree: 'B. Tech',
-    fieldOfStudy: 'Computer Science and Engineering',
-    grade: 'CGPA - 8.41 / 10, Major GPA - 9 / 10'
+    fieldOfStudy: 'Computer Science and Engineering'
   },
   {
     duration: '2017 - 2019',
     institute: 'Bal Bhavan Public Sr. Sec School',
     degree: 'Intermediate',
-    fieldOfStudy: 'Science with CS',
-    grade: 'Percentage - 75.6 %'
+    fieldOfStudy: 'Science with CS'
   }
 ]
 
