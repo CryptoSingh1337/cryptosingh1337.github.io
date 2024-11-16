@@ -2,7 +2,7 @@
   <section class="xl:flex mt-0 mx-8 mb-8">
     <picture>
       <img class="float-left w-[7.5rem] h-[7.5rem] mb-2 mr-4 xl:float-none md:min-w-[16rem] md:h-64 md:mb-4 md:mr-8"
-        src="/profile/img.jpg" alt="profile-img" />
+        src="/favicon.png" alt="profile-img" />
       <div class="text-black hidden xl:block">
         <h3 class="mb-4 font-bold text-base text-black dark:text-white duration-700">Résumé</h3>
         <a class="no-underline" :href="resume" target="_blank" download>
