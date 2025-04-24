@@ -14,10 +14,8 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://loadshare.net/",
     position: "Software Engineer (Backend Developer)",
     content: [
-      "Working on a financial service.",
-      "Developed transaction tracking and configuration-based point system for incentive riders, reduced cost per batch.",
-      "Designed ticket management microservice, integrated with grievance system, reduced issue resolution speed.",
-      "Created POC for grievance system using state machine architecture and created new flows for auto-ticket resolution."
+      "Owner of a financial service, improved its architecture.",
+      "Created a grievance system using state-machine architecture."
     ]
   },
   {
@@ -26,9 +24,8 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://amadeus.com/en",
     position: "Software Engineer Intern",
     content: [
-      "Worked on API Extension project.",
       "Integrated OpenAPI specification in API code generation flow.",
-      "Wrote a pipeline to deploy the API on the Azure Function App using GitHub Actions, Terraform, and Terragrunt."
+      "Wrote a pipeline to deploy the API on the Azure Function App using GitHub Actions, Terraform."
     ]
   },
   {
@@ -37,11 +34,7 @@ export const workExperience: Experience[] = [
     organizationUrl: "https://loadshare.net",
     position: "Software Engineer Intern",
     content: [
-      "Worked under the Hyperlocal logistics operations pod.",
-      "Built a COD microservice, boosting orders by 30%.",
-      "Created an API for zone configurations, increasing operational efficiency by 10%.",
-      "Reduced Ops team manual work with geo-spatial queries.",
-      "Upgraded Spring Boot from version 1 to 2, migrated deployment from WAR to JAR."
+      "Developed a Cash on Delivery (COD) microservice, enabling the system to accept COD orders."
     ]
   },
   {
@@ -51,9 +44,7 @@ export const workExperience: Experience[] = [
     position: "Contributor",
     content: [
       "Updated existing unit tests to use separate input file.",
-      "Updated existing Javadocs and added code examples.",
-      "Learned about CI/CD, Apache Maven, Unit testing.",
-      "Merged over 35+ pull requests."
+      "Updated existing Javadocs and added code examples."
     ]
   },
   {
@@ -64,7 +55,6 @@ export const workExperience: Experience[] = [
     content: [
       "Created Technology and Gaming related videos.",
       "Live streamed various games.",
-      "Crossed 100k+ views."
     ]
   }
 ]
