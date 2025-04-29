@@ -13,49 +13,35 @@ export const workExperience: Experience[] = [
     organization: "LoadShare Networks",
     organizationUrl: "https://loadshare.net/",
     position: "Software Engineer (Backend Developer)",
-    content: [
-      "Owner of a financial service, improved its architecture.",
-      "Created a grievance system using state-machine architecture."
-    ]
+    content: []
   },
   {
     date: "Feb 2023 - June 2023",
     organization: "Amadeus Labs",
     organizationUrl: "https://amadeus.com/en",
     position: "Software Engineer Intern",
-    content: [
-      "Integrated OpenAPI specification in API code generation flow.",
-      "Wrote a pipeline to deploy the API on the Azure Function App using GitHub Actions, Terraform."
-    ]
+    content: []
   },
   {
     date: "June 2022 - Sep 2022",
     organization: "LoadShare Networks",
     organizationUrl: "https://loadshare.net",
     position: "Software Engineer Intern",
-    content: [
-      "Developed a Cash on Delivery (COD) microservice, enabling the system to accept COD orders."
-    ]
+    content: []
   },
   {
     date: "Mar 2021 - May 2021",
     organization: "Checkstyle",
     organizationUrl: "https://github.com/checkstyle/checkstyle",
     position: "Contributor",
-    content: [
-      "Updated existing unit tests to use separate input file.",
-      "Updated existing Javadocs and added code examples."
-    ]
+    content: []
   },
   {
     date: "July 2016 - June 2019",
     organization: "YouTube",
     organizationUrl: "https://www.youtube.com/c/CryptoSingh/",
     position: "Content Creator",
-    content: [
-      "Created Technology and Gaming related videos.",
-      "Live streamed various games.",
-    ]
+    content: []
   }
 ]
 

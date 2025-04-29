@@ -62,11 +62,11 @@ const classRight = [
 }
 
 .work-experience-block--left {
-  min-height: 6rem;
+  min-height: 3rem;
 }
 
 .work-experience-block--right:not(:last-child) {
-  min-height: 6rem;
+  min-height: 3rem;
 }
 
 .work-experience-period {
@@ -103,7 +103,7 @@ const classRight = [
 
   .work-experience-block--right {
     text-align: left;
-    margin-top: 10rem;
+    margin-top: 6rem;
     margin-bottom: 0;
   }
 
