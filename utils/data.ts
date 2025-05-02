@@ -12,7 +12,7 @@ export const workExperience: Experience[] = [
     date: "July 2023 - Present",
     organization: "LoadShare Networks",
     organizationUrl: "https://loadshare.net/",
-    position: "Software Engineer (Backend Developer)",
+    position: "Software Development Engineer - I",
     content: []
   },
   {
