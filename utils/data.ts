@@ -9,7 +9,14 @@ export const hero = [
 
 export const workExperience: Experience[] = [
   {
-    date: "July 2023 - Present",
+    date: "May 2025 - Present",
+    organization: "LoadShare Networks",
+    organizationUrl: "https://loadshare.net/",
+    position: "Software Development Engineer - II",
+    content: []
+  },
+  {
+    date: "July 2023 - May 2025",
     organization: "LoadShare Networks",
     organizationUrl: "https://loadshare.net/",
     position: "Software Development Engineer - I",
