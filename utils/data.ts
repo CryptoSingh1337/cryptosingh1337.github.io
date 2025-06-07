@@ -3,8 +3,7 @@ import { Education, Certification, Experience, Publication } from "./types"
 export const hero = [
   "My passion lies in crafting robust and scalable backend systems that power today's digital landscape.",
   "My journey as a developer has been marked by a relentless pursuit of excellence, especially in the realm of developing applications and system design. I am dedicated to honing my skills continually, striving for mastery.",
-  "In my current work, I proficiently wield a stack of technologies that include:",
-  "However, I believe in the importance of forward momentum. Rather than resting on my past accomplishments, I am committed to delving deeper into my chosen path."
+  "The main stack of technologies I use:",
 ]
 
 export const workExperience: Experience[] = [
