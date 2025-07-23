@@ -25,14 +25,14 @@ export const workExperience: Experience[] = [
     date: "Feb 2023 - June 2023",
     organization: "Amadeus Labs",
     organizationUrl: "https://amadeus.com/en",
-    position: "Software Development Engineer Intern",
+    position: "Software Engineer Intern",
     content: []
   },
   {
     date: "June 2022 - Sep 2022",
     organization: "LoadShare Networks",
     organizationUrl: "https://loadshare.net",
-    position: "Software Development Engineer Intern",
+    position: "Software Engineer Intern",
     content: []
   },
   {
@@ -55,8 +55,8 @@ export const educations: Education[] = [
   {
     duration: '2019 - 2023',
     institute: 'Amity University, Noida',
-    degree: 'B. Tech',
-    fieldOfStudy: 'Computer Science and Engineering'
+    degree: 'Bachelor of Technology',
+    fieldOfStudy: 'Computer Science & Engineering'
   },
   {
     duration: '2017 - 2019',
