@@ -1,26 +1,24 @@
 <template>
   <button
-    :aria-label="t('controls.themeToggle')"
-    :class="['toggle', 'toggle--type', colorMode.value === 'dark' ?
-      'toggle--off-theme toggle--off switches-theme' : 'toggle--on-theme toggle--on switches-theme']"
+    :aria-label="buttonLabel"
+    :title="buttonLabel"
+    :class="['toggle', 'toggle--type', isGerman ? 'toggle--on-language toggle--on' : 'toggle--off-language toggle--off']"
     type="button"
-    @click="handleClick"></button>
+    @click="toggleLocale"></button>
 </template>
 
 <script setup lang="ts">
-const colorMode = useColorMode()
-const { t } = useI18n()
+const { locale, setLocale, t } = useI18n()
 
-function handleClick() {
-  colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
+const isGerman = computed(() => locale.value === 'de')
+const buttonLabel = computed(() => isGerman.value ? t('controls.switchToEnglish') : t('controls.switchToGerman'))
+
+function toggleLocale() {
+  setLocale(isGerman.value ? 'en' : 'de')
 }
 </script>
 
 <style scoped>
-.switches-theme {
-  margin-right: 0;
-}
-
 .toggle {
   position: relative;
   display: block;
@@ -49,7 +47,7 @@ function handleClick() {
   border: 1px solid transparent;
   border-radius: 50%;
   transition: right ease var(--transition-time-base);
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
 .toggle--off::before {
@@ -67,21 +65,17 @@ function handleClick() {
   background-color: #fff;
 }
 
-.toggle--off-theme::before {
-  background-image: url("/icons/theme-dark.svg");
+.toggle--off-language::before {
+  background-image: url('/icons/flag-en.svg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 18px 18px;
 }
 
-.toggle--on-theme::before {
-  background-image: url("/icons/theme-light.svg");
+.toggle--on-language::before {
+  background-image: url('/icons/flag-de.svg');
   background-repeat: no-repeat;
   background-position: center;
-}
-
-@media screen and (min-width: 1280px) {
-  .switches-theme {
-    margin-right: var(--space-5);
-  }
+  background-size: 18px 18px;
 }
 </style>

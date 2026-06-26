@@ -7,13 +7,13 @@
     </span>
     <span class="grid grid-cols-[max-content]">
       <span class="inline-block text-primary-400 font-semibold">
-        Degree:
+        {{ t('education.degreeLabel') }}
       </span>
       {{ education.degree }}
     </span>
     <span class="grid grid-cols-[max-content]">
       <span class="inline-block text-primary-400 font-semibold">
-        Field Of Study:
+        {{ t('education.fieldOfStudyLabel') }}
       </span>
       {{ education.fieldOfStudy }}
     </span>
@@ -28,6 +28,9 @@
 
 <script lang="ts" setup>
 import { Education } from '@/utils/types'
+
+const { t } = useI18n()
+
 defineProps<{
   education: Education,
   showTable: Boolean

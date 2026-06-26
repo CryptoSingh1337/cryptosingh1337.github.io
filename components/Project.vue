@@ -6,11 +6,11 @@
       <a class="text-black hover:underline p-1" v-if="project.urls.length > 0" :key="idx"
         v-for="(url, idx) in project.urls" :href="url.url" target="_blank">
         <span :class="['px-2 rounded-lg duration-700', url.name === 'live' ? 'bg-success-200' : 'bg-success-100']">
-          {{ url.name }}
+          {{ t(`project.links.${url.name}`) }}
         </span>
       </a>
       <span v-if="project.freelance" class="text-black text-muted px-2 rounded-lg duration-700 bg-success-100">
-        freelance
+        {{ t('project.freelance') }}
       </span>
     </span>
     <span class="col-[1/3] sm:col-[3]">{{ project.briefInfo }}</span>
@@ -20,6 +20,8 @@
 
 <script setup lang="ts">
 import { Project } from '@/utils/types';
+
+const { t } = useI18n()
 
 const props = defineProps<{
   project: Project

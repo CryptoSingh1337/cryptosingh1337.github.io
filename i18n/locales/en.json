@@ -1,0 +1,64 @@
+{
+  "seo": {
+    "title": "Saransh",
+    "description": "Portfolio of Saransh Kumar"
+  },
+  "controls": {
+    "themeToggle": "Toggle theme",
+    "switchToEnglish": "Switch language to English",
+    "switchToGerman": "Switch language to Deutsch"
+  },
+  "about": {
+    "hello": "Hello, world!",
+    "introPrefix": "I am",
+    "introMiddle": "and a",
+    "role": "Backend",
+    "introSuffix": "Developer hailing from India!",
+    "interests": "My interests:",
+    "profileAlt": "Saransh Kumar profile picture"
+  },
+  "contact": {
+    "title": "Contacts"
+  },
+  "section": {
+    "skills": "Technologies and skills",
+    "education": "Education",
+    "experience": "Work Experience",
+    "projects": "Projects",
+    "courses": "Courses",
+    "publications": "Publications"
+  },
+  "education": {
+    "degreeLabel": "Degree:",
+    "fieldOfStudyLabel": "Field Of Study:",
+    "headers": {
+      "duration": "Duration",
+      "name": "Name",
+      "degree": "Degree",
+      "fieldOfStudy": "Field Of Study"
+    }
+  },
+  "project": {
+    "headers": {
+      "title": "Title",
+      "links": "Links",
+      "description": "Description",
+      "technologies": "Technologies"
+    },
+    "freelance": "freelance",
+    "links": {
+      "repo": "repo",
+      "live": "live",
+      "demo": "demo",
+      "frontend": "frontend",
+      "backend": "backend"
+    }
+  },
+  "certification": {
+    "headers": {
+      "date": "Date",
+      "organization": "Organization",
+      "name": "Name"
+    }
+  }
+}

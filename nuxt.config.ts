@@ -17,15 +17,6 @@ export default defineNuxtConfig({
     head: {
       charset: 'UTF-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Saransh',
-      meta: [
-        { property: 'description', name: 'description', content: 'Portfolio of Saransh Kumar' },
-        { property: 'og:title', name: 'og:title', content: 'Saransh' },
-        { property: 'og:url', name: 'og:url', content: 'https://saranshkumar.me/' },
-        { property: 'og:image', name: 'og:image', content: '/favicon.png' },
-        { property: 'og:description', name: 'og:description', content: 'Portfolio of Saransh Kumar' },
-        { property: 'og:type', name: 'og:type', content: 'website' }
-      ],
       link: [
         { rel: 'icon', href: '/favicon.png' }
       ]
@@ -37,7 +28,20 @@ export default defineNuxtConfig({
   ],
 
   devtools: { enabled: true },
-  modules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/robots'],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/robots'],
+
+  i18n: {
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: false,
+    lazy: true,
+    langDir: 'locales',
+    locales: [
+      { code: 'en', language: 'en-GB', file: 'en.json', name: 'English' },
+      { code: 'de', language: 'de-DE', file: 'de.json', name: 'Deutsch' }
+    ],
+    vueI18n: './i18n.config.ts'
+  },
 
   colorMode: {
     preference: 'dark',

@@ -1,72 +1,16 @@
 import { Education, Certification, Experience, Publication } from "./types"
 
-export const hero = [
-  "My passion lies in crafting robust and scalable backend systems that power today's digital landscape.",
-  "My journey as a developer has been marked by a relentless pursuit of excellence, especially in the realm of developing applications and system design. I am dedicated to honing my skills continually, striving for mastery.",
-  "The main stack of technologies I use:",
-]
+export type SupportedLocale = 'en' | 'de'
 
-export const workExperience: Experience[] = [
-  {
-    date: "May 2025 - Present",
-    organization: "LoadShare Networks",
-    organizationUrl: "https://loadshare.net/",
-    position: "Software Development Engineer - II",
-    content: []
-  },
-  {
-    date: "July 2023 - May 2025",
-    organization: "LoadShare Networks",
-    organizationUrl: "https://loadshare.net/",
-    position: "Software Development Engineer - I",
-    content: []
-  },
-  {
-    date: "Feb 2023 - June 2023",
-    organization: "Amadeus Labs",
-    organizationUrl: "https://amadeus.com/en",
-    position: "Software Engineer Intern",
-    content: []
-  },
-  {
-    date: "June 2022 - Sep 2022",
-    organization: "LoadShare Networks",
-    organizationUrl: "https://loadshare.net",
-    position: "Software Engineer Intern",
-    content: []
-  },
-  {
-    date: "Mar 2021 - May 2021",
-    organization: "Checkstyle",
-    organizationUrl: "https://github.com/checkstyle/checkstyle",
-    position: "Contributor",
-    content: []
-  },
-  {
-    date: "July 2016 - June 2019",
-    organization: "YouTube",
-    organizationUrl: "https://www.youtube.com/c/CryptoSingh/",
-    position: "Content Creator",
-    content: []
-  }
-]
+export type PortfolioContent = {
+  hero: string[]
+  workExperience: Experience[]
+  educations: Education[]
+  certifications: Certification[]
+  publications: Publication[]
+}
 
-export const educations: Education[] = [
-  {
-    duration: '2019 - 2023',
-    institute: 'Amity University, Noida',
-    degree: 'Bachelor of Technology',
-    fieldOfStudy: 'Computer Science & Engineering'
-  },
-  {
-    duration: '2017 - 2019',
-    institute: 'Bal Bhavan Public Sr. Sec School',
-    degree: 'Intermediate',
-    fieldOfStudy: 'Science with CS'
-  }
-]
-
-export const certifications: Certification[] = [
+const certifications: Certification[] = [
   {
     title: 'Spring Framework 5: Beginner to Guru',
     url: 'https://drive.google.com/file/d/1r48p_lY3g5_u6c-UsmNE0kNHo6y2WHko/view?usp=sharing',
@@ -111,7 +55,7 @@ export const certifications: Certification[] = [
   }
 ]
 
-export const publications: Publication[] = [
+const publications: Publication[] = [
   {
     citation: 'S. Kumar, S. Dubey, M. Khandelwal and G. Aggarwal, "Design of cloud based video sharing platform using Machine Learning," 2023 13th International Conference on Cloud Computing, Data Science & Engineering (Confluence), Noida, India, 2023, pp. 80-85, doi: 10.1109/Confluence56041.2023.10048833.',
     url: 'https://ieeexplore.ieee.org/document/10048833'
@@ -121,3 +65,140 @@ export const publications: Publication[] = [
     url: 'https://ieeexplore.ieee.org/document/10397835'
   }
 ]
+
+export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
+  en: {
+    hero: [
+      "My passion lies in crafting robust and scalable backend systems that power today's digital landscape.",
+      'My journey as a developer has been marked by a relentless pursuit of excellence, especially in the realm of developing applications and system design. I am dedicated to honing my skills continually, striving for mastery.',
+      'The main stack of technologies I use:'
+    ],
+    workExperience: [
+      {
+        date: 'May 2025 - Present',
+        organization: 'LoadShare Networks',
+        organizationUrl: 'https://loadshare.net/',
+        position: 'Software Development Engineer - II',
+        content: []
+      },
+      {
+        date: 'July 2023 - May 2025',
+        organization: 'LoadShare Networks',
+        organizationUrl: 'https://loadshare.net/',
+        position: 'Software Development Engineer - I',
+        content: []
+      },
+      {
+        date: 'Feb 2023 - June 2023',
+        organization: 'Amadeus Labs',
+        organizationUrl: 'https://amadeus.com/en',
+        position: 'Software Engineer Intern',
+        content: []
+      },
+      {
+        date: 'June 2022 - Sep 2022',
+        organization: 'LoadShare Networks',
+        organizationUrl: 'https://loadshare.net',
+        position: 'Software Engineer Intern',
+        content: []
+      },
+      {
+        date: 'Mar 2021 - May 2021',
+        organization: 'Checkstyle',
+        organizationUrl: 'https://github.com/checkstyle/checkstyle',
+        position: 'Contributor',
+        content: []
+      },
+      {
+        date: 'July 2016 - June 2019',
+        organization: 'YouTube',
+        organizationUrl: 'https://www.youtube.com/c/CryptoSingh/',
+        position: 'Content Creator',
+        content: []
+      }
+    ],
+    educations: [
+      {
+        duration: '2019 - 2023',
+        institute: 'Amity University, Noida',
+        degree: 'Bachelor of Technology',
+        fieldOfStudy: 'Computer Science & Engineering'
+      },
+      {
+        duration: '2017 - 2019',
+        institute: 'Bal Bhavan Public Sr. Sec School',
+        degree: 'Intermediate',
+        fieldOfStudy: 'Science with CS'
+      }
+    ],
+    certifications,
+    publications
+  },
+  de: {
+    hero: [
+      'Meine Leidenschaft liegt darin, robuste und skalierbare Backend-Systeme zu entwickeln, die die heutige digitale Welt antreiben.',
+      'Mein Weg als Entwickler ist von einem konsequenten Streben nach Exzellenz gepraegt, besonders bei der Entwicklung von Anwendungen und im Systemdesign. Ich arbeite kontinuierlich daran, meine Faehigkeiten weiterzuentwickeln und echte Meisterschaft anzustreben.',
+      'Die wichtigsten Technologien, die ich verwende:'
+    ],
+    workExperience: [
+      {
+        date: 'Mai 2025 - Heute',
+        organization: 'LoadShare Networks',
+        organizationUrl: 'https://loadshare.net/',
+        position: 'Softwareentwickler - II',
+        content: []
+      },
+      {
+        date: 'Juli 2023 - Mai 2025',
+        organization: 'LoadShare Networks',
+        organizationUrl: 'https://loadshare.net/',
+        position: 'Softwareentwickler - I',
+        content: []
+      },
+      {
+        date: 'Feb 2023 - Juni 2023',
+        organization: 'Amadeus Labs',
+        organizationUrl: 'https://amadeus.com/en',
+        position: 'Praktikant als Softwareentwickler',
+        content: []
+      },
+      {
+        date: 'Juni 2022 - Sep 2022',
+        organization: 'LoadShare Networks',
+        organizationUrl: 'https://loadshare.net',
+        position: 'Praktikant als Softwareentwickler',
+        content: []
+      },
+      {
+        date: 'Maerz 2021 - Mai 2021',
+        organization: 'Checkstyle',
+        organizationUrl: 'https://github.com/checkstyle/checkstyle',
+        position: 'Mitwirkender',
+        content: []
+      },
+      {
+        date: 'Juli 2016 - Juni 2019',
+        organization: 'YouTube',
+        organizationUrl: 'https://www.youtube.com/c/CryptoSingh/',
+        position: 'Content Creator',
+        content: []
+      }
+    ],
+    educations: [
+      {
+        duration: '2019 - 2023',
+        institute: 'Amity University, Noida',
+        degree: 'Bachelor of Technology',
+        fieldOfStudy: 'Informatik und Ingenieurwesen'
+      },
+      {
+        duration: '2017 - 2019',
+        institute: 'Bal Bhavan Public Sr. Sec School',
+        degree: 'Oberstufe',
+        fieldOfStudy: 'Naturwissenschaften mit Informatik'
+      }
+    ],
+    certifications,
+    publications
+  }
+}

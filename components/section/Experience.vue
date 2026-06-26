@@ -1,15 +1,16 @@
 <template>
   <section class="m-8 mt-0 xl:ml-0">
-    <h3 class="mb-4 font-bold text-lg text-black dark:text-white duration-700">Work Experience</h3>
+    <h3 class="mb-4 font-bold text-lg text-black dark:text-white duration-700">{{ t('section.experience') }}</h3>
     <div class="work-experience--branches">
-      <Experience :key="experience.organization" v-for="(experience, idx) in workExperience" :experience="experience"
+      <Experience :key="`${experience.organization}-${experience.date}`" v-for="(experience, idx) in content.workExperience" :experience="experience"
         :is-left="(idx & 1) === 0" />
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import { workExperience } from "@/utils/data"
+const { t } = useI18n()
+const content = usePortfolioContent()
 </script>
 
 <style scoped>
