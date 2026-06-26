@@ -46,6 +46,9 @@
       "technologies": "Technologies"
     },
     "freelance": "freelance",
+    "viewDetails": "View details",
+    "back": "Back",
+    "notFound": "Project not found",
     "links": {
       "repo": "repo",
       "live": "live",

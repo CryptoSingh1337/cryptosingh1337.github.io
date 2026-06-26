@@ -1,134 +1,167 @@
 <template>
-  <div :class="['work-experience-block', isLeft ? classLeft[0] : classRight[0]]">
-    <span :class="['work-experience-period', isLeft ? classLeft[1] : classRight[1]]">{{ experience.date }}</span>
-    <div :class="['work-experience-info', isLeft ? classLeft[2] : classRight[2]]">
-      <h3>
-        <a class="work-experience-link font-bold text-base hover:underline" :href="experience.organizationUrl"
-          target="_blank">
-          {{ experience.organization }}
-          <svg class="inline" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="10" height="10"
-            viewBox="0 0 24 24" style="fill: var(--dark)">
-            <path
-              d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z" />
-          </svg>
-        </a>
-      </h3>
-      <span class="work-experience-position">{{ experience.position }}</span>
-      <div class="work-experience-content">
-        <span :key="i" v-for="(c, i) in experience.content">{{ c }}</span>
-      </div>
+  <div class="exp">
+    <div class="exp-date">{{ company.span }}</div>
+    <div class="exp-rail" aria-hidden="true">
+      <span class="exp-dot"></span>
+    </div>
+    <div class="exp-body">
+      <a class="exp-org hover:underline" :href="company.organizationUrl" target="_blank" rel="noopener">
+        {{ company.organization }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+          <path
+            d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z" />
+        </svg>
+      </a>
+
+      <div v-if="!company.multi" class="exp-single">{{ company.roles[0].position }}</div>
+
+      <ol v-else class="exp-roles">
+        <li v-for="(role, i) in company.roles" :key="i" class="exp-role">
+          <span class="exp-subdot" aria-hidden="true"></span>
+          <div class="exp-pos">{{ role.position }}</div>
+          <div class="exp-rdate">{{ role.date }}</div>
+        </li>
+      </ol>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { Experience } from '@/utils/types';
+import { Experience } from '@/utils/types'
 
 defineProps<{
-  experience: Experience,
-  isLeft: boolean
+  company: Experience
 }>()
-
-const classLeft = [
-  "work-experience-block--left",
-  "work-experience-period--left",
-  "work-experience-info--left",
-]
-const classRight = [
-  "work-experience-block--right",
-  "work-experience-period--right",
-  "work-experience-info--right",
-]
 </script>
 
 <style scoped>
-.work-experience-block--left,
-.work-experience-block--right {
-  margin-bottom: var(--space-4);
+.exp {
+  display: flex;
+  align-items: stretch;
+}
+
+.exp-date {
+  flex: none;
+  width: 9.5rem;
   text-align: right;
-}
-
-.work-experience-block--left:last-child {
-  margin-bottom: 0;
-}
-
-.work-experience-block--right:last-child {
-  margin-bottom: 0;
-}
-
-.work-experience-period--left,
-.work-experience-period--right {
-  padding-right: var(--space-2);
-}
-
-.work-experience-block--left {
-  min-height: 3rem;
-}
-
-.work-experience-block--right:not(:last-child) {
-  min-height: 3rem;
-}
-
-.work-experience-period {
+  padding-right: var(--space-3);
+  padding-top: 1px;
   color: var(--primary-400);
   font-weight: 600;
-  border-bottom: 4px solid var(--primary-300);
+  font-size: 0.78rem;
+  line-height: 1.35;
+  white-space: nowrap;
 }
 
-.work-experience-info {
-  display: flex;
-  flex-direction: column;
-  margin-top: var(--space-3);
+.exp-rail {
+  flex: none;
+  width: 1.4rem;
+  position: relative;
 }
 
-.work-experience-info--left,
-.work-experience-info--right {
-  padding-right: var(--space-2);
+.exp-rail::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  transform: translateX(-50%);
+  background: var(--primary-300);
 }
 
-.work-experience-position {
-  color: var(--gray-500);
-  margin-bottom: var(--space-3);
+.exp-dot {
+  position: absolute;
+  left: 50%;
+  top: 3px;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary-500);
+  box-shadow: 0 0 0 4px var(--background);
 }
 
-.work-experience-link {
+.exp-body {
+  flex: 1;
+  min-width: 0;
+  padding-left: var(--space-3);
+  padding-bottom: var(--space-5);
+}
+
+.exp-org {
+  font-weight: 700;
+  font-size: 1rem;
   transition: var(--transition-time-base);
 }
 
-.work-experience-content span {
-  display: block;
+.exp-org svg {
+  display: inline;
+  fill: var(--dark);
 }
 
-@media screen and (min-width: 640px) {
+.exp-single {
+  color: var(--gray-500);
+  margin-top: var(--space-1);
+}
 
-  .work-experience-block--right {
-    text-align: left;
-    margin-top: 6rem;
-    margin-bottom: 0;
-  }
+.exp-roles {
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
 
-  .work-experience-period--left {
-    padding-right: var(--space-2);
-  }
+.exp-role {
+  position: relative;
+  padding-left: var(--space-4);
+}
 
-  .work-experience-period--right {
-    padding-left: var(--space-4);
-    padding-right: 0;
-  }
+.exp-subdot {
+  position: absolute;
+  left: 0;
+  top: 0.42rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--background);
+  border: 2px solid var(--primary-400);
+}
 
-  .work-experience-info {
-    display: flex;
+.exp-pos {
+  font-weight: 600;
+}
+
+.exp-rdate {
+  color: var(--gray-500);
+  font-size: 0.8rem;
+  margin-top: 0.05rem;
+}
+
+@media screen and (max-width: 680px) {
+  .exp {
     flex-direction: column;
-    margin-top: var(--space-3);
-  }
-
-  .work-experience-info--left {
-    padding-right: var(--space-2);
-  }
-
-  .work-experience-info--right {
+    border-left: 2px solid var(--primary-300);
     padding-left: var(--space-4);
+    margin-left: 5px;
+  }
+
+  .exp-date {
+    width: auto;
+    text-align: left;
     padding-right: 0;
+    padding-top: 0;
+    padding-bottom: var(--space-1);
+  }
+
+  .exp-rail {
+    display: none;
+  }
+
+  .exp-body {
+    padding-left: 0;
   }
 }
 </style>

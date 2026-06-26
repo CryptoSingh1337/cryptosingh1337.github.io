@@ -17,6 +17,11 @@ export type Education = {
   fieldOfStudy: string
 }
 
+export type ProjectTechnology = {
+  name: string,
+  iconName?: string
+}
+
 export type Project = {
   id: string,
   title: string,
@@ -24,17 +29,22 @@ export type Project = {
   freelance: boolean,
   githubReadme: string,
   urls: Array<Link>,
-  technologies: Array<string>
+  technologies: Array<ProjectTechnology>
   createdAt: string,
   order: number
 }
 
+export type ExperienceRole = {
+  position: string,
+  date: string
+}
+
 export type Experience = {
-  date: string,
   organization: string,
   organizationUrl: string,
-  position: string,
-  content: Array<string>
+  span: string,
+  multi: boolean,
+  roles: Array<ExperienceRole>
 }
 
 export type Certification = {

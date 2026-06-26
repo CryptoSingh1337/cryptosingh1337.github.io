@@ -1,25 +1,25 @@
 <template>
-  <li class="py-3 px-0 text-xs grid gap-4 grid-cols-[repeat(2,_1fr)] sm:grid-cols-[1fr_1fr_3fr_2fr] sm:items-center">
-    <span class="font-medium text-sm">{{ project.title }}</span>
-    <span
-      class="flex sm:flex-col flex-wrap items-end self-end justify-end justify-self-end sm:items-center sm:self-center sm:justify-center sm:justify-self-center">
-      <a class="text-black hover:underline p-1" v-if="project.urls.length > 0" :key="idx"
-        v-for="(url, idx) in project.urls" :href="url.url" target="_blank">
-        <span :class="['px-2 rounded-lg duration-700', url.name === 'live' ? 'bg-success-200' : 'bg-success-100']">
-          {{ t(`project.links.${url.name}`) }}
-        </span>
-      </a>
-      <span v-if="project.freelance" class="text-black text-muted px-2 rounded-lg duration-700 bg-success-100">
-        {{ t('project.freelance') }}
-      </span>
-    </span>
-    <span class="col-[1/3] sm:col-[3]">{{ project.briefInfo }}</span>
-    <span class="col-[1/3] sm:col-[4] sm:text-right">{{ technologiesUsed }}</span>
-  </li>
+  <NuxtLink class="proj" :to="`/project/${project.id}`">
+    <div class="proj-head">
+      <span class="proj-title">{{ project.title }}</span>
+      <span v-if="year" class="proj-year">{{ year }}</span>
+    </div>
+    <p class="proj-brief">{{ project.briefInfo }}</p>
+    <div class="proj-foot">
+      <ul class="proj-tech">
+        <li v-for="tech in project.technologies" :key="tech.name" class="chip">
+          <img v-if="icon(tech.iconName ?? tech.name)" :src="icon(tech.iconName ?? tech.name)" :alt="tech.name" loading="lazy" />
+          {{ tech.name }}
+        </li>
+      </ul>
+      <span class="proj-more">{{ t('project.viewDetails') }} &rarr;</span>
+    </div>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">
-import { Project } from '@/utils/types';
+import { Project } from '@/utils/types'
+import { techIcon } from '@/utils/techIcons'
 
 const { t } = useI18n()
 
@@ -27,12 +27,96 @@ const props = defineProps<{
   project: Project
 }>()
 
-let technologiesUsed = ''
-for (let i = 0; i < props.project.technologies.length; i++) {
-  if (i === props.project.technologies.length - 1) {
-    technologiesUsed += props.project.technologies[i]
-  } else {
-    technologiesUsed += props.project.technologies[i] + ', '
-  }
-}
+const icon = (name: string) => techIcon(name)
+
+const year = computed(() => {
+  if (!props.project.createdAt) return ''
+  const d = new Date(props.project.createdAt)
+  return isNaN(d.getTime()) ? '' : String(d.getFullYear())
+})
 </script>
+
+<style scoped>
+.proj {
+  display: block;
+  padding: var(--space-4) var(--space-3);
+  border-bottom: 1px solid var(--primary-200);
+  color: inherit;
+  text-decoration: none;
+  transition: background var(--transition-time-base), box-shadow var(--transition-time-base);
+}
+
+.proj:hover {
+  background: rgba(127, 127, 127, 0.08);
+  box-shadow: inset 3px 0 0 var(--primary-400);
+}
+
+.proj-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.proj-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.proj-year {
+  color: var(--primary-400);
+  font-weight: 600;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.proj-brief {
+  margin: var(--space-1) 0 0;
+  color: var(--gray-500);
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  max-width: 48rem;
+}
+
+.proj-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-top: var(--space-3);
+}
+
+.proj-tech {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(127, 127, 127, 0.14);
+  border-radius: 0.45rem;
+  padding: 0.25rem 0.6rem 0.25rem 0.42rem;
+  font-size: 0.78rem;
+}
+
+.chip img {
+  width: 1.1rem;
+  height: 1.1rem;
+  object-fit: contain;
+}
+
+.proj-more {
+  color: var(--primary-400);
+  font-weight: 600;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+</style>

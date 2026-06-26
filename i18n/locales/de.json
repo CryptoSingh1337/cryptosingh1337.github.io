@@ -46,6 +46,9 @@
       "technologies": "Technologien"
     },
     "freelance": "freiberuflich",
+    "viewDetails": "Details ansehen",
+    "back": "Zurueck",
+    "notFound": "Projekt nicht gefunden",
     "links": {
       "repo": "repo",
       "live": "live",

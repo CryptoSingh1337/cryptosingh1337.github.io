@@ -9,7 +9,7 @@
     <div class="xl:ml-8">
       <SectionEducation class="hidden md:block xl:hidden" />
       <SectionExperience />
-      <SectionProject :projects="projects" />
+      <SectionProject />
       <SectionCertification class="md:block xl:hidden" />
       <SectionPublication />
     </div>
@@ -17,10 +17,9 @@
 </template>
 
 <script setup lang="ts">
-import { Project, Skill } from '@/utils/types'
+import { Skill } from '@/utils/types'
 
 defineProps<{
-  technologies: Array<Skill>,
-  projects: Array<Project>
+  technologies: Array<Skill>
 }>()
 </script>
