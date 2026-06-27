@@ -1,11 +1,11 @@
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <NuxtPage/>
   </NuxtLayout>
 </template>
 
-<script setup lang="ts">
-const { locale, t } = useI18n()
+<script lang="ts" setup>
+const {locale} = useI18n()
 
 useHead(() => ({
   htmlAttrs: {

@@ -1,6 +1,6 @@
 <template>
   <section class="detail">
-    <NuxtLink to="/" class="back hover:underline">&larr; {{ t('project.back') }}</NuxtLink>
+    <NuxtLink class="back hover:underline" to="/">&larr; {{ t('project.back') }}</NuxtLink>
 
     <template v-if="project">
       <header class="hero">
@@ -15,11 +15,11 @@
           <a
             v-for="link in project.urls"
             :key="link.name"
+            :class="{ 'is-primary': link.name === 'live' || link.name === 'demo' }"
             :href="link.url"
-            target="_blank"
-            rel="noopener"
             class="link-pill"
-            :class="{ 'is-primary': link.name === 'live' || link.name === 'demo' }">
+            rel="noopener"
+            target="_blank">
             {{ t(`project.links.${link.name}`) }} &#8599;
           </a>
         </div>
@@ -31,7 +31,8 @@
             <h2 class="label">{{ t('project.headers.technologies') }}</h2>
             <ul class="stack">
               <li v-for="tech in project.technologies" :key="tech.name" class="chip">
-                <img v-if="techIcon(tech.iconName ?? tech.name)" :src="techIcon(tech.iconName ?? tech.name)" :alt="tech.name" loading="lazy" />
+                <img v-if="techIcon(tech.iconName ?? tech.name)" :alt="tech.name"
+                     :src="techIcon(tech.iconName ?? tech.name)" loading="lazy"/>
                 {{ tech.name }}
               </li>
             </ul>
@@ -40,7 +41,7 @@
 
         <main class="main">
           <h2 class="label">{{ t('project.overview') }}</h2>
-          <MarkdownView v-if="project.githubReadme" :key="project.id" :src="project.githubReadme" />
+          <MarkdownView v-if="project.githubReadme" :key="project.id" :src="project.githubReadme"/>
           <p v-else class="readme-empty">{{ t('project.noReadme') }}</p>
         </main>
       </div>
@@ -50,11 +51,11 @@
   </section>
 </template>
 
-<script setup lang="ts">
-import { techIcon } from '@/utils/techIcons'
-import { projectYear } from '@/utils/data'
+<script lang="ts" setup>
+import {techIcon} from '@/utils/techIcons'
+import {projectYear} from '@/utils/data'
 
-const { t } = useI18n()
+const {t} = useI18n()
 const route = useRoute()
 const content = usePortfolioContent()
 

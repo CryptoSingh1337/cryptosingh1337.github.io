@@ -10,16 +10,18 @@
           <span class="text-center">{{ t('education.headers.fieldOfStudy') }}</span>
         </li>
         <div class="divide-y divide-solid divide-primary-200">
-          <Education :key="idx" v-for="(education, idx) in content.educations" :education="education" :show-table="true" />
+          <Education v-for="(education, idx) in content.educations" :key="idx" :education="education"
+                     :show-table="true"/>
         </div>
       </div>
     </ul>
-    <Education class="md:hidden xl:block" :key="idx" v-for="(education, idx) in content.educations" :education="education"
-      :show-table="false" />
+    <Education v-for="(education, idx) in content.educations" :key="idx" :education="education"
+               :show-table="false"
+               class="md:hidden xl:block"/>
   </section>
 </template>
 
 <script lang="ts" setup>
-const { t } = useI18n()
+const {t} = useI18n()
 const content = usePortfolioContent()
 </script>

@@ -26,15 +26,15 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       title: 'Saransh',
       meta: [
-        { property: 'description', name: 'description', content: 'Portfolio of Saransh Kumar' },
-        { property: 'og:title', name: 'og:title', content: 'Saransh' },
-        { property: 'og:url', name: 'og:url', content: 'https://saransh.pro' },
-        { property: 'og:image', name: 'og:image', content: '/favicon.png' },
-        { property: 'og:description', name: 'og:description', content: 'Portfolio of Saransh Kumar' },
-        { property: 'og:type', name: 'og:type', content: 'website' }
+        {property: 'description', name: 'description', content: 'Portfolio of Saransh Kumar'},
+        {property: 'og:title', name: 'og:title', content: 'Saransh'},
+        {property: 'og:url', name: 'og:url', content: 'https://saransh.pro'},
+        {property: 'og:image', name: 'og:image', content: '/favicon.png'},
+        {property: 'og:description', name: 'og:description', content: 'Portfolio of Saransh Kumar'},
+        {property: 'og:type', name: 'og:type', content: 'website'}
       ],
       link: [
-        { rel: 'icon', href: '/favicon.png' }
+        {rel: 'icon', href: '/favicon.png'}
       ]
     }
   },
@@ -43,7 +43,7 @@ export default defineNuxtConfig({
     '@/assets/styles.css'
   ],
 
-  devtools: { enabled: true },
+  devtools: {enabled: true},
   modules: ['@nuxtjs/i18n', '@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/robots'],
 
   i18n: {
@@ -52,8 +52,8 @@ export default defineNuxtConfig({
     detectBrowserLanguage: false,
     langDir: 'locales',
     locales: [
-      { code: 'en', language: 'en-GB', file: 'en.json', name: 'English' },
-      { code: 'de', language: 'de-DE', file: 'de.json', name: 'Deutsch' }
+      {code: 'en', language: 'en-GB', file: 'en.json', name: 'English'},
+      {code: 'de', language: 'de-DE', file: 'de.json', name: 'Deutsch'}
     ],
     vueI18n: './i18n.config.ts'
   },

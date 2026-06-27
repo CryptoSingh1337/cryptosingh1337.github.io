@@ -1,15 +1,15 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 </script>
 <template>
   <div
     class="bg-default min-w-[320px] max-w-3xl xl:max-w-7xl my-8 mx-auto py-8 px-0 shadow-2xl dark:shadow-none text-black dark:text-white">
     <div class="content-info flex flex-col overflow-x-hidden overflow-y-scroll">
-      <slot />
+      <slot/>
     </div>
     <ClientOnly>
       <div class="switches">
-        <LanguageToggleButton />
-        <ThemeToggleButton />
+        <LanguageToggleButton/>
+        <ThemeToggleButton/>
       </div>
     </ClientOnly>
   </div>

@@ -7,9 +7,9 @@
     @click="handleClick"></button>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 const colorMode = useColorMode()
-const { t } = useI18n()
+const {t} = useI18n()
 
 function handleClick() {
   colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'

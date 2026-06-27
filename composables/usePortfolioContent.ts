@@ -1,7 +1,7 @@
-import { portfolioContent, SupportedLocale } from '@/utils/data'
+import {portfolioContent, SupportedLocale} from '@/utils/data'
 
 export function usePortfolioContent() {
-  const { locale } = useI18n()
+  const {locale} = useI18n()
 
   return computed(() => portfolioContent[locale.value as SupportedLocale] ?? portfolioContent.en)
 }

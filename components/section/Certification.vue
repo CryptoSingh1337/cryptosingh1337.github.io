@@ -9,17 +9,18 @@
           <span class="text-right">{{ t('certification.headers.name') }}</span>
         </li>
         <div class="divide-y divide-solid divide-primary-200">
-          <Certification :key="certification.title" v-for="certification in content.certifications" :certification="certification"
-            :show-table="true" />
+          <Certification v-for="certification in content.certifications" :key="certification.title"
+                         :certification="certification"
+                         :show-table="true"/>
         </div>
       </div>
     </ul>
-    <Certification class="hidden xl:block" :key="certification.title" v-for="certification in content.certifications"
-      :certification="certification" :show-table="false" />
+    <Certification v-for="certification in content.certifications" :key="certification.title" :certification="certification"
+                   :show-table="false" class="hidden xl:block"/>
   </section>
 </template>
 
-<script setup lang="ts">
-const { t } = useI18n()
+<script lang="ts" setup>
+const {t} = useI18n()
 const content = usePortfolioContent()
 </script>

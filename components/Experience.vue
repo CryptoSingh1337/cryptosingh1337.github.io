@@ -1,15 +1,15 @@
 <template>
   <div class="exp">
     <div class="exp-date">{{ company.span }}</div>
-    <div class="exp-rail" aria-hidden="true">
+    <div aria-hidden="true" class="exp-rail">
       <span class="exp-dot"></span>
     </div>
     <div class="exp-body">
-      <a class="exp-org hover:underline" :href="company.organizationUrl" target="_blank" rel="noopener">
+      <a :href="company.organizationUrl" class="exp-org hover:underline" rel="noopener" target="_blank">
         {{ company.organization }}
-        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24">
+        <svg height="10" viewBox="0 0 24 24" width="10" xmlns="http://www.w3.org/2000/svg">
           <path
-            d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z" />
+            d="M 19.980469 2.9902344 A 1.0001 1.0001 0 0 0 19.869141 3 L 15 3 A 1.0001 1.0001 0 1 0 15 5 L 17.585938 5 L 8.2929688 14.292969 A 1.0001 1.0001 0 1 0 9.7070312 15.707031 L 19 6.4140625 L 19 9 A 1.0001 1.0001 0 1 0 21 9 L 21 4.1269531 A 1.0001 1.0001 0 0 0 19.980469 2.9902344 z M 5 3 C 3.9069372 3 3 3.9069372 3 5 L 3 19 C 3 20.093063 3.9069372 21 5 21 L 19 21 C 20.093063 21 21 20.093063 21 19 L 21 13 A 1.0001 1.0001 0 1 0 19 13 L 19 19 L 5 19 L 5 5 L 11 5 A 1.0001 1.0001 0 1 0 11 3 L 5 3 z"/>
         </svg>
       </a>
 
@@ -17,7 +17,7 @@
 
       <ol v-else class="exp-roles">
         <li v-for="(role, i) in company.roles" :key="i" class="exp-role">
-          <span class="exp-subdot" aria-hidden="true"></span>
+          <span aria-hidden="true" class="exp-subdot"></span>
           <div class="exp-pos">{{ role.position }}</div>
           <div class="exp-rdate">{{ role.date }}</div>
         </li>
@@ -26,8 +26,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { Experience } from '@/utils/types'
+<script lang="ts" setup>
+import {Experience} from '@/utils/types'
 
 const props = defineProps<{
   company: Experience

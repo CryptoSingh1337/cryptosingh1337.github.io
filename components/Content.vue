@@ -1,23 +1,23 @@
 <template>
   <div class="block md:flex md:flex-col xl:flex-row">
     <div class="block md:grid md:gap-x-8 md:grid-cols-[16rem_auto] xl:block">
-      <Contact />
-      <SectionSkill :technologies="technologies" />
-      <SectionEducation class="md:hidden xl:block" />
-      <SectionCertification class="hidden md:hidden xl:block" />
+      <Contact/>
+      <SectionSkill :technologies="technologies"/>
+      <SectionEducation class="md:hidden xl:block"/>
+      <SectionCertification class="hidden md:hidden xl:block"/>
     </div>
     <div class="xl:ml-8">
-      <SectionEducation class="hidden md:block xl:hidden" />
-      <SectionExperience />
-      <SectionProject />
-      <SectionCertification class="md:block xl:hidden" />
-      <SectionPublication />
+      <SectionEducation class="hidden md:block xl:hidden"/>
+      <SectionExperience/>
+      <SectionProject/>
+      <SectionCertification class="md:block xl:hidden"/>
+      <SectionPublication/>
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-import { Skill } from '@/utils/types'
+<script lang="ts" setup>
+import {Skill} from '@/utils/types'
 
 defineProps<{
   technologies: Array<Skill>

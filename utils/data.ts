@@ -1,5 +1,5 @@
-import { Education, Certification, Experience, Project, ProjectTechnology, Publication, Skill } from "./types"
-import { techIcon } from './techIcons'
+import {Certification, Education, Experience, Project, ProjectTechnology, Publication, Skill} from "./types"
+import {techIcon} from './techIcons'
 
 export type SupportedLocale = 'en' | 'de'
 
@@ -12,9 +12,9 @@ export type PortfolioContent = {
   projects: Project[]
 }
 
-const tech = (name: string, iconName?: string): ProjectTechnology => iconName ? { name, iconName } : { name }
-const skill = (id: string, name: string, iconName = name): Skill => ({ id, name, url: techIcon(iconName) })
-const localSkill = (id: string, name: string, url: string): Skill => ({ id, name, url })
+const tech = (name: string, iconName?: string): ProjectTechnology => iconName ? {name, iconName} : {name}
+const skill = (id: string, name: string, iconName = name): Skill => ({id, name, url: techIcon(iconName)})
+const localSkill = (id: string, name: string, url: string): Skill => ({id, name, url})
 
 export const projectYear = (createdAt?: string): string => {
   if (!createdAt) return ''
@@ -124,8 +124,8 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: '',
     urls: [
-      { name: 'live', url: 'https://themis.saransh.pro/' },
-      { name: 'demo', url: 'https://youtu.be/jBWx6UouZow?utm_source=portfolio' }
+      {name: 'live', url: 'https://themis.saransh.pro/'},
+      {name: 'demo', url: 'https://youtu.be/jBWx6UouZow?utm_source=portfolio'}
     ],
     technologies: [tech('Java'), tech('Spring Boot'), tech('PostgreSQL'), tech('Nuxt.js'), tech('Tailwind CSS'), tech('AWS'), tech('Docker'), tech('Drools')],
     createdAt: '2025-11-01'
@@ -136,9 +136,9 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/serpent-clash/refs/heads/master/README.md',
     urls: [
-      { name: 'repo', url: 'https://github.com/CryptoSingh1337/serpent-clash' },
-      { name: 'live', url: 'https://serpent-clash.saransh.pro/' },
-      { name: 'demo', url: 'https://www.youtube.com/watch?v=GLIhDvpuB-0&utm_source=portfolio' }
+      {name: 'repo', url: 'https://github.com/CryptoSingh1337/serpent-clash'},
+      {name: 'live', url: 'https://serpent-clash.saransh.pro/'},
+      {name: 'demo', url: 'https://www.youtube.com/watch?v=GLIhDvpuB-0&utm_source=portfolio'}
     ],
     technologies: [tech('Golang'), tech('Vue.js'), tech('Pixi.js', 'Javascript'), tech('Websocket'), tech('Tailwind CSS')],
     createdAt: '2024-08-01'
@@ -158,8 +158,8 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/urlific/master/Readme.md',
     urls: [
-      { name: 'repo', url: 'https://github.com/CryptoSingh1337/urlific' },
-      { name: 'live', url: 'https://urlific.onrender.com/' }
+      {name: 'repo', url: 'https://github.com/CryptoSingh1337/urlific'},
+      {name: 'live', url: 'https://urlific.onrender.com/'}
     ],
     technologies: [tech('Java'), tech('Spring Boot'), tech('Spring Security', 'Spring'), tech('Thymeleaf'), tech('Tailwind CSS'), tech('MongoDB')],
     createdAt: '2023-06-01'
@@ -170,9 +170,9 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/vidflow-backend/master/Readme.md',
     urls: [
-      { name: 'demo', url: 'https://www.youtube.com/watch?v=WJZyM-X8wAo' },
-      { name: 'frontend', url: 'https://github.com/CryptoSingh1337/vidflow-client' },
-      { name: 'backend', url: 'https://github.com/CryptoSingh1337/vidflow-backend' }
+      {name: 'demo', url: 'https://www.youtube.com/watch?v=WJZyM-X8wAo'},
+      {name: 'frontend', url: 'https://github.com/CryptoSingh1337/vidflow-client'},
+      {name: 'backend', url: 'https://github.com/CryptoSingh1337/vidflow-backend'}
     ],
     technologies: [tech('Java'), tech('Spring Boot'), tech('Spring WebMvc', 'Spring'), tech('Spring Data MongoDB', 'Spring'), tech('Spring Security', 'Spring'), tech('Javascript'), tech('Vue'), tech('Nuxt'), tech('Vuetify'), tech('Microsoft Azure', 'Azure'), tech('AWS')],
     createdAt: '2021-10-01'
@@ -183,7 +183,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/GMoments/master/README.md',
     urls: [
-      { name: 'repo', url: 'https://github.com/CryptoSingh1337/GMoments' }
+      {name: 'repo', url: 'https://github.com/CryptoSingh1337/GMoments'}
     ],
     technologies: [tech('Python'), tech('D3DShot (Window Desktop Duplication API)'), tech('ffmpeg')],
     createdAt: '2022-01-09'
@@ -194,8 +194,8 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: '',
     urls: [
-      { name: 'repo', url: 'https://github.com/CryptoSingh1337/lexical-analyzer' },
-      { name: 'live', url: 'https://lexical-analyzer.onrender.com/' }
+      {name: 'repo', url: 'https://github.com/CryptoSingh1337/lexical-analyzer'},
+      {name: 'live', url: 'https://lexical-analyzer.onrender.com/'}
     ],
     technologies: [tech('Java'), tech('Spring Boot'), tech('Thymeleaf'), tech('Tailwind CSS')],
     createdAt: '2022-04-14'
@@ -206,8 +206,8 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/fellowship-backend/master/README.md',
     urls: [
-      { name: 'frontend', url: 'https://github.com/CryptoSingh1337/fellowship-frontend' },
-      { name: 'backend', url: 'https://github.com/CryptoSingh1337/fellowship-backend' }
+      {name: 'frontend', url: 'https://github.com/CryptoSingh1337/fellowship-frontend'},
+      {name: 'backend', url: 'https://github.com/CryptoSingh1337/fellowship-backend'}
     ],
     technologies: [tech('Java'), tech('Spring Boot'), tech('Spring Security', 'Spring'), tech('Spring Scheduler', 'Spring'), tech('Spring Data Mongo', 'Spring'), tech('Java Mail API', 'Java'), tech('MongoDB'), tech('Amazon SQS', 'AWS'), tech('Javascript'), tech('Vue'), tech('Nuxt 2', 'Nuxt.js'), tech('Vuetify')],
     createdAt: '2022-08-01'
@@ -218,8 +218,8 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/vue-quiz-app/master/README.md',
     urls: [
-      { name: 'repo', url: 'https://github.com/CryptoSingh1337/vue-quiz-app' },
-      { name: 'live', url: 'https://pensive-nightingale-13aa84.netlify.app/' }
+      {name: 'repo', url: 'https://github.com/CryptoSingh1337/vue-quiz-app'},
+      {name: 'live', url: 'https://pensive-nightingale-13aa84.netlify.app/'}
     ],
     technologies: [tech('Vue'), tech('Vuex', 'Vue.js'), tech('Javascript'), tech('WaveUI')],
     createdAt: '2021-10-06'
@@ -230,8 +230,8 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/spring-blog-api/master/Readme.md',
     urls: [
-      { name: 'frontend', url: 'https://github.com/Adibros/bloged' },
-      { name: 'backend', url: 'https://github.com/CryptoSingh1337/spring-blog-api' }
+      {name: 'frontend', url: 'https://github.com/Adibros/bloged'},
+      {name: 'backend', url: 'https://github.com/CryptoSingh1337/spring-blog-api'}
     ],
     technologies: [tech('Spring Boot'), tech('Spring Data Jpa', 'Spring'), tech('Spring Rest Docs', 'Spring'), tech('H2-DB'), tech('React'), tech('Redux'), tech('Router')],
     createdAt: '2021-07-27'
@@ -242,7 +242,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/spring-recipe-app/master/Readme.md',
     urls: [
-      { name: 'repo', url: 'https://github.com/CryptoSingh1337/spring-recipe-app' }
+      {name: 'repo', url: 'https://github.com/CryptoSingh1337/spring-recipe-app'}
     ],
     technologies: [tech('Spring Boot'), tech('Spring WebMvc', 'Spring'), tech('Spring Data JPA', 'Spring'), tech('H2-DB'), tech('Thymeleaf')],
     createdAt: '2021-06-13'
@@ -253,7 +253,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/crm-springmvc-hibernate/master/Readme.md',
     urls: [
-      { name: 'repo', url: 'https://github.com/CryptoSingh1337/crm-springmvc-hibernate' }
+      {name: 'repo', url: 'https://github.com/CryptoSingh1337/crm-springmvc-hibernate'}
     ],
     technologies: [tech('Spring'), tech('Spring WebMvc', 'Spring'), tech('Hibernate'), tech('MySQL'), tech('JSP', 'Java')],
     createdAt: '2021-06-03'
@@ -264,8 +264,8 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/minify-url/master/README.md',
     urls: [
-      { name: 'repo', url: 'https://github.com/CryptoSingh1337/minify-url' },
-      { name: 'live', url: 'https://cryptosingh1337.github.io/minify-url-frontend/' }
+      {name: 'repo', url: 'https://github.com/CryptoSingh1337/minify-url'},
+      {name: 'live', url: 'https://cryptosingh1337.github.io/minify-url-frontend/'}
     ],
     technologies: [tech('Spring Boot'), tech('Spring WebMvc', 'Spring'), tech('MongoDB'), tech('HTML'), tech('CSS'), tech('Javascript'), tech('Bootstrap')],
     createdAt: '2021-02-22'
@@ -276,8 +276,8 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/Notepad/master/Readme.md',
     urls: [
-      { name: 'repo', url: 'https://github.com/CryptoSingh1337/Notepad' },
-      { name: 'demo', url: 'https://github.com/CryptoSingh1337/Notepad/releases/tag/2.0' }
+      {name: 'repo', url: 'https://github.com/CryptoSingh1337/Notepad'},
+      {name: 'demo', url: 'https://github.com/CryptoSingh1337/Notepad/releases/tag/2.0'}
     ],
     technologies: [tech('Java'), tech('JavaFX', 'Java')],
     createdAt: '2020-08-28'
@@ -288,7 +288,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/todo-list/master/README.md',
     urls: [
-      { name: 'repo', url: 'https://github.com/CryptoSingh1337/todolist-maven' }
+      {name: 'repo', url: 'https://github.com/CryptoSingh1337/todolist-maven'}
     ],
     technologies: [tech('Java'), tech('JavaFX', 'Java'), tech('CSS')],
     createdAt: '2020-07-19'
@@ -299,7 +299,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/password-rack/master/README.md',
     urls: [
-      { name: 'repo', url: 'https://github.com/CryptoSingh1337/password-rack' }
+      {name: 'repo', url: 'https://github.com/CryptoSingh1337/password-rack'}
     ],
     technologies: [tech('Java'), tech('Java Swing', 'Java')],
     createdAt: '2020-04-20'
@@ -310,14 +310,14 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/wireless-robotic-hand/master/README.md',
     urls: [
-      { name: 'repo', url: 'https://github.com/CryptoSingh1337/wireless-robotic-hand' }
+      {name: 'repo', url: 'https://github.com/CryptoSingh1337/wireless-robotic-hand'}
     ],
     technologies: [tech('Arduino UNO R3', 'Arduino'), tech('nRF24L01')],
     createdAt: '2017-11-15'
   }
 ]
 
-const projects: Project[] = projectsData.map(project => ({ id: slugify(project.title), ...project }))
+const projects: Project[] = projectsData.map(project => ({id: slugify(project.title), ...project}))
 
 export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
   en: {
@@ -332,9 +332,9 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organizationUrl: 'https://loadshare.net/',
         span: 'Jun 2022 - Present',
         roles: [
-          { position: 'Software Development Engineer - II', date: 'May 2025 - Present' },
-          { position: 'Software Development Engineer - I', date: 'Jul 2023 - May 2025' },
-          { position: 'Software Engineer Intern', date: 'Jun 2022 - Sep 2022' }
+          {position: 'Software Development Engineer - II', date: 'May 2025 - Present'},
+          {position: 'Software Development Engineer - I', date: 'Jul 2023 - May 2025'},
+          {position: 'Software Engineer Intern', date: 'Jun 2022 - Sep 2022'}
         ]
       },
       {
@@ -342,7 +342,7 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organizationUrl: 'https://amadeus.com/en',
         span: 'Feb 2023 - Jun 2023',
         roles: [
-          { position: 'Software Engineer Intern', date: 'Feb 2023 - Jun 2023' }
+          {position: 'Software Engineer Intern', date: 'Feb 2023 - Jun 2023'}
         ]
       },
       {
@@ -350,7 +350,7 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organizationUrl: 'https://github.com/checkstyle/checkstyle',
         span: 'Mar 2021 - May 2021',
         roles: [
-          { position: 'Contributor', date: 'Mar 2021 - May 2021' }
+          {position: 'Contributor', date: 'Mar 2021 - May 2021'}
         ]
       },
       {
@@ -358,7 +358,7 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organizationUrl: 'https://www.youtube.com/c/CryptoSingh/',
         span: 'Jul 2016 - Jun 2019',
         roles: [
-          { position: 'Content Creator', date: 'Jul 2016 - Jun 2019' }
+          {position: 'Content Creator', date: 'Jul 2016 - Jun 2019'}
         ]
       }
     ],
@@ -392,8 +392,8 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organizationUrl: 'https://loadshare.net/',
         span: 'Juli 2023 - Heute',
         roles: [
-          { position: 'Softwareentwickler - II', date: 'Mai 2025 - Heute' },
-          { position: 'Softwareentwickler - I', date: 'Juli 2023 - Mai 2025' }
+          {position: 'Softwareentwickler - II', date: 'Mai 2025 - Heute'},
+          {position: 'Softwareentwickler - I', date: 'Juli 2023 - Mai 2025'}
         ]
       },
       {
@@ -401,7 +401,7 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organizationUrl: 'https://amadeus.com/en',
         span: 'Feb 2023 - Juni 2023',
         roles: [
-          { position: 'Praktikant als Softwareentwickler', date: 'Feb 2023 - Juni 2023' }
+          {position: 'Praktikant als Softwareentwickler', date: 'Feb 2023 - Juni 2023'}
         ]
       },
       {
@@ -409,7 +409,7 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organizationUrl: 'https://loadshare.net',
         span: 'Juni 2022 - Sep 2022',
         roles: [
-          { position: 'Praktikant als Softwareentwickler', date: 'Juni 2022 - Sep 2022' }
+          {position: 'Praktikant als Softwareentwickler', date: 'Juni 2022 - Sep 2022'}
         ]
       },
       {
@@ -417,7 +417,7 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organizationUrl: 'https://github.com/checkstyle/checkstyle',
         span: 'Maerz 2021 - Mai 2021',
         roles: [
-          { position: 'Mitwirkender', date: 'Maerz 2021 - Mai 2021' }
+          {position: 'Mitwirkender', date: 'Maerz 2021 - Mai 2021'}
         ]
       },
       {
@@ -425,7 +425,7 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organizationUrl: 'https://www.youtube.com/c/CryptoSingh/',
         span: 'Juli 2016 - Juni 2019',
         roles: [
-          { position: 'Content Creator', date: 'Juli 2016 - Juni 2019' }
+          {position: 'Content Creator', date: 'Juli 2016 - Juni 2019'}
         ]
       }
     ],

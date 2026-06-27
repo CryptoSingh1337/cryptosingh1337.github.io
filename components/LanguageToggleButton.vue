@@ -1,14 +1,14 @@
 <template>
   <button
     :aria-label="buttonLabel"
-    :title="buttonLabel"
     :class="['toggle', 'toggle--type', isGerman ? 'toggle--on-language toggle--on' : 'toggle--off-language toggle--off']"
+    :title="buttonLabel"
     type="button"
     @click="toggleLocale"></button>
 </template>
 
-<script setup lang="ts">
-const { locale, setLocale, t } = useI18n()
+<script lang="ts" setup>
+const {locale, setLocale, t} = useI18n()
 
 const isGerman = computed(() => locale.value === 'de')
 const buttonLabel = computed(() => isGerman.value ? t('controls.switchToEnglish') : t('controls.switchToGerman'))

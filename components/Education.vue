@@ -2,7 +2,7 @@
   <p v-if="!showTable" class="grid gap-y-4 mb-8 xl:grid-cols-[16rem]">
     <span class="inline-block text-primary-400 font-semibold">
       {{ education.institute }}
-      <br />
+      <br/>
       ({{ education.duration }})
     </span>
     <span class="grid grid-cols-[max-content]">
@@ -27,9 +27,9 @@
 </template>
 
 <script lang="ts" setup>
-import { Education } from '@/utils/types'
+import {Education} from '@/utils/types'
 
-const { t } = useI18n()
+const {t} = useI18n()
 
 defineProps<{
   education: Education,

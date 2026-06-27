@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink class="proj" :to="`/project/${project.id}`">
+  <NuxtLink :to="`/project/${project.id}`" class="proj">
     <div class="proj-head">
       <span class="proj-title">{{ project.title }}</span>
       <span v-if="year" class="proj-year">{{ year }}</span>
@@ -8,7 +8,8 @@
     <div class="proj-foot">
       <ul class="proj-tech">
         <li v-for="tech in project.technologies" :key="tech.name" class="chip">
-          <img v-if="techIcon(tech.iconName ?? tech.name)" :src="techIcon(tech.iconName ?? tech.name)" :alt="tech.name" loading="lazy" />
+          <img v-if="techIcon(tech.iconName ?? tech.name)" :alt="tech.name" :src="techIcon(tech.iconName ?? tech.name)"
+               loading="lazy"/>
           {{ tech.name }}
         </li>
       </ul>
@@ -17,12 +18,12 @@
   </NuxtLink>
 </template>
 
-<script setup lang="ts">
-import { Project } from '@/utils/types'
-import { techIcon } from '@/utils/techIcons'
-import { projectYear } from '@/utils/data'
+<script lang="ts" setup>
+import {Project} from '@/utils/types'
+import {techIcon} from '@/utils/techIcons'
+import {projectYear} from '@/utils/data'
 
-const { t } = useI18n()
+const {t} = useI18n()
 
 const props = defineProps<{
   project: Project

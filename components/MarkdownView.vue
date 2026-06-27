@@ -1,26 +1,26 @@
 <template>
   <div class="md-view">
-    <zero-md v-show="rendered" :src="src" @zero-md-rendered="onRendered" />
+    <zero-md v-show="rendered" :src="src" @zero-md-rendered="onRendered"/>
 
-    <div v-if="!rendered && !failed" class="md-skeleton" aria-hidden="true">
+    <div v-if="!rendered && !failed" aria-hidden="true" class="md-skeleton">
       <span v-for="n in 6" :key="n" class="md-skeleton-line"></span>
     </div>
 
     <a
       v-if="failed && !rendered"
       :href="src"
-      target="_blank"
+      class="md-fallback hover:underline"
       rel="noopener"
-      class="md-fallback hover:underline">
+      target="_blank">
       {{ t('project.readmeUnavailable') }} &#8599;
     </a>
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 // The themed <zero-md> element is registered in plugins/zero-md.client.ts.
 const props = defineProps<{ src: string }>()
-const { t } = useI18n()
+const {t} = useI18n()
 
 const rendered = ref(false)
 const failed = ref(false)
@@ -30,11 +30,16 @@ function armWatchdog() {
   if (watchdog) clearTimeout(watchdog)
   // If nothing rendered in time (offline / CDN blocked / src 404), offer a link.
   // Generous, since zero-md lazy-loads its parser from the CDN on first view.
-  watchdog = setTimeout(() => { if (!rendered.value) failed.value = true }, 30000)
+  watchdog = setTimeout(() => {
+    if (!rendered.value) failed.value = true
+  }, 30000)
 }
 
 function onRendered() {
-  if (watchdog) { clearTimeout(watchdog); watchdog = null }
+  if (watchdog) {
+    clearTimeout(watchdog);
+    watchdog = null
+  }
   failed.value = false
   rendered.value = true
 }
@@ -67,12 +72,21 @@ onBeforeUnmount(() => {
   animation: md-shimmer 1.4s ease infinite;
 }
 
-.md-skeleton-line:nth-child(3n) { width: 70%; }
-.md-skeleton-line:nth-child(4n) { width: 85%; }
+.md-skeleton-line:nth-child(3n) {
+  width: 70%;
+}
+
+.md-skeleton-line:nth-child(4n) {
+  width: 85%;
+}
 
 @keyframes md-shimmer {
-  0% { background-position: 100% 0; }
-  100% { background-position: -100% 0; }
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }
 
 .md-fallback {
