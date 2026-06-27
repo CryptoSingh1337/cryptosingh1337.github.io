@@ -46,6 +46,12 @@
       "technologies": "Technologien"
     },
     "freelance": "freiberuflich",
+    "viewDetails": "Details ansehen",
+    "back": "Zurueck zu den Projekten",
+    "notFound": "Projekt nicht gefunden",
+    "overview": "Ueberblick",
+    "readmeUnavailable": "README konnte nicht geladen werden. Auf GitHub ansehen",
+    "noReadme": "Noch keine Beschreibung — sieh dir die Links oben an.",
     "links": {
       "repo": "repo",
       "live": "live",

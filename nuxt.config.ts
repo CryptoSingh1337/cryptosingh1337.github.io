@@ -1,6 +1,13 @@
 export default defineNuxtConfig({
   ssr: true,
 
+  // `zero-md` is a custom element rendered as-is, not a Vue component.
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag === 'zero-md'
+    }
+  },
+
   nitro: {
     prerender: {
       routes: ['/']

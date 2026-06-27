@@ -1,0 +1,58 @@
+// Maps a canonical technology label to a logo URL.
+// Returns '' when no icon is known, so project chips render text-only.
+
+const DEVICON = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons'
+
+const ICONS: Record<string, string> = {
+  'java': `${DEVICON}/java/java-original.svg`,
+  'spring': `${DEVICON}/spring/spring-original.svg`,
+  'spring boot': `${DEVICON}/spring/spring-original.svg`,
+  'vue': `${DEVICON}/vuejs/vuejs-original.svg`,
+  'vue.js': `${DEVICON}/vuejs/vuejs-original.svg`,
+  'nuxt': `${DEVICON}/nuxtjs/nuxtjs-original.svg`,
+  'nuxt.js': `${DEVICON}/nuxtjs/nuxtjs-original.svg`,
+  'node': `${DEVICON}/nodejs/nodejs-original.svg`,
+  'node.js': `${DEVICON}/nodejs/nodejs-original.svg`,
+  'javascript': `${DEVICON}/javascript/javascript-original.svg`,
+  'typescript': `${DEVICON}/typescript/typescript-original.svg`,
+  'go': `${DEVICON}/go/go-original.svg`,
+  'golang': `${DEVICON}/go/go-original.svg`,
+  'python': `${DEVICON}/python/python-original.svg`,
+  'tailwind': `${DEVICON}/tailwindcss/tailwindcss-original.svg`,
+  'tailwind css': `${DEVICON}/tailwindcss/tailwindcss-original.svg`,
+  'mongodb': `${DEVICON}/mongodb/mongodb-original.svg`,
+  'postgresql': `${DEVICON}/postgresql/postgresql-original.svg`,
+  'postgres': `${DEVICON}/postgresql/postgresql-original.svg`,
+  'mysql': `${DEVICON}/mysql/mysql-original.svg`,
+  'redis': `${DEVICON}/redis/redis-original.svg`,
+  'kafka': `${DEVICON}/apachekafka/apachekafka-original.svg`,
+  'apache kafka': `${DEVICON}/apachekafka/apachekafka-original.svg`,
+  'docker': `${DEVICON}/docker/docker-original.svg`,
+  'kubernetes': `${DEVICON}/kubernetes/kubernetes-plain.svg`,
+  'k8s': `${DEVICON}/kubernetes/kubernetes-plain.svg`,
+  'aws': `${DEVICON}/amazonwebservices/amazonwebservices-original-wordmark.svg`,
+  'azure': `${DEVICON}/azure/azure-original.svg`,
+  'arduino': `${DEVICON}/arduino/arduino-original.svg`,
+  'bootstrap': `${DEVICON}/bootstrap/bootstrap-original.svg`,
+  'flask': `${DEVICON}/flask/flask-original.svg`,
+  'terraform': `${DEVICON}/terraform/terraform-original.svg`,
+  'git': `${DEVICON}/git/git-original.svg`,
+  'hibernate': `${DEVICON}/hibernate/hibernate-original.svg`,
+  'linux': `${DEVICON}/linux/linux-original.svg`,
+  'tensorflow': `${DEVICON}/tensorflow/tensorflow-original.svg`,
+  'react': `${DEVICON}/react/react-original.svg`,
+  'redux': `${DEVICON}/redux/redux-original.svg`,
+  'scikit-learn': `${DEVICON}/scikitlearn/scikitlearn-original.svg`,
+  'sklearn': `${DEVICON}/scikitlearn/scikitlearn-original.svg`,
+  'maven': `${DEVICON}/maven/maven-original.svg`,
+  'html5': `${DEVICON}/html5/html5-original.svg`,
+  'html': `${DEVICON}/html5/html5-original.svg`,
+  'css3': `${DEVICON}/css3/css3-original.svg`,
+  'css': `${DEVICON}/css3/css3-original.svg`,
+  'thymeleaf': `${DEVICON}/thymeleaf/thymeleaf-original.svg`,
+  'vuetify': `${DEVICON}/vuetify/vuetify-original.svg`,
+}
+
+export function techIcon(name: string): string {
+  return ICONS[name.trim().toLowerCase()] ?? ''
+}

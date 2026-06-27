@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      zero-md:
+        specifier: ^3.1.7
+        version: 3.1.7
     devDependencies:
       '@nuxt/devtools':
         specifier: latest
@@ -4976,6 +4980,9 @@ packages:
 
   youch@4.1.1:
     resolution: {integrity: sha512-mxW3qiSnl+GRxXsaUMzv2Mbada1Y8CDltET9UxejDQe6DBYlSekghl5U5K0ReAikcHDi0G1vKZEmmo/NWAGKLA==}
+
+  zero-md@3.1.7:
+    resolution: {integrity: sha512-Hr+zyqZe3NYI2b2ZdSIdM062QmLeJq7eK0GNXIH9bngRFFnoXx6EXiAbY2Zv6OA8mdxOHhB5B2TaDbV5w++7ig==}
 
   zip-stream@6.0.1:
     resolution: {integrity: sha512-zK7YHHz4ZXpW89AHXUPbQVGKI7uvkd3hzusTdotCg1UxyaVtg0zFJSTfW/Dq5f7OBBVnq6cZIaC8Ti4hb6dtCA==}
@@ -10389,6 +10396,8 @@ snapshots:
       '@speed-highlight/core': 1.2.17
       cookie-es: 3.1.1
       youch-core: 0.3.3
+
+  zero-md@3.1.7: {}
 
   zip-stream@6.0.1:
     dependencies:
