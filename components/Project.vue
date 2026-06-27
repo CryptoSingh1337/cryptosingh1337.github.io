@@ -8,7 +8,7 @@
     <div class="proj-foot">
       <ul class="proj-tech">
         <li v-for="tech in project.technologies" :key="tech.name" class="chip">
-          <img v-if="icon(tech.iconName ?? tech.name)" :src="icon(tech.iconName ?? tech.name)" :alt="tech.name" loading="lazy" />
+          <img v-if="techIcon(tech.iconName ?? tech.name)" :src="techIcon(tech.iconName ?? tech.name)" :alt="tech.name" loading="lazy" />
           {{ tech.name }}
         </li>
       </ul>
@@ -20,6 +20,7 @@
 <script setup lang="ts">
 import { Project } from '@/utils/types'
 import { techIcon } from '@/utils/techIcons'
+import { projectYear } from '@/utils/data'
 
 const { t } = useI18n()
 
@@ -27,13 +28,7 @@ const props = defineProps<{
   project: Project
 }>()
 
-const icon = (name: string) => techIcon(name)
-
-const year = computed(() => {
-  if (!props.project.createdAt) return ''
-  const d = new Date(props.project.createdAt)
-  return isNaN(d.getTime()) ? '' : String(d.getFullYear())
-})
+const year = computed(() => projectYear(props.project.createdAt))
 </script>
 
 <style scoped>

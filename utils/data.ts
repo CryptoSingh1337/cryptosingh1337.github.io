@@ -13,40 +13,46 @@ export type PortfolioContent = {
 }
 
 const tech = (name: string, iconName?: string): ProjectTechnology => iconName ? { name, iconName } : { name }
-const skill = (id: string, name: string, order: number, iconName = name): Skill => ({ id, name, url: techIcon(iconName), order })
-const localSkill = (id: string, name: string, order: number, url: string): Skill => ({ id, name, url, order })
+const skill = (id: string, name: string, iconName = name): Skill => ({ id, name, url: techIcon(iconName) })
+const localSkill = (id: string, name: string, url: string): Skill => ({ id, name, url })
+
+export const projectYear = (createdAt?: string): string => {
+  if (!createdAt) return ''
+  const d = new Date(createdAt)
+  return isNaN(d.getTime()) ? '' : String(d.getFullYear())
+}
 
 export const interestedSkills: Skill[] = [
-  localSkill('interested-distributed-systems', 'Distributed Systems', 3, '/icons/skills/distributed-systems.png'),
-  localSkill('interested-machine-learning', 'Machine Learning', 4, '/icons/skills/machine-learning.png')
+  localSkill('interested-distributed-systems', 'Distributed Systems', '/icons/skills/distributed-systems.png'),
+  localSkill('interested-machine-learning', 'Machine Learning', '/icons/skills/machine-learning.png')
 ]
 
 export const skills: Skill[] = [
-  skill('skill-java', 'Java', 1),
-  skill('skill-spring', 'Spring', 2),
-  skill('skill-hibernate', 'Hibernate', 3),
-  localSkill('skill-sql', 'SQL', 4, '/icons/skills/sql.svg'),
-  skill('skill-golang', 'Golang', 5),
-  skill('skill-mongodb', 'MongoDB', 5),
-  skill('skill-html', 'HTML', 6),
-  skill('skill-css', 'CSS', 7),
-  skill('skill-javascript', 'JavaScript', 8, 'Javascript'),
-  skill('skill-typescript', 'TypeScript', 9),
-  skill('skill-vue', 'Vue.js', 10),
-  skill('skill-nuxt', 'Nuxt.js', 11),
-  skill('skill-node', 'Node.js', 12),
-  skill('skill-tailwind', 'Tailwind CSS', 14),
-  skill('skill-git', 'Git', 16),
-  skill('skill-maven', 'Apache Maven', 17, 'Maven'),
-  skill('skill-docker', 'Docker', 18),
-  localSkill('skill-aws', 'AWS', 19, '/icons/skills/aws.svg'),
-  skill('skill-azure', 'Azure', 20),
-  skill('skill-terraform', 'Terraform', 21),
-  skill('skill-linux', 'Linux', 22),
-  localSkill('skill-vscode', 'VSCode', 23, '/icons/skills/vscode.svg'),
-  localSkill('skill-intellij', 'Intellij IDEA', 24, '/icons/skills/intellij-idea.svg'),
-  localSkill('skill-data-structures', 'Data Structures', 25, '/icons/skills/data-structures.svg'),
-  localSkill('skill-algorithms', 'Algorithms', 26, '/icons/skills/algorithms.svg')
+  skill('skill-java', 'Java'),
+  skill('skill-spring', 'Spring'),
+  skill('skill-hibernate', 'Hibernate'),
+  localSkill('skill-sql', 'SQL', '/icons/skills/sql.svg'),
+  skill('skill-golang', 'Golang'),
+  skill('skill-mongodb', 'MongoDB'),
+  skill('skill-html', 'HTML'),
+  skill('skill-css', 'CSS'),
+  skill('skill-javascript', 'JavaScript', 'Javascript'),
+  skill('skill-typescript', 'TypeScript'),
+  skill('skill-vue', 'Vue.js'),
+  skill('skill-nuxt', 'Nuxt.js'),
+  skill('skill-node', 'Node.js'),
+  skill('skill-tailwind', 'Tailwind CSS'),
+  skill('skill-git', 'Git'),
+  skill('skill-maven', 'Apache Maven', 'Maven'),
+  skill('skill-docker', 'Docker'),
+  localSkill('skill-aws', 'AWS', '/icons/skills/aws.svg'),
+  skill('skill-azure', 'Azure'),
+  skill('skill-terraform', 'Terraform'),
+  skill('skill-linux', 'Linux'),
+  localSkill('skill-vscode', 'VSCode', '/icons/skills/vscode.svg'),
+  localSkill('skill-intellij', 'Intellij IDEA', '/icons/skills/intellij-idea.svg'),
+  localSkill('skill-data-structures', 'Data Structures', '/icons/skills/data-structures.svg'),
+  localSkill('skill-algorithms', 'Algorithms', '/icons/skills/algorithms.svg')
 ]
 
 const certifications: Certification[] = [
@@ -105,9 +111,14 @@ const publications: Publication[] = [
   }
 ]
 
-const projects: Project[] = [
+const slugify = (value: string): string =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+
+const projectsData: Array<Omit<Project, 'id'>> = [
   {
-    id: 'ab7CWxEAACAAKxKK',
     title: 'Themis',
     briefInfo: 'Themis is a rule and decision management platform for teams that need to author, review, version, build, and deploy business logic with confidence. It brings together workspace management, Git-backed rule sources, decision lifecycles, artifact generation, and deployment workflows in one product surface.',
     freelance: false,
@@ -117,37 +128,31 @@ const projects: Project[] = [
       { name: 'demo', url: 'https://youtu.be/jBWx6UouZow?utm_source=portfolio' }
     ],
     technologies: [tech('Java'), tech('Spring Boot'), tech('PostgreSQL'), tech('Nuxt.js'), tech('Tailwind CSS'), tech('AWS'), tech('Docker'), tech('Drools')],
-    createdAt: '2025-11-01',
-    order: 16
+    createdAt: '2025-11-01'
   },
   {
-    id: 'ZwVhjxEAACwAb__-',
     title: 'Serpent Clash',
     briefInfo: 'A multiplayer snake game',
     freelance: false,
-    githubReadme: '',
+    githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/serpent-clash/refs/heads/master/README.md',
     urls: [
       { name: 'repo', url: 'https://github.com/CryptoSingh1337/serpent-clash' },
       { name: 'live', url: 'https://serpent-clash.saransh.pro/' },
       { name: 'demo', url: 'https://www.youtube.com/watch?v=GLIhDvpuB-0&utm_source=portfolio' }
     ],
     technologies: [tech('Golang'), tech('Vue.js'), tech('Pixi.js', 'Javascript'), tech('Websocket'), tech('Tailwind CSS')],
-    createdAt: '2024-08-01',
-    order: 15
+    createdAt: '2024-08-01'
   },
   {
-    id: 'ZaFzrhEAAC4AgYrV',
     title: 'Automated Caller System',
     briefInfo: 'Created flask application to extract data from third party IVR system, integrated twilio API to make calls and extract data in most optimize and cost effective way.',
     freelance: true,
     githubReadme: '',
     urls: [],
     technologies: [tech('Python'), tech('Flask'), tech('Twilio')],
-    createdAt: '2024-01-08',
-    order: 14
+    createdAt: '2024-01-08'
   },
   {
-    id: 'ZTuFbRIAACkAV7O8',
     title: 'URLific',
     briefInfo: 'Provides a proxy URL for frequently changing URLs. Uses OAuth 2.0 for authentication and an in‑memory LRU cache.',
     freelance: false,
@@ -157,11 +162,9 @@ const projects: Project[] = [
       { name: 'live', url: 'https://urlific.onrender.com/' }
     ],
     technologies: [tech('Java'), tech('Spring Boot'), tech('Spring Security', 'Spring'), tech('Thymeleaf'), tech('Tailwind CSS'), tech('MongoDB')],
-    createdAt: '2023-06-01',
-    order: 13
+    createdAt: '2023-06-01'
   },
   {
-    id: 'YWMwyRIAACwAz83T',
     title: 'VidFlow',
     briefInfo: 'A video sharing platform. It integrates content recommendations and real-time spam filtering.',
     freelance: false,
@@ -172,11 +175,9 @@ const projects: Project[] = [
       { name: 'backend', url: 'https://github.com/CryptoSingh1337/vidflow-backend' }
     ],
     technologies: [tech('Java'), tech('Spring Boot'), tech('Spring WebMvc', 'Spring'), tech('Spring Data MongoDB', 'Spring'), tech('Spring Security', 'Spring'), tech('Javascript'), tech('Vue'), tech('Nuxt'), tech('Vuetify'), tech('Microsoft Azure', 'Azure'), tech('AWS')],
-    createdAt: '2021-10-01',
-    order: 12
+    createdAt: '2021-10-01'
   },
   {
-    id: 'Ys3UBRYAAC4AtNew',
     title: 'GMoments',
     briefInfo: 'GMoments saves the last few seconds (15-20 sec) gameplay.',
     freelance: false,
@@ -185,11 +186,9 @@ const projects: Project[] = [
       { name: 'repo', url: 'https://github.com/CryptoSingh1337/GMoments' }
     ],
     technologies: [tech('Python'), tech('D3DShot (Window Desktop Duplication API)'), tech('ffmpeg')],
-    createdAt: '2022-01-09',
-    order: 11
+    createdAt: '2022-01-09'
   },
   {
-    id: 'ZnGpABEAACsAgxEC',
     title: 'Lexical Analyzer',
     briefInfo: 'A web application to break a C program into tokens',
     freelance: false,
@@ -199,11 +198,9 @@ const projects: Project[] = [
       { name: 'live', url: 'https://lexical-analyzer.onrender.com/' }
     ],
     technologies: [tech('Java'), tech('Spring Boot'), tech('Thymeleaf'), tech('Tailwind CSS')],
-    createdAt: '2022-04-14',
-    order: 10.1
+    createdAt: '2022-04-14'
   },
   {
-    id: 'Yw8MLxEAACoAJsrK',
     title: 'Fellowship',
     briefInfo: 'A scholarship aggregator. It provides scholarship recommendations based on user-specific details.',
     freelance: false,
@@ -213,11 +210,9 @@ const projects: Project[] = [
       { name: 'backend', url: 'https://github.com/CryptoSingh1337/fellowship-backend' }
     ],
     technologies: [tech('Java'), tech('Spring Boot'), tech('Spring Security', 'Spring'), tech('Spring Scheduler', 'Spring'), tech('Spring Data Mongo', 'Spring'), tech('Java Mail API', 'Java'), tech('MongoDB'), tech('Amazon SQS', 'AWS'), tech('Javascript'), tech('Vue'), tech('Nuxt 2', 'Nuxt.js'), tech('Vuetify')],
-    createdAt: '2022-08-01',
-    order: 10
+    createdAt: '2022-08-01'
   },
   {
-    id: 'YStDyRIAACgAdEY-',
     title: 'Vue Quiz App',
     briefInfo: 'A customizable multiple choice quiz app.',
     freelance: false,
@@ -227,11 +222,9 @@ const projects: Project[] = [
       { name: 'live', url: 'https://pensive-nightingale-13aa84.netlify.app/' }
     ],
     technologies: [tech('Vue'), tech('Vuex', 'Vue.js'), tech('Javascript'), tech('WaveUI')],
-    createdAt: '2021-10-06',
-    order: 9
+    createdAt: '2021-10-06'
   },
   {
-    id: 'YSsjLBIAACoAc7We',
     title: 'Bloged',
     briefInfo: 'Bloged is a fullstack application created in collaboration with a friend where user can read blogs and can comment on a blog.',
     freelance: false,
@@ -241,11 +234,9 @@ const projects: Project[] = [
       { name: 'backend', url: 'https://github.com/CryptoSingh1337/spring-blog-api' }
     ],
     technologies: [tech('Spring Boot'), tech('Spring Data Jpa', 'Spring'), tech('Spring Rest Docs', 'Spring'), tech('H2-DB'), tech('React'), tech('Redux'), tech('Router')],
-    createdAt: '2021-07-27',
-    order: 8
+    createdAt: '2021-07-27'
   },
   {
-    id: 'YSs-7hIAACgAdDC4',
     title: 'Spring Recipe App',
     briefInfo: 'A Spring web application for managing Recipe. It can handle all the CRUD operations on Recipe and its ingredients. This project was created while I was learning about Spring framework.',
     freelance: false,
@@ -254,11 +245,9 @@ const projects: Project[] = [
       { name: 'repo', url: 'https://github.com/CryptoSingh1337/spring-recipe-app' }
     ],
     technologies: [tech('Spring Boot'), tech('Spring WebMvc', 'Spring'), tech('Spring Data JPA', 'Spring'), tech('H2-DB'), tech('Thymeleaf')],
-    createdAt: '2021-06-13',
-    order: 7
+    createdAt: '2021-06-13'
   },
   {
-    id: 'YSs_lRIAAC0AdDOe',
     title: 'CRM system',
     briefInfo: 'A simple Spring application for Customer Relationship Management.',
     freelance: false,
@@ -267,11 +256,9 @@ const projects: Project[] = [
       { name: 'repo', url: 'https://github.com/CryptoSingh1337/crm-springmvc-hibernate' }
     ],
     technologies: [tech('Spring'), tech('Spring WebMvc', 'Spring'), tech('Hibernate'), tech('MySQL'), tech('JSP', 'Java')],
-    createdAt: '2021-06-03',
-    order: 6
+    createdAt: '2021-06-03'
   },
   {
-    id: 'YStCfhIAAC8AdECL',
     title: 'Minify URL',
     briefInfo: 'A fullstack web application which makes long URLs, shorter.',
     freelance: false,
@@ -281,11 +268,9 @@ const projects: Project[] = [
       { name: 'live', url: 'https://cryptosingh1337.github.io/minify-url-frontend/' }
     ],
     technologies: [tech('Spring Boot'), tech('Spring WebMvc', 'Spring'), tech('MongoDB'), tech('HTML'), tech('CSS'), tech('Javascript'), tech('Bootstrap')],
-    createdAt: '2021-02-22',
-    order: 5
+    createdAt: '2021-02-22'
   },
   {
-    id: 'YStEbhIAAC4AdEkm',
     title: 'Notepad',
     briefInfo: 'A simple notepad application (clone of Windows Notepad).',
     freelance: false,
@@ -295,11 +280,9 @@ const projects: Project[] = [
       { name: 'demo', url: 'https://github.com/CryptoSingh1337/Notepad/releases/tag/2.0' }
     ],
     technologies: [tech('Java'), tech('JavaFX', 'Java')],
-    createdAt: '2020-08-28',
-    order: 4
+    createdAt: '2020-08-28'
   },
   {
-    id: 'YStFGRIAACwAdEwk',
     title: 'Todo List',
     briefInfo: 'A Java desktop application for managing todos.',
     freelance: false,
@@ -308,11 +291,9 @@ const projects: Project[] = [
       { name: 'repo', url: 'https://github.com/CryptoSingh1337/todolist-maven' }
     ],
     technologies: [tech('Java'), tech('JavaFX', 'Java'), tech('CSS')],
-    createdAt: '2020-07-19',
-    order: 3
+    createdAt: '2020-07-19'
   },
   {
-    id: 'YStLohIAACsAdGkm',
     title: 'Password Rack',
     briefInfo: 'A password storing application which stores your multiple passwords and provide you a single password to manage those stored passwords.',
     freelance: false,
@@ -321,11 +302,9 @@ const projects: Project[] = [
       { name: 'repo', url: 'https://github.com/CryptoSingh1337/password-rack' }
     ],
     technologies: [tech('Java'), tech('Java Swing', 'Java')],
-    createdAt: '2020-04-20',
-    order: 2
+    createdAt: '2020-04-20'
   },
   {
-    id: 'YS9t6xIAAC4AhpU_',
     title: 'Wireless Robotic Hand',
     briefInfo: 'A robotic arm created using Arduino Uno R3 which consists of a receiver and transmitter and communicate to each other using nRF24L01 wireless module. This was my 11th standard project.',
     freelance: false,
@@ -334,10 +313,11 @@ const projects: Project[] = [
       { name: 'repo', url: 'https://github.com/CryptoSingh1337/wireless-robotic-hand' }
     ],
     technologies: [tech('Arduino UNO R3', 'Arduino'), tech('nRF24L01')],
-    createdAt: '2017-11-15',
-    order: 1
+    createdAt: '2017-11-15'
   }
 ]
+
+const projects: Project[] = projectsData.map(project => ({ id: slugify(project.title), ...project }))
 
 export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
   en: {
@@ -351,7 +331,6 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organization: 'LoadShare Networks',
         organizationUrl: 'https://loadshare.net/',
         span: 'Jun 2022 - Present',
-        multi: true,
         roles: [
           { position: 'Software Development Engineer - II', date: 'May 2025 - Present' },
           { position: 'Software Development Engineer - I', date: 'Jul 2023 - May 2025' },
@@ -362,7 +341,6 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organization: 'Amadeus Labs',
         organizationUrl: 'https://amadeus.com/en',
         span: 'Feb 2023 - Jun 2023',
-        multi: false,
         roles: [
           { position: 'Software Engineer Intern', date: 'Feb 2023 - Jun 2023' }
         ]
@@ -371,7 +349,6 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organization: 'Checkstyle',
         organizationUrl: 'https://github.com/checkstyle/checkstyle',
         span: 'Mar 2021 - May 2021',
-        multi: false,
         roles: [
           { position: 'Contributor', date: 'Mar 2021 - May 2021' }
         ]
@@ -380,7 +357,6 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organization: 'YouTube',
         organizationUrl: 'https://www.youtube.com/c/CryptoSingh/',
         span: 'Jul 2016 - Jun 2019',
-        multi: false,
         roles: [
           { position: 'Content Creator', date: 'Jul 2016 - Jun 2019' }
         ]
@@ -415,7 +391,6 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organization: 'LoadShare Networks',
         organizationUrl: 'https://loadshare.net/',
         span: 'Juli 2023 - Heute',
-        multi: true,
         roles: [
           { position: 'Softwareentwickler - II', date: 'Mai 2025 - Heute' },
           { position: 'Softwareentwickler - I', date: 'Juli 2023 - Mai 2025' }
@@ -425,7 +400,6 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organization: 'Amadeus Labs',
         organizationUrl: 'https://amadeus.com/en',
         span: 'Feb 2023 - Juni 2023',
-        multi: false,
         roles: [
           { position: 'Praktikant als Softwareentwickler', date: 'Feb 2023 - Juni 2023' }
         ]
@@ -434,7 +408,6 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organization: 'LoadShare Networks',
         organizationUrl: 'https://loadshare.net',
         span: 'Juni 2022 - Sep 2022',
-        multi: false,
         roles: [
           { position: 'Praktikant als Softwareentwickler', date: 'Juni 2022 - Sep 2022' }
         ]
@@ -443,7 +416,6 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organization: 'Checkstyle',
         organizationUrl: 'https://github.com/checkstyle/checkstyle',
         span: 'Maerz 2021 - Mai 2021',
-        multi: false,
         roles: [
           { position: 'Mitwirkender', date: 'Maerz 2021 - Mai 2021' }
         ]
@@ -452,7 +424,6 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         organization: 'YouTube',
         organizationUrl: 'https://www.youtube.com/c/CryptoSingh/',
         span: 'Juli 2016 - Juni 2019',
-        multi: false,
         roles: [
           { position: 'Content Creator', date: 'Juli 2016 - Juni 2019' }
         ]

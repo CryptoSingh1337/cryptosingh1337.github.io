@@ -1,8 +1,7 @@
 export type Skill = {
   id: string,
   name: string,
-  url: string,
-  order: number
+  url: string
 }
 
 export type Link = {
@@ -30,8 +29,7 @@ export type Project = {
   githubReadme: string,
   urls: Array<Link>,
   technologies: Array<ProjectTechnology>
-  createdAt: string,
-  order: number
+  createdAt: string
 }
 
 export type ExperienceRole = {
@@ -43,7 +41,6 @@ export type Experience = {
   organization: string,
   organizationUrl: string,
   span: string,
-  multi: boolean,
   roles: Array<ExperienceRole>
 }
 

@@ -13,7 +13,7 @@
         </svg>
       </a>
 
-      <div v-if="!company.multi" class="exp-single">{{ company.roles[0].position }}</div>
+      <div v-if="!multi" class="exp-single">{{ company.roles[0].position }}</div>
 
       <ol v-else class="exp-roles">
         <li v-for="(role, i) in company.roles" :key="i" class="exp-role">
@@ -29,9 +29,11 @@
 <script setup lang="ts">
 import { Experience } from '@/utils/types'
 
-defineProps<{
+const props = defineProps<{
   company: Experience
 }>()
+
+const multi = computed(() => props.company.roles.length > 1)
 </script>
 
 <style scoped>
