@@ -51,6 +51,12 @@ const ICONS: Record<string, string> = {
   'css': `${DEVICON}/css3/css3-original.svg`,
   'thymeleaf': `${DEVICON}/thymeleaf/thymeleaf-original.svg`,
   'vuetify': `${DEVICON}/vuetify/vuetify-original.svg`,
+  'jenkins': `${DEVICON}/jenkins/jenkins-original.svg`,
+  'grafana': `${DEVICON}/grafana/grafana-original.svg`,
+  'rabbitmq': `${DEVICON}/rabbitmq/rabbit-original.svg`,
+  'junit': `${DEVICON}/junit/junit-original.svg`,
+  'githubactions': `${DEVICON}/githubactions/githubactions-original.svg`,
+  'pixi.js': `${DEVICON}/pixijs/pixijs-original.svg`,
 }
 
 export function techIcon(name: string): string {

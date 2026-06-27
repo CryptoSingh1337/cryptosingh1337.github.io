@@ -31,24 +31,30 @@ export const skills: Skill[] = [
   skill('skill-java', 'Java'),
   skill('skill-spring', 'Spring'),
   skill('skill-hibernate', 'Hibernate'),
-  localSkill('skill-sql', 'SQL', '/icons/skills/sql.svg'),
-  skill('skill-golang', 'Golang'),
+  skill('skill-junit', 'JUnit'),
+  skill('skill-mysql', 'MySQL'),
+  skill('skill-postgres', 'PostgreSQL'),
+  skill('skill-redis', 'Redis'),
   skill('skill-mongodb', 'MongoDB'),
-  skill('skill-html', 'HTML'),
-  skill('skill-css', 'CSS'),
-  skill('skill-javascript', 'JavaScript', 'Javascript'),
+  skill('skill-golang', 'Golang'),
+  skill('skill-javascript', 'JavaScript'),
   skill('skill-typescript', 'TypeScript'),
+  skill('skill-python', 'Python'),
   skill('skill-vue', 'Vue.js'),
   skill('skill-nuxt', 'Nuxt.js'),
   skill('skill-node', 'Node.js'),
   skill('skill-tailwind', 'Tailwind CSS'),
   skill('skill-git', 'Git'),
+  skill('skill-githubactions', 'GitHub Actions', 'githubactions'),
   skill('skill-maven', 'Apache Maven', 'Maven'),
   skill('skill-docker', 'Docker'),
   localSkill('skill-aws', 'AWS', '/icons/skills/aws.svg'),
   skill('skill-azure', 'Azure'),
   skill('skill-terraform', 'Terraform'),
   skill('skill-linux', 'Linux'),
+  skill('skill-jenkins', 'Jenkins'),
+  skill('skill-grafana', 'Grafana'),
+  localSkill('skill-newrelic', 'NewRelic', '/icons/skills/newrelic.svg'),
   localSkill('skill-vscode', 'VSCode', '/icons/skills/vscode.svg'),
   localSkill('skill-intellij', 'Intellij IDEA', '/icons/skills/intellij-idea.svg'),
   localSkill('skill-data-structures', 'Data Structures', '/icons/skills/data-structures.svg'),
@@ -140,7 +146,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
       {name: 'live', url: 'https://serpent-clash.saransh.pro/'},
       {name: 'demo', url: 'https://www.youtube.com/watch?v=GLIhDvpuB-0&utm_source=portfolio'}
     ],
-    technologies: [tech('Golang'), tech('Vue.js'), tech('Pixi.js', 'Javascript'), tech('Websocket'), tech('Tailwind CSS')],
+    technologies: [tech('Golang'), tech('Vue.js'), tech('Pixi.js'), tech('Websocket'), tech('Tailwind CSS')],
     createdAt: '2024-08-01'
   },
   {
@@ -174,7 +180,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
       {name: 'frontend', url: 'https://github.com/CryptoSingh1337/vidflow-client'},
       {name: 'backend', url: 'https://github.com/CryptoSingh1337/vidflow-backend'}
     ],
-    technologies: [tech('Java'), tech('Spring Boot'), tech('Spring WebMvc', 'Spring'), tech('Spring Data MongoDB', 'Spring'), tech('Spring Security', 'Spring'), tech('Javascript'), tech('Vue'), tech('Nuxt'), tech('Vuetify'), tech('Microsoft Azure', 'Azure'), tech('AWS')],
+    technologies: [tech('Java'), tech('Spring Boot'), tech('Spring WebMvc', 'Spring'), tech('Spring Data MongoDB', 'Spring'), tech('Spring Security', 'Spring'), tech('JavaScript'), tech('Vue'), tech('Nuxt'), tech('Vuetify'), tech('Microsoft Azure', 'Azure'), tech('AWS')],
     createdAt: '2021-10-01'
   },
   {
@@ -209,7 +215,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
       {name: 'frontend', url: 'https://github.com/CryptoSingh1337/fellowship-frontend'},
       {name: 'backend', url: 'https://github.com/CryptoSingh1337/fellowship-backend'}
     ],
-    technologies: [tech('Java'), tech('Spring Boot'), tech('Spring Security', 'Spring'), tech('Spring Scheduler', 'Spring'), tech('Spring Data Mongo', 'Spring'), tech('Java Mail API', 'Java'), tech('MongoDB'), tech('Amazon SQS', 'AWS'), tech('Javascript'), tech('Vue'), tech('Nuxt 2', 'Nuxt.js'), tech('Vuetify')],
+    technologies: [tech('Java'), tech('Spring Boot'), tech('Spring Security', 'Spring'), tech('Spring Scheduler', 'Spring'), tech('Spring Data Mongo', 'Spring'), tech('Java Mail API', 'Java'), tech('MongoDB'), tech('Amazon SQS', 'AWS'), tech('JavaScript'), tech('Vue'), tech('Nuxt 2', 'Nuxt.js'), tech('Vuetify')],
     createdAt: '2022-08-01'
   },
   {
@@ -221,7 +227,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
       {name: 'repo', url: 'https://github.com/CryptoSingh1337/vue-quiz-app'},
       {name: 'live', url: 'https://pensive-nightingale-13aa84.netlify.app/'}
     ],
-    technologies: [tech('Vue'), tech('Vuex', 'Vue.js'), tech('Javascript'), tech('WaveUI')],
+    technologies: [tech('Vue'), tech('Vuex', 'Vue.js'), tech('JavaScript'), tech('WaveUI')],
     createdAt: '2021-10-06'
   },
   {
