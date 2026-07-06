@@ -126,14 +126,14 @@ const slugify = (value: string): string =>
 const projectsData: Array<Omit<Project, 'id'>> = [
   {
     title: 'Themis',
-    briefInfo: 'Themis is a rule and decision management platform for teams that need to author, review, version, build, and deploy business logic with confidence. It brings together workspace management, Git-backed rule sources, decision lifecycles, artifact generation, and deployment workflows in one product surface.',
+    briefInfo: 'Themis is a rule and decision management platform for teams that need to author, review, version, build, and deploy business logic with confidence.',
+    githubReadme: 'https://gist.githubusercontent.com/CryptoSingh1337/15016b5c8eff99b179725fb236accd6c/raw/d6f3d84b67baea11df179218ba3c4df43f5f2169/THEMIS-README.md',
     freelance: false,
-    githubReadme: '',
     urls: [
       {name: 'live', url: 'https://themis.saransh.pro/'},
       {name: 'demo', url: 'https://youtu.be/jBWx6UouZow?utm_source=portfolio'}
     ],
-    technologies: [tech('Java'), tech('Spring Boot'), tech('PostgreSQL'), tech('Nuxt.js'), tech('Tailwind CSS'), tech('AWS'), tech('Docker'), tech('Drools')],
+    technologies: [tech('Java'), tech('Spring Boot'), tech('Spring AI', 'Spring Boot'), tech('PostgreSQL'), tech('Nuxt.js'), tech('Tailwind CSS'), tech('AWS'), tech('Jenkins'), tech('GitHub Actions', 'githubactions'), tech('Docker'), tech('Drools')],
     createdAt: '2025-11-01'
   },
   {
@@ -151,7 +151,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
   },
   {
     title: 'Automated Caller System',
-    briefInfo: 'Created flask application to extract data from third party IVR system, integrated twilio API to make calls and extract data in most optimize and cost effective way.',
+    briefInfo: 'A flask application to extract data from third party IVR system, integrated twilio API to make calls and extract data in most optimize and cost effective way.',
     freelance: true,
     githubReadme: '',
     urls: [],
@@ -160,7 +160,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
   },
   {
     title: 'URLific',
-    briefInfo: 'Provides a proxy URL for frequently changing URLs. Uses OAuth 2.0 for authentication and an in‑memory LRU cache.',
+    briefInfo: 'A proxy URL service that provides permanent links for resources with frequently changing URLs, such as social media profiles.',
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/urlific/master/Readme.md',
     urls: [
@@ -172,7 +172,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
   },
   {
     title: 'VidFlow',
-    briefInfo: 'A video sharing platform. It integrates content recommendations and real-time spam filtering.',
+    briefInfo: 'A video sharing platform, integrates content recommendations and real-time spam filtering.',
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/vidflow-backend/master/Readme.md',
     urls: [
@@ -208,7 +208,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
   },
   {
     title: 'Fellowship',
-    briefInfo: 'A scholarship aggregator. It provides scholarship recommendations based on user-specific details.',
+    briefInfo: 'A scholarship aggregator, provides scholarship recommendations based on user profile.',
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/fellowship-backend/master/README.md',
     urls: [
@@ -244,7 +244,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
   },
   {
     title: 'Spring Recipe App',
-    briefInfo: 'A Spring web application for managing Recipe. It can handle all the CRUD operations on Recipe and its ingredients. This project was created while I was learning about Spring framework.',
+    briefInfo: 'A Spring web application for managing Recipe.',
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/spring-recipe-app/master/Readme.md',
     urls: [
@@ -312,7 +312,7 @@ const projectsData: Array<Omit<Project, 'id'>> = [
   },
   {
     title: 'Wireless Robotic Hand',
-    briefInfo: 'A robotic arm created using Arduino Uno R3 which consists of a receiver and transmitter and communicate to each other using nRF24L01 wireless module. This was my 11th standard project.',
+    briefInfo: 'A robotic arm created using Arduino Uno R3 which consists of a receiver and transmitter and communicate to each other using nRF24L01 wireless module.',
     freelance: false,
     githubReadme: 'https://raw.githubusercontent.com/CryptoSingh1337/wireless-robotic-hand/master/README.md',
     urls: [
