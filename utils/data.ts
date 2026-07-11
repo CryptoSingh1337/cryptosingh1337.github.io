@@ -421,7 +421,7 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
       {
         organization: 'Checkstyle',
         organizationUrl: 'https://github.com/checkstyle/checkstyle',
-        span: 'Maerz 2021 - Mai 2021',
+        span: 'März 2021 - Mai 2021',
         roles: [
           {position: 'Mitwirkender', date: 'Maerz 2021 - Mai 2021'}
         ]
