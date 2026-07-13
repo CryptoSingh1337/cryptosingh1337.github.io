@@ -130,8 +130,8 @@ const projectsData: Array<Omit<Project, 'id'>> = [
     githubReadme: 'https://gist.githubusercontent.com/CryptoSingh1337/15016b5c8eff99b179725fb236accd6c/raw/d6f3d84b67baea11df179218ba3c4df43f5f2169/THEMIS-README.md',
     freelance: false,
     urls: [
-      {name: 'live', url: 'https://themis.saransh.pro/'},
-      {name: 'demo', url: 'https://youtu.be/jBWx6UouZow?utm_source=portfolio'}
+      // {name: 'live', url: 'https://themis.saransh.pro/'},
+      // {name: 'demo', url: 'https://youtu.be/jBWx6UouZow?utm_source=portfolio'}
     ],
     technologies: [tech('Java'), tech('Spring Boot'), tech('Spring AI', 'Spring Boot'), tech('PostgreSQL'), tech('Nuxt.js'), tech('Tailwind CSS'), tech('AWS'), tech('Jenkins'), tech('GitHub Actions', 'githubactions'), tech('Docker'), tech('Drools')],
     createdAt: '2025-11-01'
