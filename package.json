@@ -11,7 +11,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^4.0.1",
-    "@nuxtjs/i18n": "^10.4.0",
+    "@nuxtjs/i18n": "^10.4.1",
     "@nuxtjs/robots": "^6.1.1",
     "@nuxtjs/tailwindcss": "^6.14.0",
     "nuxt": "^4.4.8",
