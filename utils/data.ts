@@ -399,7 +399,8 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         span: 'Juli 2023 - Heute',
         roles: [
           {position: 'Softwareentwickler - II', date: 'Mai 2025 - Heute'},
-          {position: 'Softwareentwickler - I', date: 'Juli 2023 - Mai 2025'}
+          {position: 'Softwareentwickler - I', date: 'Juli 2023 - Mai 2025'},
+          {position: 'Praktikant als Softwareentwickler', date: 'Juni 2022 - Sep 2022'}
         ]
       },
       {
@@ -408,14 +409,6 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         span: 'Feb 2023 - Juni 2023',
         roles: [
           {position: 'Praktikant als Softwareentwickler', date: 'Feb 2023 - Juni 2023'}
-        ]
-      },
-      {
-        organization: 'LoadShare Networks',
-        organizationUrl: 'https://loadshare.net',
-        span: 'Juni 2022 - Sep 2022',
-        roles: [
-          {position: 'Praktikant als Softwareentwickler', date: 'Juni 2022 - Sep 2022'}
         ]
       },
       {
