@@ -439,7 +439,7 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
         duration: '2017 - 2019',
         institute: 'Bal Bhavan Public Sr. Sec School',
         degree: 'Oberstufe',
-        fieldOfStudy: 'Naturwissenschaften mit Informatik'
+        fieldOfStudy: 'Wissenschaft mit Informatik'
       }
     ],
     certifications,
