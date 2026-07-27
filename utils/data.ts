@@ -388,8 +388,8 @@ export const portfolioContent: Record<SupportedLocale, PortfolioContent> = {
   },
   de: {
     hero: [
-      'Meine Leidenschaft liegt darin, robuste und skalierbare Backend-Systeme zu entwickeln, die die heutige digitale Welt antreiben.',
-      'Mein Weg als Entwickler ist von einem konsequenten Streben nach Exzellenz gepraegt, besonders bei der Entwicklung von Anwendungen und im Systemdesign. Ich arbeite kontinuierlich daran, meine Faehigkeiten weiterzuentwickeln und echte Meisterschaft anzustreben.',
+      'Meine Leidenschaft liegt in der Entwicklung robuster und skalierbarer Backend-Systeme, die die heutige digitale Landschaft antreiben.',
+      'Mein Werdegang als Entwickler war stets von dem unermüdlichen Streben nach Exzellenz geprägt, insbesondere im Bereich der Anwendungsentwicklung und des Systemdesigns. Ich bin bestrebt, meine Fähigkeiten kontinuierlich zu verbessern und Meisterschaft zu erlangen.',
       'Die wichtigsten Technologien, die ich verwende:'
     ],
     workExperience: [
