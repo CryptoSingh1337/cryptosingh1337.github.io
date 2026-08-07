@@ -57,6 +57,7 @@ const ICONS: Record<string, string> = {
   'junit': `${DEVICON}/junit/junit-original.svg`,
   'githubactions': `${DEVICON}/githubactions/githubactions-original.svg`,
   'pixi.js': `${DEVICON}/pixijs/pixijs-original.svg`,
+  'zoom': '/zoom.svg'
 }
 
 export function techIcon(name: string): string {

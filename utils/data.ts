@@ -125,6 +125,15 @@ const slugify = (value: string): string =>
 
 const projectsData: Array<Omit<Project, 'id'>> = [
   {
+    title: 'Zoom Automation Bot',
+    briefInfo: 'An autonomous Zoom bot that creates webinars, joins them automatically, and broadcasts video with synchronized audio via screen sharing, enabling fully automated webinar hosting.',
+    githubReadme: '',
+    freelance: true,
+    urls: [],
+    technologies: [tech('Python'), tech('AWS'), tech('Zoom API', 'Zoom')],
+    createdAt: '2026-07-30'
+  },
+  {
     title: 'Themis',
     briefInfo: 'Themis is a rule and decision management platform for teams that need to author, review, version, build, and deploy business logic with confidence.',
     githubReadme: 'https://gist.githubusercontent.com/CryptoSingh1337/15016b5c8eff99b179725fb236accd6c/raw/d6f3d84b67baea11df179218ba3c4df43f5f2169/THEMIS-README.md',
